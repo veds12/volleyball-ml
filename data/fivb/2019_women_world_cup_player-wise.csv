@@ -1,1846 +1,1846 @@
-,Match Num,Team,Number,Name,Points Scored,Attacks Won,Attacks Attempted,Blocks Won,Blocks Attempted,Serves Won,Serves Attempted
-0,1,USA,11,Andrea Drews,15,12,22,1,12,2,10
-1,1,USA,10,Jordan Larson,14,10,23,1,3,3,15
-2,1,USA,24,Chiaka Ogbogu,12,9,11,3,15,0,9
-3,1,USA,23,Kelsey Robinson,11,10,19,0,1,1,10
-4,1,USA,22,Haleigh Washington,3,3,5,0,4,0,8
-5,1,USA,25,Karsta Lowe,3,3,4,0,1,0,0
-6,1,USA,2,Jordyn Poulter,2,0,1,1,3,1,19
-7,1,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,1,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-9,1,USA,7,Lauren Carlini,0,0,0,0,0,0,2
-10,1,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,0
-11,1,USA,15,Kimberly Hill,0,0,0,0,0,0,0
-12,1,USA,17,Megan Courtney,0,0,0,0,0,0,0
-13,1,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-0,9,USA,22,Haleigh Washington,16,11,19,5,18,0,14
-1,9,USA,23,Kelsey Robinson,16,13,22,2,3,1,18
-2,9,USA,25,Karsta Lowe,16,13,21,2,5,1,10
-3,9,USA,10,Jordan Larson,12,11,24,0,4,1,18
-4,9,USA,24,Chiaka Ogbogu,12,8,14,4,19,0,11
-5,9,USA,11,Andrea Drews,3,3,10,0,1,0,3
-6,9,USA,2,Jordyn Poulter,2,0,1,2,8,0,16
-7,9,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,9,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-9,9,USA,7,Lauren Carlini,0,0,0,0,0,0,0
-10,9,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,7
-11,9,USA,15,Kimberly Hill,0,0,0,0,0,0,0
-12,9,USA,17,Megan Courtney,0,0,0,0,0,0,0
-13,9,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-0,15,USA,25,Karsta Lowe,22,20,44,1,7,1,15
-1,15,USA,14,Michelle Bartsch-Hackley,21,14,34,5,13,2,15
-2,15,USA,6,Tetori Dixon,12,7,12,4,24,1,19
-3,15,USA,15,Kimberly Hill,10,10,25,0,6,0,14
-4,15,USA,19,Hannah Tapp,9,7,14,0,13,2,15
-5,15,USA,7,Lauren Carlini,5,2,3,3,13,0,14
-6,15,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
-7,15,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,15,USA,10,Jordan Larson,0,0,0,0,0,0,0
-9,15,USA,11,Andrea Drews,0,0,0,0,0,0,0
-10,15,USA,17,Megan Courtney,0,0,0,0,0,0,0
-11,15,USA,22,Haleigh Washington,0,0,0,0,0,0,0
-12,15,USA,23,Kelsey Robinson,0,0,0,0,0,0,0
-13,15,USA,24,Chiaka Ogbogu,0,0,0,0,0,0,0
-0,21,USA,23,Kelsey Robinson,16,16,26,0,1,0,9
-1,21,USA,10,Jordan Larson,14,9,19,1,7,4,17
-2,21,USA,11,Andrea Drews,13,11,24,1,5,1,10
-3,21,USA,22,Haleigh Washington,6,5,8,1,4,0,11
-4,21,USA,2,Jordyn Poulter,5,1,1,2,5,2,16
-5,21,USA,24,Chiaka Ogbogu,3,3,12,0,18,0,8
-6,21,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-7,21,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-8,21,USA,7,Lauren Carlini,0,0,0,0,0,0,0
-9,21,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,1
-10,21,USA,15,Kimberly Hill,0,0,0,0,0,0,1
-11,21,USA,17,Megan Courtney,0,0,0,0,0,0,0
-12,21,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-13,21,USA,25,Karsta Lowe,0,0,0,0,0,0,0
-0,29,USA,23,Kelsey Robinson,15,14,31,1,3,0,9
-1,29,USA,11,Andrea Drews,14,12,27,2,12,0,6
-2,29,USA,24,Chiaka Ogbogu,12,6,8,4,20,2,10
-3,29,USA,22,Haleigh Washington,10,9,13,1,9,0,6
-4,29,USA,10,Jordan Larson,8,8,18,0,0,0,10
-5,29,USA,2,Jordyn Poulter,1,0,0,0,3,1,22
-6,29,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-7,29,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-8,29,USA,7,Lauren Carlini,0,0,0,0,0,0,0
-9,29,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,6
-10,29,USA,15,Kimberly Hill,0,0,0,0,0,0,4
-11,29,USA,17,Megan Courtney,0,0,0,0,0,0,0
-12,29,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-13,29,USA,25,Karsta Lowe,0,0,0,0,0,0,0
-0,36,USA,14,Michelle Bartsch-Hackley,30,26,46,3,7,1,18
-1,36,USA,25,Karsta Lowe,18,17,37,1,9,0,5
-2,36,USA,24,Chiaka Ogbogu,17,9,15,8,30,0,13
-3,36,USA,23,Kelsey Robinson,14,13,41,1,5,0,17
-4,36,USA,22,Haleigh Washington,9,5,13,3,19,1,15
-5,36,USA,11,Andrea Drews,4,4,15,0,8,0,6
-6,36,USA,2,Jordyn Poulter,2,1,2,1,6,0,28
-7,36,USA,15,Kimberly Hill,1,1,5,0,0,0,5
-8,36,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-9,36,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-10,36,USA,7,Lauren Carlini,0,0,0,0,0,0,0
-11,36,USA,10,Jordan Larson,0,0,0,0,0,0,3
-12,36,USA,17,Megan Courtney,0,0,0,0,0,0,0
-13,36,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-0,40,USA,10,Jordan Larson,10,9,28,1,6,0,12
-1,40,USA,25,Karsta Lowe,9,8,18,1,6,0,4
-2,40,USA,24,Chiaka Ogbogu,7,5,10,2,4,0,5
-3,40,USA,11,Andrea Drews,5,5,12,0,2,0,3
-4,40,USA,22,Haleigh Washington,5,4,11,1,6,0,6
-5,40,USA,23,Kelsey Robinson,5,5,17,0,1,0,5
-6,40,USA,14,Michelle Bartsch-Hackley,3,3,11,0,0,0,2
-7,40,USA,2,Jordyn Poulter,1,0,2,1,6,0,6
-8,40,USA,6,Tetori Dixon,1,1,1,0,3,0,1
-9,40,USA,7,Lauren Carlini,1,0,0,0,1,1,9
-10,40,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-11,40,USA,15,Kimberly Hill,0,0,0,0,0,0,3
-12,40,USA,17,Megan Courtney,0,0,0,0,0,0,0
-13,40,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-0,44,USA,11,Andrea Drews,23,19,30,2,8,2,12
-1,44,USA,24,Chiaka Ogbogu,12,8,17,4,10,0,7
-2,44,USA,14,Michelle Bartsch-Hackley,11,9,26,1,4,1,9
-3,44,USA,22,Haleigh Washington,8,3,8,2,6,3,14
-4,44,USA,10,Jordan Larson,4,2,11,1,7,1,12
-5,44,USA,23,Kelsey Robinson,4,3,5,0,0,1,5
-6,44,USA,7,Lauren Carlini,1,0,3,1,2,0,13
-7,44,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
-8,44,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-9,44,USA,6,Tetori Dixon,0,0,0,0,0,0,0
-10,44,USA,15,Kimberly Hill,0,0,2,0,1,0,1
-11,44,USA,17,Megan Courtney,0,0,0,0,0,0,0
-12,44,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-13,44,USA,25,Karsta Lowe,0,0,0,0,0,0,0
-0,53,USA,23,Kelsey Robinson,26,21,42,1,8,4,23
-1,53,USA,11,Andrea Drews,22,19,45,1,11,2,13
-2,53,USA,10,Jordan Larson,17,16,34,1,6,0,15
-3,53,USA,22,Haleigh Washington,9,3,9,4,18,2,16
-4,53,USA,6,Tetori Dixon,4,4,8,0,7,0,8
-5,53,USA,2,Jordyn Poulter,2,1,5,0,7,1,22
-6,53,USA,24,Chiaka Ogbogu,2,1,5,0,6,1,7
-7,53,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,53,USA,7,Lauren Carlini,0,0,0,0,0,0,0
-9,53,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,1
-10,53,USA,15,Kimberly Hill,0,0,0,0,0,0,0
-11,53,USA,17,Megan Courtney,0,0,0,0,0,0,0
-12,53,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-13,53,USA,25,Karsta Lowe,0,0,0,0,0,0,0
-0,57,USA,25,Karsta Lowe,18,14,22,3,8,1,13
-1,57,USA,14,Michelle Bartsch-Hackley,13,11,25,2,9,0,9
-2,57,USA,19,Hannah Tapp,13,8,13,4,12,1,7
-3,57,USA,6,Tetori Dixon,10,7,10,2,11,1,14
-4,57,USA,15,Kimberly Hill,8,7,18,1,3,0,7
-5,57,USA,7,Lauren Carlini,3,1,2,1,3,1,23
-6,57,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
-7,57,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,57,USA,10,Jordan Larson,0,0,0,0,0,0,0
-9,57,USA,11,Andrea Drews,0,0,0,0,0,0,0
-10,57,USA,17,Megan Courtney,0,0,0,0,0,0,0
-11,57,USA,22,Haleigh Washington,0,0,0,0,0,0,0
-12,57,USA,23,Kelsey Robinson,0,0,0,0,0,0,0
-13,57,USA,24,Chiaka Ogbogu,0,0,0,0,0,0,0
-0,61,USA,11,Andrea Drews,24,20,40,2,12,2,13
-1,61,USA,24,Chiaka Ogbogu,16,8,13,7,22,1,8
-2,61,USA,14,Michelle Bartsch-Hackley,12,9,19,0,6,3,25
-3,61,USA,23,Kelsey Robinson,9,8,27,1,4,0,11
-4,61,USA,7,Lauren Carlini,2,1,1,1,6,0,17
-5,61,USA,22,Haleigh Washington,2,2,7,0,6,0,6
-6,61,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
-7,61,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
-8,61,USA,6,Tetori Dixon,0,0,0,0,3,0,4
-9,61,USA,10,Jordan Larson,0,0,3,0,0,0,0
-10,61,USA,15,Kimberly Hill,0,0,0,0,0,0,6
-11,61,USA,17,Megan Courtney,0,0,0,0,0,0,0
-12,61,USA,19,Hannah Tapp,0,0,0,0,0,0,0
-13,61,USA,25,Karsta Lowe,0,0,0,0,0,0,0
-0,1,KEN,5,Sharon Chepchumba Kiprono,11,11,27,0,3,0,8
-1,1,KEN,10,Noel Murambi,6,4,13,1,5,1,6
-2,1,KEN,14,Mercy Moim,6,5,17,1,2,0,12
-3,1,KEN,15,Lorine Chebet Kaei,5,3,8,2,5,0,3
-4,1,KEN,7,Janet Wanja,2,2,3,0,1,0,7
-5,1,KEN,8,Trizah Atuka,2,2,7,0,8,0,2
-6,1,KEN,19,Edith Mukuvilani,2,2,4,0,2,0,4
-7,1,KEN,3,Violet Makuto,1,0,3,0,1,1,4
-8,1,KEN,1,Jane Wacu Wairimu,0,0,0,0,1,0,3
-9,1,KEN,4,Leonida Kasaya,0,0,0,0,0,0,1
-10,1,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-11,1,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-12,1,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,1,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,7,KEN,14,Mercy Moim,8,6,17,2,4,0,10
-1,7,KEN,3,Violet Makuto,7,4,9,1,1,2,8
-2,7,KEN,5,Sharon Chepchumba Kiprono,6,6,18,0,0,0,4
-3,7,KEN,4,Leonida Kasaya,5,4,8,1,3,0,8
-4,7,KEN,8,Trizah Atuka,5,4,14,1,6,0,5
-5,7,KEN,1,Jane Wacu Wairimu,1,1,1,0,0,0,3
-6,7,KEN,7,Janet Wanja,1,0,1,0,0,1,4
-7,7,KEN,10,Noel Murambi,1,1,7,0,0,0,1
-8,7,KEN,19,Edith Mukuvilani,1,1,5,0,4,0,2
-9,7,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-10,7,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-11,7,KEN,15,Lorine Chebet Kaei,0,0,0,0,1,0,3
-12,7,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,7,KEN,18,Emmaculate Chemtai,0,0,4,0,0,0,2
-0,13,KEN,5,Sharon Chepchumba Kiprono,8,7,26,1,6,0,3
-1,13,KEN,19,Edith Mukuvilani,7,5,9,2,11,0,4
-2,13,KEN,14,Mercy Moim,5,4,19,1,5,0,6
-3,13,KEN,4,Leonida Kasaya,4,4,15,0,1,0,3
-4,13,KEN,3,Violet Makuto,2,2,4,0,2,0,5
-5,13,KEN,8,Trizah Atuka,2,1,6,1,4,0,4
-6,13,KEN,10,Noel Murambi,2,2,3,0,1,0,4
-7,13,KEN,15,Lorine Chebet Kaei,1,1,4,0,2,0,1
-8,13,KEN,18,Emmaculate Chemtai,1,0,4,0,0,1,2
-9,13,KEN,1,Jane Wacu Wairimu,0,0,0,0,4,0,5
-10,13,KEN,7,Janet Wanja,0,0,0,0,0,0,3
-11,13,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-12,13,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,3
-13,13,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-0,23,KEN,14,Mercy Moim,9,7,27,2,2,0,8
-1,23,KEN,5,Sharon Chepchumba Kiprono,8,7,24,0,2,1,7
-2,23,KEN,19,Edith Mukuvilani,8,7,12,1,17,0,9
-3,23,KEN,4,Leonida Kasaya,7,7,18,0,4,0,4
-4,23,KEN,8,Trizah Atuka,4,4,11,0,13,0,9
-5,23,KEN,10,Noel Murambi,4,3,15,1,2,0,4
-6,23,KEN,3,Violet Makuto,1,0,6,1,1,0,2
-7,23,KEN,1,Jane Wacu Wairimu,0,0,4,0,3,0,4
-8,23,KEN,7,Janet Wanja,0,0,3,0,1,0,5
-9,23,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-10,23,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-11,23,KEN,15,Lorine Chebet Kaei,0,0,0,0,2,0,0
-12,23,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,23,KEN,18,Emmaculate Chemtai,0,0,1,0,1,0,0
-0,27,KEN,5,Sharon Chepchumba Kiprono,10,10,21,0,8,0,4
-1,27,KEN,15,Lorine Chebet Kaei,7,5,12,1,9,1,7
-2,27,KEN,4,Leonida Kasaya,6,6,18,0,5,0,7
-3,27,KEN,14,Mercy Moim,6,5,12,1,3,0,5
-4,27,KEN,7,Janet Wanja,4,3,4,0,0,1,5
-5,27,KEN,19,Edith Mukuvilani,2,2,9,0,4,0,8
-6,27,KEN,1,Jane Wacu Wairimu,1,0,1,0,0,1,5
-7,27,KEN,3,Violet Makuto,1,1,2,0,0,0,2
-8,27,KEN,10,Noel Murambi,1,1,6,0,0,0,1
-9,27,KEN,8,Trizah Atuka,0,0,2,0,0,0,2
-10,27,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-11,27,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,3
-12,27,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,27,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,32,KEN,4,Leonida Kasaya,12,12,27,0,2,0,5
-1,32,KEN,5,Sharon Chepchumba Kiprono,9,7,20,0,1,2,7
-2,32,KEN,14,Mercy Moim,6,6,15,0,3,0,6
-3,32,KEN,3,Violet Makuto,5,4,8,0,1,1,6
-4,32,KEN,15,Lorine Chebet Kaei,4,1,7,2,6,1,7
-5,32,KEN,19,Edith Mukuvilani,4,1,9,3,10,0,4
-6,32,KEN,10,Noel Murambi,2,2,14,0,3,0,5
-7,32,KEN,7,Janet Wanja,1,0,0,0,1,1,6
-8,32,KEN,1,Jane Wacu Wairimu,0,0,0,0,1,0,5
-9,32,KEN,8,Trizah Atuka,0,0,5,0,1,0,5
-10,32,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-11,32,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-12,32,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,32,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,42,KEN,19,Edith Mukuvilani,13,11,17,1,13,1,11
-1,42,KEN,4,Leonida Kasaya,11,10,30,1,3,0,10
-2,42,KEN,5,Sharon Chepchumba Kiprono,7,5,20,2,9,0,3
-3,42,KEN,14,Mercy Moim,7,4,13,3,4,0,6
-4,42,KEN,3,Violet Makuto,4,3,7,1,9,0,8
-5,42,KEN,1,Jane Wacu Wairimu,2,2,2,0,1,0,7
-6,42,KEN,10,Noel Murambi,2,2,6,0,1,0,4
-7,42,KEN,8,Trizah Atuka,1,1,2,0,1,0,1
-8,42,KEN,7,Janet Wanja,0,0,1,0,0,0,5
-9,42,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-10,42,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-11,42,KEN,15,Lorine Chebet Kaei,0,0,0,0,1,0,2
-12,42,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,42,KEN,18,Emmaculate Chemtai,0,0,3,0,4,0,4
-0,46,KEN,5,Sharon Chepchumba Kiprono,10,8,23,1,3,1,6
-1,46,KEN,4,Leonida Kasaya,7,7,23,0,3,0,3
-2,46,KEN,14,Mercy Moim,7,5,16,0,0,2,9
-3,46,KEN,10,Noel Murambi,4,4,11,0,1,0,3
-4,46,KEN,19,Edith Mukuvilani,3,3,8,0,6,0,4
-5,46,KEN,3,Violet Makuto,1,1,5,0,3,0,4
-6,46,KEN,13,Carolyne Sirengo,1,1,1,0,0,0,0
-7,46,KEN,1,Jane Wacu Wairimu,0,0,0,0,0,0,4
-8,46,KEN,7,Janet Wanja,0,0,1,0,0,0,4
-9,46,KEN,8,Trizah Atuka,0,0,1,0,1,0,1
-10,46,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-11,46,KEN,15,Lorine Chebet Kaei,0,0,2,0,0,0,2
-12,46,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,46,KEN,18,Emmaculate Chemtai,0,0,1,0,0,0,0
-0,49,KEN,5,Sharon Chepchumba Kiprono,10,10,18,0,5,0,7
-1,49,KEN,4,Leonida Kasaya,8,6,25,1,10,1,8
-2,49,KEN,8,Trizah Atuka,8,6,11,2,8,0,9
-3,49,KEN,19,Edith Mukuvilani,7,5,11,2,8,0,5
-4,49,KEN,7,Janet Wanja,2,0,0,0,2,2,8
-5,49,KEN,14,Mercy Moim,2,1,5,0,2,1,13
-6,49,KEN,1,Jane Wacu Wairimu,0,0,0,0,2,0,3
-7,49,KEN,3,Violet Makuto,0,0,0,0,0,0,1
-8,49,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-9,49,KEN,10,Noel Murambi,0,0,4,0,0,0,0
-10,49,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-11,49,KEN,15,Lorine Chebet Kaei,0,0,0,0,0,0,0
-12,49,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,49,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,59,KEN,4,Leonida Kasaya,10,10,25,0,2,0,11
-1,59,KEN,8,Trizah Atuka,8,5,14,0,7,3,13
-2,59,KEN,19,Edith Mukuvilani,8,7,19,1,11,0,9
-3,59,KEN,14,Mercy Moim,7,5,11,0,3,2,10
-4,59,KEN,5,Sharon Chepchumba Kiprono,5,5,14,0,2,0,6
-5,59,KEN,1,Jane Wacu Wairimu,2,2,3,0,1,0,8
-6,59,KEN,3,Violet Makuto,2,1,2,1,1,0,2
-7,59,KEN,7,Janet Wanja,0,0,0,0,1,0,1
-8,59,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-9,59,KEN,10,Noel Murambi,0,0,4,0,1,0,1
-10,59,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-11,59,KEN,15,Lorine Chebet Kaei,0,0,0,0,0,0,0
-12,59,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,59,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,65,KEN,14,Mercy Moim,19,15,23,3,6,1,12
-1,65,KEN,5,Sharon Chepchumba Kiprono,18,18,40,0,7,0,9
-2,65,KEN,8,Trizah Atuka,12,7,13,5,15,0,12
-3,65,KEN,19,Edith Mukuvilani,10,9,18,1,7,0,11
-4,65,KEN,10,Noel Murambi,7,5,17,1,6,1,17
-5,65,KEN,4,Leonida Kasaya,2,2,9,0,0,0,2
-6,65,KEN,1,Jane Wacu Wairimu,1,1,5,0,4,0,17
-7,65,KEN,15,Lorine Chebet Kaei,1,1,1,0,1,0,1
-8,65,KEN,3,Violet Makuto,0,0,2,0,1,0,6
-9,65,KEN,7,Janet Wanja,0,0,1,0,2,0,2
-10,65,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
-11,65,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
-12,65,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
-13,65,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
-0,2,CMR,2,Christelle Tchoudjang Nana,9,8,21,0,5,1,8
-1,2,CMR,16,Estelle Adiana,5,4,8,1,3,0,3
-2,2,CMR,1,Stephanie Fotso Mogoung,4,1,7,3,11,0,5
-3,2,CMR,6,Laetitia Crescence Moma Bassoko,4,4,23,0,0,0,8
-4,2,CMR,10,Berthrade Simone Flore Bikatal,2,1,4,1,1,0,2
-5,2,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,2,3,0,2,0,7
-6,2,CMR,9,Honorine Djakao Gamkoua,1,0,2,1,1,0,2
-7,2,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-8,2,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-9,2,CMR,12,Abdoulkarim Fawziya,0,0,2,0,0,0,1
-10,2,CMR,14,Yolande Juliana Amana Guigolo,0,0,1,0,0,0,3
-11,2,CMR,15,Ezssi Emelda Piata,0,0,0,0,2,0,2
-12,2,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-0,8,CMR,16,Estelle Adiana,10,10,13,0,2,0,2
-1,8,CMR,6,Laetitia Crescence Moma Bassoko,9,8,21,0,5,1,6
-2,8,CMR,2,Christelle Tchoudjang Nana,8,5,17,3,4,0,7
-3,8,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,7,5,7,1,9,1,8
-4,8,CMR,10,Berthrade Simone Flore Bikatal,5,5,14,0,4,0,7
-5,8,CMR,1,Stephanie Fotso Mogoung,3,3,7,0,3,0,7
-6,8,CMR,9,Honorine Djakao Gamkoua,1,1,3,0,0,0,1
-7,8,CMR,14,Yolande Juliana Amana Guigolo,1,0,2,0,1,1,6
-8,8,CMR,15,Ezssi Emelda Piata,1,0,3,0,2,1,8
-9,8,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-10,8,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-11,8,CMR,12,Abdoulkarim Fawziya,0,0,0,0,0,0,0
-12,8,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-0,14,CMR,6,Laetitia Crescence Moma Bassoko,26,24,54,1,8,1,12
-1,14,CMR,1,Stephanie Fotso Mogoung,16,10,25,4,18,2,16
-2,14,CMR,2,Christelle Tchoudjang Nana,12,12,44,0,6,0,19
-3,14,CMR,10,Berthrade Simone Flore Bikatal,8,7,26,0,6,1,16
-4,14,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,8,5,9,2,14,1,17
-5,14,CMR,20,Ruth Manuela Marie Bibinbe,2,1,1,1,1,0,0
-6,14,CMR,12,Abdoulkarim Fawziya,1,1,2,0,0,0,0
-7,14,CMR,16,Estelle Adiana,1,1,5,0,1,0,1
-8,14,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-9,14,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,2,0,4
-10,14,CMR,14,Yolande Juliana Amana Guigolo,0,0,4,0,5,0,9
-11,14,CMR,15,Ezssi Emelda Piata,0,0,2,0,0,0,3
-12,14,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-0,24,CMR,6,Laetitia Crescence Moma Bassoko,16,16,38,0,4,0,9
-1,24,CMR,2,Christelle Tchoudjang Nana,7,6,19,1,6,0,12
-2,24,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,5,2,11,3,7,0,10
-3,24,CMR,10,Berthrade Simone Flore Bikatal,4,4,14,0,3,0,5
-4,24,CMR,15,Ezssi Emelda Piata,3,0,5,3,4,0,1
-5,24,CMR,1,Stephanie Fotso Mogoung,2,2,5,0,5,0,8
-6,24,CMR,12,Abdoulkarim Fawziya,2,2,8,0,1,0,2
-7,24,CMR,14,Yolande Juliana Amana Guigolo,1,0,0,0,3,1,5
-8,24,CMR,16,Estelle Adiana,1,1,5,0,2,0,1
-9,24,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-10,24,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-11,24,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,2,0,1
-12,24,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,24,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,1,0,1
-0,28,CMR,6,Laetitia Crescence Moma Bassoko,14,14,26,0,4,0,11
-1,28,CMR,2,Christelle Tchoudjang Nana,5,5,21,0,6,0,6
-2,28,CMR,12,Abdoulkarim Fawziya,5,4,12,1,5,0,7
-3,28,CMR,15,Ezssi Emelda Piata,5,4,8,1,8,0,9
-4,28,CMR,16,Estelle Adiana,4,2,4,0,1,2,5
-5,28,CMR,1,Stephanie Fotso Mogoung,2,2,4,0,4,0,3
-6,28,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,2,6,0,2,0,5
-7,28,CMR,14,Yolande Juliana Amana Guigolo,2,1,1,1,5,0,6
-8,28,CMR,9,Honorine Djakao Gamkoua,1,0,0,0,2,1,4
-9,28,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-10,28,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-11,28,CMR,10,Berthrade Simone Flore Bikatal,0,0,1,0,1,0,3
-12,28,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,28,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
-0,33,CMR,10,Berthrade Simone Flore Bikatal,10,9,13,1,5,0,5
-1,33,CMR,16,Estelle Adiana,9,8,22,0,3,1,7
-2,33,CMR,6,Laetitia Crescence Moma Bassoko,6,6,17,0,3,0,6
-3,33,CMR,1,Stephanie Fotso Mogoung,4,1,6,2,7,1,4
-4,33,CMR,14,Yolande Juliana Amana Guigolo,3,1,1,1,4,1,10
-5,33,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,4,1,3,1,11
-6,33,CMR,12,Abdoulkarim Fawziya,2,2,10,0,2,0,3
-7,33,CMR,15,Ezssi Emelda Piata,1,0,1,1,2,0,3
-8,33,CMR,2,Christelle Tchoudjang Nana,0,0,0,0,0,0,0
-9,33,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-10,33,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-11,33,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
-12,33,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,33,CMR,20,Ruth Manuela Marie Bibinbe,0,0,1,0,0,0,0
-0,39,CMR,6,Laetitia Crescence Moma Bassoko,14,14,29,0,12,0,7
-1,39,CMR,16,Estelle Adiana,8,6,21,0,3,2,11
-2,39,CMR,10,Berthrade Simone Flore Bikatal,6,5,15,1,3,0,7
-3,39,CMR,15,Ezssi Emelda Piata,4,2,5,1,6,1,4
-4,39,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,3,1,4,1,6
-5,39,CMR,14,Yolande Juliana Amana Guigolo,2,1,4,1,2,0,10
-6,39,CMR,20,Ruth Manuela Marie Bibinbe,2,2,2,0,0,0,1
-7,39,CMR,1,Stephanie Fotso Mogoung,1,1,9,0,5,0,5
-8,39,CMR,12,Abdoulkarim Fawziya,1,1,7,0,2,0,3
-9,39,CMR,2,Christelle Tchoudjang Nana,0,0,0,0,0,0,0
-10,39,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-11,39,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-12,39,CMR,9,Honorine Djakao Gamkoua,0,0,2,0,1,0,0
-13,39,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-0,45,CMR,6,Laetitia Crescence Moma Bassoko,24,23,54,1,9,0,14
-1,45,CMR,16,Estelle Adiana,15,13,36,2,13,0,9
-2,45,CMR,10,Berthrade Simone Flore Bikatal,13,13,23,0,9,0,17
-3,45,CMR,1,Stephanie Fotso Mogoung,11,7,13,3,22,1,10
-4,45,CMR,15,Ezssi Emelda Piata,9,8,13,1,13,0,12
-5,45,CMR,2,Christelle Tchoudjang Nana,5,3,7,1,2,1,5
-6,45,CMR,14,Yolande Juliana Amana Guigolo,4,1,4,2,9,1,23
-7,45,CMR,12,Abdoulkarim Fawziya,1,1,3,0,0,0,6
-8,45,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-9,45,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-10,45,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
-11,45,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,0,0,0,0,1,0,6
-12,45,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,45,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
-0,51,CMR,6,Laetitia Crescence Moma Bassoko,14,11,35,1,3,2,9
-1,51,CMR,2,Christelle Tchoudjang Nana,6,5,16,0,8,1,5
-2,51,CMR,12,Abdoulkarim Fawziya,3,1,9,1,5,1,4
-3,51,CMR,16,Estelle Adiana,3,3,9,0,1,0,3
-4,51,CMR,1,Stephanie Fotso Mogoung,2,1,6,1,3,0,5
-5,51,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,3,2,4,0,7
-6,51,CMR,14,Yolande Juliana Amana Guigolo,1,0,1,0,4,1,10
-7,51,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-8,51,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-9,51,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
-10,51,CMR,10,Berthrade Simone Flore Bikatal,0,0,6,0,1,0,2
-11,51,CMR,15,Ezssi Emelda Piata,0,0,3,0,3,0,2
-12,51,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,51,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
-0,57,CMR,6,Laetitia Crescence Moma Bassoko,7,7,31,0,3,0,6
-1,57,CMR,16,Estelle Adiana,6,4,18,0,10,2,6
-2,57,CMR,15,Ezssi Emelda Piata,5,4,11,0,7,1,8
-3,57,CMR,14,Yolande Juliana Amana Guigolo,4,2,2,0,4,2,10
-4,57,CMR,1,Stephanie Fotso Mogoung,3,2,6,1,6,0,3
-5,57,CMR,10,Berthrade Simone Flore Bikatal,2,2,5,0,2,0,1
-6,57,CMR,2,Christelle Tchoudjang Nana,0,0,6,0,3,0,4
-7,57,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-8,57,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-9,57,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
-10,57,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,0,0,0,0,0,0,2
-11,57,CMR,12,Abdoulkarim Fawziya,0,0,0,0,1,0,1
-12,57,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-13,57,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
-0,65,CMR,2,Christelle Tchoudjang Nana,23,20,40,3,7,0,16
-1,65,CMR,1,Stephanie Fotso Mogoung,11,7,19,4,13,0,9
-2,65,CMR,10,Berthrade Simone Flore Bikatal,10,8,14,2,4,0,10
-3,65,CMR,16,Estelle Adiana,8,8,15,0,3,0,13
-4,65,CMR,20,Ruth Manuela Marie Bibinbe,6,3,5,2,4,1,10
-5,65,CMR,6,Laetitia Crescence Moma Bassoko,2,2,16,0,3,0,4
-6,65,CMR,14,Yolande Juliana Amana Guigolo,2,0,2,1,4,1,17
-7,65,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,1,1,6,0,2,0,2
-8,65,CMR,12,Abdoulkarim Fawziya,1,1,6,0,0,0,2
-9,65,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
-10,65,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
-11,65,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
-12,65,CMR,15,Ezssi Emelda Piata,0,0,2,0,3,0,3
-13,65,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
-0,2,RUS,6,Irina Koroleva,13,8,10,3,7,2,12
-1,2,RUS,8,Nataliya Goncharova,11,9,19,1,3,1,10
-2,2,RUS,16,Irina Voronkova,11,8,13,1,4,2,10
-3,2,RUS,18,Kseniia Parubets,9,7,12,0,3,2,10
-4,2,RUS,26,Anna Lazareva,4,3,5,0,1,1,6
-5,2,RUS,3,Ekaterina Efimova,3,1,7,2,6,0,12
-6,2,RUS,13,Evgeniya Startseva,2,1,2,1,1,0,4
-7,2,RUS,19,Mariia Khaletskaia,2,1,2,1,2,0,2
-8,2,RUS,7,Tatiana Romanova,1,1,2,0,1,0,3
-9,2,RUS,1,Angelina Lazarenko,0,0,1,0,0,0,2
-10,2,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-11,2,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,2,RUS,11,Margarita Kurilo,0,0,5,0,0,0,0
-13,2,RUS,25,Yulia Brovkina,0,0,0,0,0,0,2
-0,12,RUS,8,Nataliya Goncharova,31,28,57,3,9,0,15
-1,12,RUS,6,Irina Koroleva,20,15,19,5,23,0,17
-2,12,RUS,16,Irina Voronkova,15,12,27,0,8,3,20
-3,12,RUS,18,Kseniia Parubets,15,12,26,3,9,0,10
-4,12,RUS,3,Ekaterina Efimova,5,2,5,3,15,0,23
-5,12,RUS,13,Evgeniya Startseva,5,3,3,2,3,0,14
-6,12,RUS,7,Tatiana Romanova,1,0,0,0,0,1,6
-7,12,RUS,25,Yulia Brovkina,1,1,1,0,2,0,1
-8,12,RUS,26,Anna Lazareva,1,0,4,1,1,0,4
-9,12,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,1
-10,12,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-11,12,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,12,RUS,11,Margarita Kurilo,0,0,1,0,0,0,1
-13,12,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,0
-0,16,RUS,16,Irina Voronkova,11,11,20,0,6,0,8
-1,16,RUS,8,Nataliya Goncharova,10,10,25,0,5,0,6
-2,16,RUS,3,Ekaterina Efimova,7,4,7,3,12,0,7
-3,16,RUS,6,Irina Koroleva,6,3,8,3,8,0,9
-4,16,RUS,19,Mariia Khaletskaia,6,6,7,0,2,0,3
-5,16,RUS,18,Kseniia Parubets,5,5,17,0,2,0,7
-6,16,RUS,7,Tatiana Romanova,1,0,0,1,6,0,5
-7,16,RUS,13,Evgeniya Startseva,1,1,4,0,4,0,4
-8,16,RUS,26,Anna Lazareva,1,1,9,0,2,0,3
-9,16,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,0
-10,16,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-11,16,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,16,RUS,11,Margarita Kurilo,0,0,1,0,1,0,5
-13,16,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-0,20,RUS,8,Nataliya Goncharova,13,13,23,0,7,0,12
-1,20,RUS,16,Irina Voronkova,12,11,19,0,3,1,12
-2,20,RUS,18,Kseniia Parubets,11,9,20,0,3,2,11
-3,20,RUS,6,Irina Koroleva,10,5,9,3,12,2,11
-4,20,RUS,3,Ekaterina Efimova,5,2,5,2,6,1,12
-5,20,RUS,1,Angelina Lazarenko,3,1,1,2,3,0,2
-6,20,RUS,13,Evgeniya Startseva,3,1,1,2,8,0,9
-7,20,RUS,7,Tatiana Romanova,1,1,1,0,2,0,0
-8,20,RUS,26,Anna Lazareva,1,0,0,0,0,1,2
-9,20,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-10,20,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-11,20,RUS,11,Margarita Kurilo,0,0,0,0,0,0,1
-12,20,RUS,19,Mariia Khaletskaia,0,0,2,0,1,0,5
-13,20,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-0,26,RUS,8,Nataliya Goncharova,26,22,55,3,7,1,13
-1,26,RUS,18,Kseniia Parubets,21,20,37,0,4,1,19
-2,26,RUS,6,Irina Koroleva,12,9,17,3,27,0,15
-3,26,RUS,16,Irina Voronkova,12,10,30,2,8,0,19
-4,26,RUS,3,Ekaterina Efimova,11,4,6,5,16,2,10
-5,26,RUS,26,Anna Lazareva,6,4,8,0,1,2,3
-6,26,RUS,13,Evgeniya Startseva,3,2,4,1,2,0,11
-7,26,RUS,1,Angelina Lazarenko,2,2,4,0,8,0,8
-8,26,RUS,7,Tatiana Romanova,1,0,0,1,4,0,2
-9,26,RUS,19,Mariia Khaletskaia,1,1,2,0,1,0,5
-10,26,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-11,26,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,26,RUS,11,Margarita Kurilo,0,0,0,0,0,0,5
-13,26,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-0,35,RUS,8,Nataliya Goncharova,21,17,34,3,9,1,11
-1,35,RUS,18,Kseniia Parubets,18,17,30,0,2,1,15
-2,35,RUS,6,Irina Koroleva,16,13,19,3,21,0,12
-3,35,RUS,16,Irina Voronkova,10,8,22,1,4,1,11
-4,35,RUS,3,Ekaterina Efimova,7,3,7,3,16,1,25
-5,35,RUS,26,Anna Lazareva,2,2,4,0,2,0,2
-6,35,RUS,13,Evgeniya Startseva,1,0,1,1,5,0,13
-7,35,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,1
-8,35,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-9,35,RUS,7,Tatiana Romanova,0,0,0,0,1,0,0
-10,35,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-11,35,RUS,11,Margarita Kurilo,0,0,0,0,0,0,0
-12,35,RUS,19,Mariia Khaletskaia,0,0,2,0,4,0,4
-13,35,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-0,41,RUS,8,Nataliya Goncharova,12,10,25,1,6,1,10
-1,41,RUS,18,Kseniia Parubets,12,8,25,3,7,1,12
-2,41,RUS,6,Irina Koroleva,9,5,11,4,9,0,12
-3,41,RUS,3,Ekaterina Efimova,8,5,8,3,8,0,12
-4,41,RUS,16,Irina Voronkova,6,6,11,0,4,0,10
-5,41,RUS,13,Evgeniya Startseva,3,2,4,1,5,0,12
-6,41,RUS,26,Anna Lazareva,3,2,4,1,3,0,1
-7,41,RUS,19,Mariia Khaletskaia,2,1,5,1,4,0,1
-8,41,RUS,1,Angelina Lazarenko,1,1,2,0,4,0,1
-9,41,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-10,41,RUS,7,Tatiana Romanova,0,0,0,0,2,0,2
-11,41,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,41,RUS,11,Margarita Kurilo,0,0,0,0,0,0,0
-13,41,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-0,47,RUS,8,Nataliya Goncharova,15,13,34,2,5,0,15
-1,47,RUS,16,Irina Voronkova,13,9,27,3,11,1,7
-2,47,RUS,6,Irina Koroleva,12,7,9,4,19,1,9
-3,47,RUS,18,Kseniia Parubets,10,8,15,0,4,2,15
-4,47,RUS,3,Ekaterina Efimova,5,2,5,2,8,1,11
-5,47,RUS,7,Tatiana Romanova,2,0,0,1,7,1,8
-6,47,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,4
-7,47,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-8,47,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-9,47,RUS,11,Margarita Kurilo,0,0,1,0,0,0,2
-10,47,RUS,13,Evgeniya Startseva,0,0,0,0,3,0,2
-11,47,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,2
-12,47,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-13,47,RUS,26,Anna Lazareva,0,0,0,0,0,0,0
-0,53,RUS,8,Nataliya Goncharova,23,21,47,1,3,1,18
-1,53,RUS,16,Irina Voronkova,18,14,27,3,7,1,12
-2,53,RUS,6,Irina Koroleva,17,10,15,6,15,1,16
-3,53,RUS,18,Kseniia Parubets,8,8,23,0,3,0,6
-4,53,RUS,26,Anna Lazareva,7,6,11,1,3,0,10
-5,53,RUS,1,Angelina Lazarenko,4,3,4,0,8,1,15
-6,53,RUS,3,Ekaterina Efimova,4,1,5,3,12,0,6
-7,53,RUS,7,Tatiana Romanova,1,0,1,1,3,0,6
-8,53,RUS,11,Margarita Kurilo,1,1,2,0,0,0,2
-9,53,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-10,53,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-11,53,RUS,13,Evgeniya Startseva,0,0,5,0,8,0,9
-12,53,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,1
-13,53,RUS,25,Yulia Brovkina,0,0,0,0,0,0,2
-0,59,RUS,8,Nataliya Goncharova,25,21,30,4,8,0,13
-1,59,RUS,6,Irina Koroleva,10,5,13,5,16,0,7
-2,59,RUS,18,Kseniia Parubets,6,5,12,1,2,0,17
-3,59,RUS,26,Anna Lazareva,6,5,16,1,5,0,5
-4,59,RUS,3,Ekaterina Efimova,5,1,4,4,10,0,9
-5,59,RUS,16,Irina Voronkova,3,3,4,0,1,0,6
-6,59,RUS,1,Angelina Lazarenko,1,0,0,0,0,1,4
-7,59,RUS,19,Mariia Khaletskaia,1,1,2,0,0,0,1
-8,59,RUS,25,Yulia Brovkina,1,0,0,1,1,0,0
-9,59,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-10,59,RUS,7,Tatiana Romanova,0,0,1,0,1,0,10
-11,59,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-12,59,RUS,11,Margarita Kurilo,0,0,1,0,2,0,1
-13,59,RUS,13,Evgeniya Startseva,0,0,0,0,0,0,0
-0,63,RUS,8,Nataliya Goncharova,22,20,61,2,5,0,12
-1,63,RUS,18,Kseniia Parubets,14,14,32,0,7,0,16
-2,63,RUS,16,Irina Voronkova,11,9,23,2,5,0,11
-3,63,RUS,6,Irina Koroleva,10,8,14,2,15,0,14
-4,63,RUS,3,Ekaterina Efimova,9,5,8,3,13,1,16
-5,63,RUS,7,Tatiana Romanova,3,1,1,2,7,0,11
-6,63,RUS,11,Margarita Kurilo,3,1,5,1,2,1,5
-7,63,RUS,19,Mariia Khaletskaia,1,0,0,0,0,1,3
-8,63,RUS,1,Angelina Lazarenko,0,0,0,0,1,0,2
-9,63,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
-10,63,RUS,9,Alla Galkina,0,0,0,0,0,0,0
-11,63,RUS,13,Evgeniya Startseva,0,0,1,0,0,0,1
-12,63,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
-13,63,RUS,26,Anna Lazareva,0,0,0,0,0,0,0
-0,3,ARG,4,Daniela Bulaich Simian,11,9,21,1,2,1,8
-1,3,ARG,26,Sol Piccolo,8,8,15,0,1,0,2
-2,3,ARG,3,Paula Yamila Nizetich,7,6,27,0,4,1,9
-3,3,ARG,11,Julieta Constanza Lazcano,5,4,11,1,10,0,7
-4,3,ARG,1,Elina Rodriguez,3,3,8,0,0,0,3
-5,3,ARG,5,Lucia Fresco,2,2,15,0,4,0,4
-6,3,ARG,8,Agnes Victoria Michel Tosi,1,1,3,0,9,0,5
-7,3,ARG,13,Bianca Farriol,1,1,1,0,2,0,3
-8,3,ARG,14,Victoria Mayer,1,1,1,0,0,0,11
-9,3,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,3,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,3,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
-12,3,ARG,24,Candela Sol Salinas,0,0,1,0,0,0,0
-13,3,ARG,30,Azul Benitez,0,0,0,0,0,0,1
-0,11,ARG,3,Paula Yamila Nizetich,9,7,20,0,1,2,11
-1,11,ARG,26,Sol Piccolo,9,9,19,0,1,0,4
-2,11,ARG,1,Elina Rodriguez,6,4,13,2,4,0,4
-3,11,ARG,4,Daniela Bulaich Simian,6,5,19,1,1,0,3
-4,11,ARG,5,Lucia Fresco,5,5,17,0,0,0,2
-5,11,ARG,11,Julieta Constanza Lazcano,4,4,12,0,13,0,7
-6,11,ARG,13,Bianca Farriol,4,2,2,2,6,0,3
-7,11,ARG,14,Victoria Mayer,2,1,4,1,4,0,8
-8,11,ARG,8,Agnes Victoria Michel Tosi,1,0,1,1,5,0,3
-9,11,ARG,23,Agostina Denisse Soria,1,1,9,0,0,0,2
-10,11,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-11,11,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-12,11,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,11,ARG,30,Azul Benitez,0,0,0,0,0,0,6
-0,15,ARG,5,Lucia Fresco,17,15,50,2,7,0,10
-1,15,ARG,1,Elina Rodriguez,14,13,26,0,4,1,13
-2,15,ARG,3,Paula Yamila Nizetich,11,9,24,1,5,1,10
-3,15,ARG,11,Julieta Constanza Lazcano,7,7,14,0,6,0,11
-4,15,ARG,13,Bianca Farriol,7,4,6,3,15,0,13
-5,15,ARG,26,Sol Piccolo,2,2,8,0,1,0,0
-6,15,ARG,4,Daniela Bulaich Simian,0,0,1,0,0,0,0
-7,15,ARG,8,Agnes Victoria Michel Tosi,0,0,2,0,2,0,1
-8,15,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-9,15,ARG,14,Victoria Mayer,0,0,3,0,1,0,17
-10,15,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,15,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
-12,15,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,15,ARG,30,Azul Benitez,0,0,0,0,0,0,0
-0,19,ARG,4,Daniela Bulaich Simian,16,15,29,1,6,0,7
-1,19,ARG,26,Sol Piccolo,15,12,28,2,7,1,11
-2,19,ARG,3,Paula Yamila Nizetich,14,11,30,0,2,3,16
-3,19,ARG,13,Bianca Farriol,9,4,12,4,22,1,13
-4,19,ARG,11,Julieta Constanza Lazcano,6,5,16,1,11,0,7
-5,19,ARG,1,Elina Rodriguez,5,5,16,0,2,0,8
-6,19,ARG,14,Victoria Mayer,5,2,2,3,10,0,19
-7,19,ARG,5,Lucia Fresco,2,2,9,0,0,0,1
-8,19,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
-9,19,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,19,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,19,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,3
-12,19,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,19,ARG,30,Azul Benitez,0,0,0,0,0,0,2
-0,27,ARG,5,Lucia Fresco,23,22,40,1,7,0,4
-1,27,ARG,4,Daniela Bulaich Simian,15,14,27,1,5,0,11
-2,27,ARG,3,Paula Yamila Nizetich,9,5,13,2,6,2,8
-3,27,ARG,13,Bianca Farriol,4,1,6,1,9,2,12
-4,27,ARG,14,Victoria Mayer,4,2,3,0,1,2,20
-5,27,ARG,8,Agnes Victoria Michel Tosi,3,2,3,1,7,0,8
-6,27,ARG,24,Candela Sol Salinas,1,1,1,0,1,0,0
-7,27,ARG,30,Azul Benitez,1,0,0,0,0,1,4
-8,27,ARG,1,Elina Rodriguez,0,0,0,0,0,0,0
-9,27,ARG,11,Julieta Constanza Lazcano,0,0,1,0,0,0,3
-10,27,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-11,27,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-12,27,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,4
-13,27,ARG,26,Sol Piccolo,0,0,0,0,0,0,0
-0,31,ARG,5,Lucia Fresco,23,23,46,0,9,0,6
-1,31,ARG,4,Daniela Bulaich Simian,14,13,34,0,5,1,15
-2,31,ARG,3,Paula Yamila Nizetich,8,7,19,0,4,1,10
-3,31,ARG,13,Bianca Farriol,7,3,9,4,19,0,7
-4,31,ARG,1,Elina Rodriguez,3,3,17,0,2,0,6
-5,31,ARG,23,Agostina Denisse Soria,2,1,2,1,2,0,2
-6,31,ARG,11,Julieta Constanza Lazcano,1,1,7,0,6,0,8
-7,31,ARG,26,Sol Piccolo,1,1,9,0,2,0,1
-8,31,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,1
-9,31,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,31,ARG,14,Victoria Mayer,0,0,3,0,7,0,13
-11,31,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-12,31,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,31,ARG,30,Azul Benitez,0,0,0,0,1,0,4
-0,41,ARG,3,Paula Yamila Nizetich,13,12,28,0,5,1,8
-1,41,ARG,1,Elina Rodriguez,5,5,23,0,2,0,7
-2,41,ARG,4,Daniela Bulaich Simian,5,5,14,0,1,0,5
-3,41,ARG,5,Lucia Fresco,5,5,16,0,3,0,3
-4,41,ARG,11,Julieta Constanza Lazcano,5,4,13,1,15,0,8
-5,41,ARG,14,Victoria Mayer,3,3,4,0,1,0,13
-6,41,ARG,26,Sol Piccolo,3,3,7,0,2,0,1
-7,41,ARG,13,Bianca Farriol,2,1,3,0,10,1,10
-8,41,ARG,24,Candela Sol Salinas,2,1,4,1,2,0,1
-9,41,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
-10,41,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-11,41,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-12,41,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
-13,41,ARG,30,Azul Benitez,0,0,0,0,0,0,3
-0,45,ARG,5,Lucia Fresco,31,28,67,0,3,3,18
-1,45,ARG,3,Paula Yamila Nizetich,15,11,34,0,8,4,15
-2,45,ARG,4,Daniela Bulaich Simian,14,13,41,0,8,1,23
-3,45,ARG,13,Bianca Farriol,10,5,10,5,15,0,11
-4,45,ARG,11,Julieta Constanza Lazcano,8,5,20,2,18,1,9
-5,45,ARG,14,Victoria Mayer,5,2,3,1,11,2,22
-6,45,ARG,8,Agnes Victoria Michel Tosi,1,1,1,0,4,0,3
-7,45,ARG,26,Sol Piccolo,1,1,1,0,2,0,0
-8,45,ARG,1,Elina Rodriguez,0,0,0,0,0,0,0
-9,45,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,45,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,45,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,4
-12,45,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,45,ARG,30,Azul Benitez,0,0,0,0,0,0,1
-0,50,ARG,5,Lucia Fresco,14,14,37,0,1,0,3
-1,50,ARG,3,Paula Yamila Nizetich,13,11,27,0,3,2,11
-2,50,ARG,1,Elina Rodriguez,6,5,9,1,5,0,4
-3,50,ARG,11,Julieta Constanza Lazcano,5,5,16,0,8,0,6
-4,50,ARG,4,Daniela Bulaich Simian,4,3,13,0,1,1,7
-5,50,ARG,26,Sol Piccolo,3,3,10,0,1,0,2
-6,50,ARG,8,Agnes Victoria Michel Tosi,2,1,2,1,4,0,13
-7,50,ARG,14,Victoria Mayer,2,2,3,0,1,0,10
-8,50,ARG,13,Bianca Farriol,1,1,5,0,4,0,4
-9,50,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,50,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,50,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,2
-12,50,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,50,ARG,30,Azul Benitez,0,0,0,0,0,0,3
-0,60,ARG,1,Elina Rodriguez,12,11,26,1,3,0,9
-1,60,ARG,3,Paula Yamila Nizetich,7,4,13,1,4,2,8
-2,60,ARG,5,Lucia Fresco,6,4,17,2,4,0,5
-3,60,ARG,11,Julieta Constanza Lazcano,4,4,12,0,5,0,8
-4,60,ARG,13,Bianca Farriol,4,3,7,1,8,0,6
-5,60,ARG,24,Candela Sol Salinas,4,3,7,1,1,0,2
-6,60,ARG,26,Sol Piccolo,3,3,10,0,1,0,1
-7,60,ARG,4,Daniela Bulaich Simian,2,2,8,0,1,0,1
-8,60,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
-9,60,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-10,60,ARG,14,Victoria Mayer,0,0,1,0,3,0,10
-11,60,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-12,60,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
-13,60,ARG,30,Azul Benitez,0,0,0,0,0,0,3
-0,64,ARG,5,Lucia Fresco,13,12,32,1,7,0,3
-1,64,ARG,1,Elina Rodriguez,12,11,24,1,4,0,5
-2,64,ARG,3,Paula Yamila Nizetich,5,4,12,0,3,1,6
-3,64,ARG,4,Daniela Bulaich Simian,2,1,6,1,2,0,0
-4,64,ARG,8,Agnes Victoria Michel Tosi,2,1,4,0,2,1,9
-5,64,ARG,11,Julieta Constanza Lazcano,1,1,5,0,6,0,4
-6,64,ARG,26,Sol Piccolo,1,1,3,0,0,0,0
-7,64,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
-8,64,ARG,13,Bianca Farriol,0,0,1,0,1,0,1
-9,64,ARG,14,Victoria Mayer,0,0,2,0,5,0,8
-10,64,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
-11,64,ARG,23,Agostina Denisse Soria,0,0,3,0,0,0,4
-12,64,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
-13,64,ARG,30,Azul Benitez,0,0,0,0,0,0,5
-0,3,NED,11,Anne Buijs,16,14,30,1,6,1,13
-1,3,NED,22,Nicole Koolhaas,11,8,9,2,16,1,14
-2,3,NED,10,Lonneke Slöetjes,10,8,22,1,4,1,7
-3,3,NED,3,Yvon Belien,8,7,10,1,9,0,9
-4,3,NED,18,Marrit Jasper,7,5,14,2,6,0,12
-5,3,NED,4,Celeste Plak,4,3,6,1,2,0,0
-6,3,NED,12,Britt Bongaerts,2,2,2,0,5,0,10
-7,3,NED,7,Juliet Lohuis,1,0,0,0,0,1,2
-8,3,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-9,3,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
-10,3,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-11,3,NED,14,Laura Dijkema,0,0,0,0,0,0,6
-12,3,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-13,3,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,7,NED,6,Maret Balkestein-Grothues,11,10,17,0,2,1,10
-1,7,NED,10,Lonneke Slöetjes,9,8,17,1,4,0,6
-2,7,NED,11,Anne Buijs,8,5,13,2,6,1,16
-3,7,NED,7,Juliet Lohuis,7,3,6,2,8,2,12
-4,7,NED,4,Celeste Plak,5,5,8,0,0,0,3
-5,7,NED,31,Eline Timmerman,4,2,4,2,3,0,6
-6,7,NED,3,Yvon Belien,3,2,3,0,4,1,4
-7,7,NED,12,Britt Bongaerts,2,2,2,0,1,0,6
-8,7,NED,17,Nicole Oude Luttikhuis,1,1,3,0,0,0,1
-9,7,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-10,7,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-11,7,NED,14,Laura Dijkema,0,0,1,0,1,0,9
-12,7,NED,18,Marrit Jasper,0,0,0,0,0,0,0
-13,7,NED,22,Nicole Koolhaas,0,0,0,0,0,0,0
-0,17,NED,10,Lonneke Slöetjes,26,25,49,1,8,0,6
-1,17,NED,11,Anne Buijs,12,10,33,1,7,1,15
-2,17,NED,22,Nicole Koolhaas,11,8,14,2,13,1,10
-3,17,NED,3,Yvon Belien,8,6,14,2,13,0,18
-4,17,NED,6,Maret Balkestein-Grothues,4,4,14,0,2,0,11
-5,17,NED,12,Britt Bongaerts,3,2,3,1,6,0,10
-6,17,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-7,17,NED,4,Celeste Plak,0,0,0,0,0,0,0
-8,17,NED,7,Juliet Lohuis,0,0,0,0,0,0,3
-9,17,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-10,17,NED,14,Laura Dijkema,0,0,0,0,0,0,0
-11,17,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-12,17,NED,18,Marrit Jasper,0,0,0,0,0,0,0
-13,17,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,21,NED,10,Lonneke Slöetjes,10,10,23,0,3,0,5
-1,21,NED,3,Yvon Belien,8,6,12,2,11,0,13
-2,21,NED,6,Maret Balkestein-Grothues,7,7,14,0,2,0,10
-3,21,NED,11,Anne Buijs,7,7,19,0,3,0,10
-4,21,NED,22,Nicole Koolhaas,6,4,5,2,8,0,3
-5,21,NED,4,Celeste Plak,3,3,7,0,0,0,3
-6,21,NED,7,Juliet Lohuis,2,1,1,1,3,0,7
-7,21,NED,12,Britt Bongaerts,2,1,4,1,3,0,9
-8,21,NED,18,Marrit Jasper,1,0,0,1,2,0,1
-9,21,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-10,21,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-11,21,NED,14,Laura Dijkema,0,0,0,0,0,0,1
-12,21,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-13,21,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,25,NED,10,Lonneke Slöetjes,20,17,47,2,13,1,11
-1,25,NED,3,Yvon Belien,18,12,17,6,23,0,16
-2,25,NED,11,Anne Buijs,15,13,35,0,9,2,17
-3,25,NED,22,Nicole Koolhaas,9,6,10,3,13,0,4
-4,25,NED,6,Maret Balkestein-Grothues,7,7,21,0,2,0,19
-5,25,NED,4,Celeste Plak,6,6,13,0,5,0,2
-6,25,NED,7,Juliet Lohuis,5,3,8,1,7,1,8
-7,25,NED,12,Britt Bongaerts,3,1,2,1,8,1,21
-8,25,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-9,25,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-10,25,NED,14,Laura Dijkema,0,0,0,0,0,0,0
-11,25,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-12,25,NED,18,Marrit Jasper,0,0,0,0,0,0,4
-13,25,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,33,NED,4,Celeste Plak,18,15,24,2,6,1,10
-1,33,NED,7,Juliet Lohuis,14,7,11,3,9,4,15
-2,33,NED,6,Maret Balkestein-Grothues,9,7,13,0,4,2,11
-3,33,NED,18,Marrit Jasper,7,7,12,0,2,0,11
-4,33,NED,22,Nicole Koolhaas,7,6,7,0,11,1,13
-5,33,NED,10,Lonneke Slöetjes,3,3,5,0,0,0,0
-6,33,NED,14,Laura Dijkema,2,2,2,0,2,0,11
-7,33,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-8,33,NED,3,Yvon Belien,0,0,0,0,0,0,0
-9,33,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-10,33,NED,11,Anne Buijs,0,0,0,0,0,0,0
-11,33,NED,12,Britt Bongaerts,0,0,0,0,1,0,2
-12,33,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-13,33,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,37,NED,4,Celeste Plak,20,16,34,2,4,2,14
-1,37,NED,18,Marrit Jasper,14,10,19,3,9,1,19
-2,37,NED,6,Maret Balkestein-Grothues,10,10,19,0,2,0,4
-3,37,NED,7,Juliet Lohuis,10,5,11,4,24,1,12
-4,37,NED,10,Lonneke Slöetjes,10,10,24,0,2,0,2
-5,37,NED,3,Yvon Belien,9,8,8,0,11,1,13
-6,37,NED,11,Anne Buijs,8,8,21,0,1,0,10
-7,37,NED,14,Laura Dijkema,2,2,3,0,0,0,8
-8,37,NED,22,Nicole Koolhaas,2,2,2,0,5,0,8
-9,37,NED,12,Britt Bongaerts,1,0,0,0,3,1,5
-10,37,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-11,37,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-12,37,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-13,37,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,47,NED,10,Lonneke Slöetjes,15,13,32,2,6,0,4
-1,47,NED,11,Anne Buijs,13,12,25,1,7,0,6
-2,47,NED,6,Maret Balkestein-Grothues,9,7,22,0,6,2,14
-3,47,NED,4,Celeste Plak,5,5,14,0,0,0,2
-4,47,NED,22,Nicole Koolhaas,5,2,7,2,10,1,10
-5,47,NED,3,Yvon Belien,4,4,7,0,7,0,10
-6,47,NED,12,Britt Bongaerts,2,1,2,0,2,1,8
-7,47,NED,7,Juliet Lohuis,1,0,2,0,4,1,3
-8,47,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-9,47,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-10,47,NED,14,Laura Dijkema,0,0,0,0,0,0,3
-11,47,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-12,47,NED,18,Marrit Jasper,0,0,0,0,0,0,3
-13,47,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,52,NED,10,Lonneke Slöetjes,22,21,49,1,7,0,13
-1,52,NED,6,Maret Balkestein-Grothues,12,11,23,1,7,0,10
-2,52,NED,11,Anne Buijs,8,8,29,0,3,0,16
-3,52,NED,7,Juliet Lohuis,6,5,9,1,12,0,12
-4,52,NED,31,Eline Timmerman,6,3,3,1,9,2,10
-5,52,NED,14,Laura Dijkema,3,3,5,0,10,0,11
-6,52,NED,4,Celeste Plak,2,2,3,0,0,0,1
-7,52,NED,18,Marrit Jasper,2,2,2,0,0,0,0
-8,52,NED,12,Britt Bongaerts,1,1,1,0,0,0,2
-9,52,NED,22,Nicole Koolhaas,1,1,3,0,4,0,5
-10,52,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-11,52,NED,3,Yvon Belien,0,0,0,0,0,0,0
-12,52,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-13,52,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-0,56,NED,10,Lonneke Slöetjes,28,26,59,2,10,0,15
-1,56,NED,4,Celeste Plak,18,16,32,2,7,0,11
-2,56,NED,18,Marrit Jasper,14,13,31,0,8,1,22
-3,56,NED,22,Nicole Koolhaas,7,5,13,1,12,1,18
-4,56,NED,11,Anne Buijs,6,5,17,1,3,0,9
-5,56,NED,7,Juliet Lohuis,3,2,6,0,9,1,9
-6,56,NED,12,Britt Bongaerts,2,0,0,2,4,0,5
-7,56,NED,14,Laura Dijkema,2,2,4,0,3,0,7
-8,56,NED,31,Eline Timmerman,1,1,4,0,5,0,5
-9,56,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-10,56,NED,3,Yvon Belien,0,0,0,0,0,0,0
-11,56,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
-12,56,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-13,56,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-0,66,NED,10,Lonneke Slöetjes,18,15,51,3,18,0,9
-1,66,NED,11,Anne Buijs,15,14,50,1,8,0,16
-2,66,NED,18,Marrit Jasper,14,11,29,1,15,2,16
-3,66,NED,4,Celeste Plak,11,9,15,2,6,0,1
-4,66,NED,7,Juliet Lohuis,6,4,9,1,19,1,15
-5,66,NED,22,Nicole Koolhaas,5,2,9,2,19,1,16
-6,66,NED,14,Laura Dijkema,3,3,4,0,9,0,15
-7,66,NED,1,Kirsten Knip,0,0,0,0,0,0,0
-8,66,NED,3,Yvon Belien,0,0,0,0,0,0,0
-9,66,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
-10,66,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
-11,66,NED,12,Britt Bongaerts,0,0,0,0,0,0,3
-12,66,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
-13,66,NED,31,Eline Timmerman,0,0,0,0,0,0,0
-0,4,CHN,2,Ting Zhu,21,18,29,2,5,1,13
-1,4,CHN,1,Xinyue Yuan,11,6,10,4,8,1,13
-2,4,CHN,6,Xiangyu Gong,10,8,23,1,8,1,9
-3,4,CHN,17,Ni Yan,9,4,11,4,9,1,13
-4,4,CHN,9,Changning Zhang,8,8,24,0,4,0,5
-5,4,CHN,12,Yingying Li,4,2,4,1,1,1,10
-6,4,CHN,16,Xia Ding,1,0,1,0,2,1,10
-7,4,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-8,4,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-9,4,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-10,4,CHN,11,Di Yao,0,0,1,0,1,0,0
-11,4,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,4,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-13,4,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
-0,8,CHN,12,Yingying Li,21,17,25,4,5,0,10
-1,8,CHN,10,Xiaotong Liu,9,6,17,0,0,3,11
-2,8,CHN,8,Chunlei Zeng,7,4,9,1,7,2,10
-3,8,CHN,14,Yixin Zheng,6,5,7,1,7,0,9
-4,8,CHN,7,Yuanyuan Wang,5,4,9,1,7,0,10
-5,8,CHN,4,Hanyu Yang,3,3,5,0,0,0,3
-6,8,CHN,6,Xiangyu Gong,3,2,5,0,0,1,11
-7,8,CHN,19,Yanhan Liu,2,2,6,0,2,0,1
-8,8,CHN,11,Di Yao,1,0,1,0,1,1,8
-9,8,CHN,16,Xia Ding,1,1,1,0,0,0,1
-10,8,CHN,1,Xinyue Yuan,0,0,0,0,0,0,0
-11,8,CHN,9,Changning Zhang,0,0,0,0,0,0,0
-12,8,CHN,15,Li Lin,0,0,0,0,0,0,0
-13,8,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,16,CHN,2,Ting Zhu,22,21,33,1,5,0,10
-1,16,CHN,9,Changning Zhang,16,14,28,1,4,1,8
-2,16,CHN,1,Xinyue Yuan,10,7,12,2,8,1,13
-3,16,CHN,17,Ni Yan,9,6,15,3,10,0,12
-4,16,CHN,6,Xiangyu Gong,7,4,18,2,10,1,12
-5,16,CHN,16,Xia Ding,5,1,3,0,4,4,19
-6,16,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
-7,16,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-8,16,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-9,16,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-10,16,CHN,11,Di Yao,0,0,0,0,0,0,0
-11,16,CHN,12,Yingying Li,0,0,0,0,0,0,0
-12,16,CHN,15,Li Lin,0,0,0,0,0,0,0
-13,16,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,22,CHN,2,Ting Zhu,20,18,26,1,3,1,13
-1,22,CHN,12,Yingying Li,12,10,17,2,5,0,13
-2,22,CHN,1,Xinyue Yuan,11,9,11,1,14,1,15
-3,22,CHN,17,Ni Yan,8,4,8,4,10,0,9
-4,22,CHN,6,Xiangyu Gong,6,6,13,0,3,0,9
-5,22,CHN,9,Changning Zhang,1,1,2,0,0,0,1
-6,22,CHN,19,Yanhan Liu,1,1,3,0,1,0,3
-7,22,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
-8,22,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-9,22,CHN,10,Xiaotong Liu,0,0,1,0,0,0,1
-10,22,CHN,11,Di Yao,0,0,0,0,0,0,0
-11,22,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,22,CHN,16,Xia Ding,0,0,1,0,9,0,9
-13,22,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,30,CHN,9,Changning Zhang,18,12,22,1,7,5,16
-1,30,CHN,2,Ting Zhu,15,12,27,1,2,2,14
-2,30,CHN,1,Xinyue Yuan,14,12,18,2,14,0,8
-3,30,CHN,17,Ni Yan,14,8,12,6,17,0,7
-4,30,CHN,6,Xiangyu Gong,9,5,17,4,10,0,10
-5,30,CHN,16,Xia Ding,1,0,1,0,7,1,18
-6,30,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-7,30,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-8,30,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-9,30,CHN,11,Di Yao,0,0,0,0,0,0,0
-10,30,CHN,12,Yingying Li,0,0,0,0,0,0,0
-11,30,CHN,14,Yixin Zheng,0,0,0,0,0,0,0
-12,30,CHN,15,Li Lin,0,0,0,0,0,0,0
-13,30,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,34,CHN,2,Ting Zhu,25,25,49,0,3,0,19
-1,34,CHN,1,Xinyue Yuan,24,19,36,5,25,0,16
-2,34,CHN,9,Changning Zhang,13,10,20,3,6,0,12
-3,34,CHN,6,Xiangyu Gong,10,5,17,4,11,1,17
-4,34,CHN,17,Ni Yan,8,7,12,1,15,0,20
-5,34,CHN,16,Xia Ding,6,1,2,3,7,2,16
-6,34,CHN,12,Yingying Li,2,2,12,0,1,0,7
-7,34,CHN,8,Chunlei Zeng,1,1,4,0,3,0,2
-8,34,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
-9,34,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-10,34,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-11,34,CHN,11,Di Yao,0,0,0,0,0,0,0
-12,34,CHN,15,Li Lin,0,0,0,0,0,0,0
-13,34,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,40,CHN,2,Ting Zhu,23,17,36,5,9,1,13
-1,40,CHN,9,Changning Zhang,13,11,20,1,7,1,12
-2,40,CHN,1,Xinyue Yuan,10,6,11,2,12,2,13
-3,40,CHN,6,Xiangyu Gong,6,5,15,1,7,0,13
-4,40,CHN,17,Ni Yan,6,4,11,1,11,1,10
-5,40,CHN,16,Xia Ding,1,1,1,0,6,0,13
-6,40,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-7,40,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-8,40,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-9,40,CHN,11,Di Yao,0,0,0,0,0,0,0
-10,40,CHN,12,Yingying Li,0,0,0,0,0,0,0
-11,40,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,40,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-13,40,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
-0,46,CHN,6,Xiangyu Gong,13,12,16,0,3,1,14
-1,46,CHN,9,Changning Zhang,10,9,15,0,3,1,12
-2,46,CHN,12,Yingying Li,10,7,15,1,6,2,10
-3,46,CHN,4,Hanyu Yang,9,3,6,2,7,4,19
-4,46,CHN,7,Yuanyuan Wang,9,6,13,3,12,0,11
-5,46,CHN,11,Di Yao,1,0,0,0,3,1,5
-6,46,CHN,19,Yanhan Liu,1,1,6,0,1,0,2
-7,46,CHN,1,Xinyue Yuan,0,0,0,0,0,0,0
-8,46,CHN,2,Ting Zhu,0,0,0,0,0,0,0
-9,46,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-10,46,CHN,14,Yixin Zheng,0,0,0,0,0,0,0
-11,46,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,46,CHN,16,Xia Ding,0,0,0,0,0,0,0
-13,46,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,52,CHN,2,Ting Zhu,22,20,35,1,3,1,19
-1,52,CHN,1,Xinyue Yuan,17,13,17,3,13,1,12
-2,52,CHN,9,Changning Zhang,14,10,28,2,13,2,11
-3,52,CHN,6,Xiangyu Gong,11,9,19,2,11,0,14
-4,52,CHN,17,Ni Yan,10,4,9,6,17,0,20
-5,52,CHN,12,Yingying Li,1,1,6,0,1,0,1
-6,52,CHN,16,Xia Ding,1,1,5,0,1,0,17
-7,52,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
-8,52,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
-9,52,CHN,8,Chunlei Zeng,0,0,0,0,1,0,1
-10,52,CHN,11,Di Yao,0,0,0,0,1,0,0
-11,52,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,52,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-13,52,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
-0,58,CHN,2,Ting Zhu,18,16,32,1,5,1,21
-1,58,CHN,9,Changning Zhang,14,13,24,1,7,0,9
-2,58,CHN,6,Xiangyu Gong,10,7,18,1,3,2,12
-3,58,CHN,17,Ni Yan,8,4,9,4,19,0,9
-4,58,CHN,1,Xinyue Yuan,6,5,8,1,8,0,8
-5,58,CHN,16,Xia Ding,3,1,1,1,6,1,13
-6,58,CHN,7,Yuanyuan Wang,2,1,1,1,2,0,1
-7,58,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
-8,58,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
-9,58,CHN,11,Di Yao,0,0,0,0,0,0,0
-10,58,CHN,12,Yingying Li,0,0,0,0,0,0,0
-11,58,CHN,15,Li Lin,0,0,0,0,0,0,0
-12,58,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-13,58,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
-0,64,CHN,6,Xiangyu Gong,15,11,21,3,13,1,14
-1,64,CHN,1,Xinyue Yuan,13,10,13,3,10,0,7
-2,64,CHN,2,Ting Zhu,12,6,13,4,6,2,14
-3,64,CHN,17,Ni Yan,11,4,6,5,11,2,8
-4,64,CHN,9,Changning Zhang,10,9,18,1,6,0,8
-5,64,CHN,12,Yingying Li,2,2,3,0,1,0,0
-6,64,CHN,16,Xia Ding,1,0,0,0,5,1,5
-7,64,CHN,19,Yanhan Liu,1,0,0,0,0,1,2
-8,64,CHN,7,Yuanyuan Wang,0,0,1,0,0,0,0
-9,64,CHN,10,Xiaotong Liu,0,0,0,0,0,0,1
-10,64,CHN,11,Di Yao,0,0,0,0,0,0,12
-11,64,CHN,14,Yixin Zheng,0,0,0,0,0,0,2
-12,64,CHN,15,Li Lin,0,0,0,0,0,0,0
-13,64,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
-0,4,KOR,17,Jaeyeong Lee,15,13,31,1,3,1,12
-1,4,KOR,10,Yeon Koung Kim,11,11,23,0,1,0,7
-2,4,KOR,14,Hyo Jin Yang,7,4,7,2,12,1,7
-3,4,KOR,4,Heejin Kim,6,5,18,1,3,0,3
-4,4,KOR,11,Su Ji Kim,2,2,3,0,4,0,4
-5,4,KOR,1,Soyoung Lee,1,1,4,0,1,0,1
-6,4,KOR,13,Jeongah Park,1,1,12,0,3,0,3
-7,4,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
-8,4,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-9,4,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-10,4,KOR,8,Eunjin Park,0,0,0,0,0,0,0
-11,4,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-12,4,KOR,15,Sohwi Kang,0,0,0,0,0,0,1
-13,4,KOR,19,Dayeong Lee,0,0,1,0,2,0,14
-0,10,KOR,4,Heejin Kim,22,21,58,1,8,0,12
-1,10,KOR,10,Yeon Koung Kim,17,17,43,0,3,0,9
-2,10,KOR,17,Jaeyeong Lee,10,8,22,1,5,1,10
-3,10,KOR,11,Su Ji Kim,9,6,12,2,10,1,20
-4,10,KOR,13,Jeongah Park,9,7,24,0,4,2,11
-5,10,KOR,8,Eunjin Park,3,1,3,1,2,1,5
-6,10,KOR,14,Hyo Jin Yang,3,2,6,1,14,0,5
-7,10,KOR,19,Dayeong Lee,1,0,2,1,8,0,14
-8,10,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
-9,10,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
-10,10,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-11,10,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-12,10,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,10,KOR,15,Sohwi Kang,0,0,3,0,1,0,4
-0,18,KOR,17,Jaeyeong Lee,24,23,45,1,6,0,14
-1,18,KOR,10,Yeon Koung Kim,23,19,47,3,6,1,15
-2,18,KOR,4,Heejin Kim,17,15,33,2,10,0,16
-3,18,KOR,11,Su Ji Kim,11,4,8,6,20,1,17
-4,18,KOR,19,Dayeong Lee,6,1,3,3,10,2,21
-5,18,KOR,13,Jeongah Park,2,0,3,1,2,1,4
-6,18,KOR,14,Hyo Jin Yang,2,1,3,1,22,0,9
-7,18,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
-8,18,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
-9,18,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-10,18,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-11,18,KOR,8,Eunjin Park,0,0,0,0,0,0,0
-12,18,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,18,KOR,15,Sohwi Kang,0,0,0,0,0,0,3
-0,20,KOR,15,Sohwi Kang,9,8,25,1,3,0,8
-1,20,KOR,13,Jeongah Park,8,7,23,0,1,1,11
-2,20,KOR,4,Heejin Kim,7,7,20,0,0,0,7
-3,20,KOR,11,Su Ji Kim,4,3,8,1,9,0,7
-4,20,KOR,7,Hyejin Ha,3,3,4,0,1,0,2
-5,20,KOR,1,Soyoung Lee,2,2,3,0,0,0,2
-6,20,KOR,8,Eunjin Park,2,1,2,0,6,1,10
-7,20,KOR,19,Dayeong Lee,2,1,1,0,2,1,11
-8,20,KOR,3,Hye Seon Yeum,1,1,1,0,0,0,1
-9,20,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-10,20,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-11,20,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
-12,20,KOR,14,Hyo Jin Yang,0,0,0,0,0,0,0
-13,20,KOR,17,Jaeyeong Lee,0,0,0,0,0,0,0
-0,28,KOR,10,Yeon Koung Kim,14,11,20,1,6,2,12
-1,28,KOR,13,Jeongah Park,12,8,20,1,4,3,15
-2,28,KOR,17,Jaeyeong Lee,9,8,20,1,1,0,9
-3,28,KOR,8,Eunjin Park,7,5,12,2,7,0,5
-4,28,KOR,7,Hyejin Ha,5,4,4,0,0,1,4
-5,28,KOR,15,Sohwi Kang,3,3,4,0,1,0,4
-6,28,KOR,1,Soyoung Lee,2,1,3,1,1,0,1
-7,28,KOR,3,Hye Seon Yeum,2,0,0,0,1,2,11
-8,28,KOR,19,Dayeong Lee,2,1,2,1,2,0,2
-9,28,KOR,11,Su Ji Kim,1,1,2,0,4,0,3
-10,28,KOR,14,Hyo Jin Yang,1,1,2,0,5,0,6
-11,28,KOR,4,Heejin Kim,0,0,0,0,0,0,1
-12,28,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-13,28,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-0,31,KOR,4,Heejin Kim,23,17,44,3,10,3,17
-1,31,KOR,17,Jaeyeong Lee,22,20,47,2,7,0,20
-2,31,KOR,10,Yeon Koung Kim,12,11,20,1,4,0,14
-3,31,KOR,14,Hyo Jin Yang,10,6,9,4,21,0,10
-4,31,KOR,13,Jeongah Park,5,5,7,0,1,0,2
-5,31,KOR,8,Eunjin Park,4,4,5,0,3,0,8
-6,31,KOR,11,Su Ji Kim,2,1,2,1,3,0,3
-7,31,KOR,19,Dayeong Lee,1,0,1,0,4,1,18
-8,31,KOR,1,Soyoung Lee,0,0,4,0,0,0,2
-9,31,KOR,3,Hye Seon Yeum,0,0,0,0,1,0,1
-10,31,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-11,31,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-12,31,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,31,KOR,15,Sohwi Kang,0,0,0,0,0,0,0
-0,37,KOR,17,Jaeyeong Lee,16,14,43,1,6,1,19
-1,37,KOR,4,Heejin Kim,15,14,41,1,4,0,6
-2,37,KOR,14,Hyo Jin Yang,10,5,8,3,14,2,16
-3,37,KOR,19,Dayeong Lee,9,4,4,3,6,2,14
-4,37,KOR,13,Jeongah Park,6,5,17,1,5,0,5
-5,37,KOR,1,Soyoung Lee,3,2,8,0,0,1,4
-6,37,KOR,8,Eunjin Park,3,1,3,1,5,1,7
-7,37,KOR,11,Su Ji Kim,3,2,9,1,13,0,8
-8,37,KOR,15,Sohwi Kang,3,1,4,0,1,2,10
-9,37,KOR,3,Hye Seon Yeum,2,2,7,0,2,0,1
-10,37,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-11,37,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-12,37,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,37,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
-0,43,KOR,10,Yeon Koung Kim,20,17,36,2,3,1,14
-1,43,KOR,4,Heejin Kim,19,17,40,0,13,2,17
-2,43,KOR,17,Jaeyeong Lee,16,13,33,2,6,1,15
-3,43,KOR,11,Su Ji Kim,9,6,11,2,13,1,11
-4,43,KOR,1,Soyoung Lee,3,2,5,1,1,0,1
-5,43,KOR,14,Hyo Jin Yang,3,2,14,1,10,0,8
-6,43,KOR,15,Sohwi Kang,2,2,2,0,0,0,5
-7,43,KOR,3,Hye Seon Yeum,0,0,2,0,2,0,14
-8,43,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-9,43,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-10,43,KOR,8,Eunjin Park,0,0,0,0,0,0,2
-11,43,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-12,43,KOR,13,Jeongah Park,0,0,4,0,0,0,2
-13,43,KOR,19,Dayeong Lee,0,0,0,0,0,0,0
-0,49,KOR,7,Hyejin Ha,9,9,21,0,4,0,3
-1,49,KOR,4,Heejin Kim,8,7,10,0,2,1,5
-2,49,KOR,13,Jeongah Park,6,5,9,1,2,0,3
-3,49,KOR,1,Soyoung Lee,5,5,11,0,1,0,6
-4,49,KOR,8,Eunjin Park,5,5,8,0,4,0,8
-5,49,KOR,11,Su Ji Kim,5,2,3,0,3,3,6
-6,49,KOR,17,Jaeyeong Lee,5,5,6,0,0,0,6
-7,49,KOR,14,Hyo Jin Yang,4,4,8,0,5,0,5
-8,49,KOR,15,Sohwi Kang,4,3,10,0,4,1,6
-9,49,KOR,3,Hye Seon Yeum,3,1,1,0,1,2,13
-10,49,KOR,19,Dayeong Lee,3,0,0,0,1,3,12
-11,49,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-12,49,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,49,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
-0,55,KOR,10,Yeon Koung Kim,25,19,44,1,7,5,20
-1,55,KOR,17,Jaeyeong Lee,20,20,42,0,5,0,14
-2,55,KOR,4,Heejin Kim,13,10,31,1,5,2,13
-3,55,KOR,11,Su Ji Kim,8,7,9,1,13,0,10
-4,55,KOR,8,Eunjin Park,6,6,6,0,2,0,7
-5,55,KOR,19,Dayeong Lee,3,0,3,3,11,0,16
-6,55,KOR,14,Hyo Jin Yang,2,1,3,1,7,0,5
-7,55,KOR,13,Jeongah Park,1,1,4,0,1,0,1
-8,55,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
-9,55,KOR,3,Hye Seon Yeum,0,0,1,0,0,0,2
-10,55,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-11,55,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-12,55,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-13,55,KOR,15,Sohwi Kang,0,0,0,0,0,0,4
-0,61,KOR,13,Jeongah Park,15,12,23,1,5,2,6
-1,61,KOR,10,Yeon Koung Kim,14,12,30,1,2,1,13
-2,61,KOR,4,Heejin Kim,9,9,24,0,3,0,9
-3,61,KOR,8,Eunjin Park,6,3,11,3,9,0,9
-4,61,KOR,14,Hyo Jin Yang,6,4,8,2,6,0,4
-5,61,KOR,17,Jaeyeong Lee,6,6,18,0,2,0,8
-6,61,KOR,15,Sohwi Kang,4,3,12,0,1,1,11
-7,61,KOR,11,Su Ji Kim,2,1,3,1,8,0,6
-8,61,KOR,19,Dayeong Lee,2,1,1,1,1,0,5
-9,61,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
-10,61,KOR,3,Hye Seon Yeum,0,0,1,0,1,0,14
-11,61,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
-12,61,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
-13,61,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
-0,5,SRB,13,Ana Bjelica,24,22,60,1,8,1,15
-1,5,SRB,1,Bianka Busa,18,14,50,1,7,3,18
-2,5,SRB,2,Katarina Lazovic,15,14,35,1,8,0,19
-3,5,SRB,6,Maja Savic,8,3,10,4,23,1,12
-4,5,SRB,14,Maja Aleksic,7,3,14,4,19,0,12
-5,5,SRB,8,Sladjana Mirkovic,4,2,2,2,14,0,19
-6,5,SRB,5,Mina Popovic,0,0,0,0,0,0,0
-7,5,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-8,5,SRB,19,Bojana Milenkovic,0,0,1,0,0,0,0
-9,5,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,5
-10,5,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-11,5,SRB,22,Sara Lozo,0,0,0,0,0,0,1
-12,5,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
-13,5,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,9,SRB,13,Ana Bjelica,18,15,28,1,4,2,13
-1,9,SRB,2,Katarina Lazovic,14,14,29,0,5,0,13
-2,9,SRB,14,Maja Aleksic,9,7,12,1,6,1,11
-3,9,SRB,22,Sara Lozo,8,8,23,0,1,0,6
-4,9,SRB,19,Bojana Milenkovic,4,4,8,0,2,0,4
-5,9,SRB,8,Sladjana Mirkovic,3,2,3,0,1,1,10
-6,9,SRB,6,Maja Savic,2,0,4,2,9,0,7
-7,9,SRB,21,Jovana Kocic,2,1,2,1,2,0,3
-8,9,SRB,1,Bianka Busa,0,0,0,0,1,0,2
-9,9,SRB,5,Mina Popovic,0,0,0,0,0,0,0
-10,9,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,9,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,4
-12,9,SRB,23,Mila Djordjevic,0,0,0,0,0,0,1
-13,9,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,13,SRB,13,Ana Bjelica,13,9,19,2,8,2,10
-1,13,SRB,14,Maja Aleksic,11,6,10,4,12,1,6
-2,13,SRB,5,Mina Popovic,8,6,10,0,8,2,14
-3,13,SRB,19,Bojana Milenkovic,7,6,7,1,1,0,6
-4,13,SRB,20,Jelena Blagojevic,7,4,9,2,2,1,13
-5,13,SRB,2,Katarina Lazovic,4,4,8,0,4,0,7
-6,13,SRB,1,Bianka Busa,3,2,8,0,1,1,7
-7,13,SRB,8,Sladjana Mirkovic,3,2,4,0,1,1,5
-8,13,SRB,22,Sara Lozo,2,2,6,0,4,0,1
-9,13,SRB,23,Mila Djordjevic,2,1,2,1,1,0,3
-10,13,SRB,21,Jovana Kocic,1,1,2,0,1,0,1
-11,13,SRB,6,Maja Savic,0,0,0,0,0,0,0
-12,13,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-13,13,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,19,SRB,13,Ana Bjelica,28,23,46,3,14,2,21
-1,19,SRB,20,Jelena Blagojevic,15,12,32,3,9,0,12
-2,19,SRB,14,Maja Aleksic,14,9,12,4,18,1,12
-3,19,SRB,19,Bojana Milenkovic,10,8,19,2,8,0,6
-4,19,SRB,1,Bianka Busa,7,7,17,0,3,0,7
-5,19,SRB,8,Sladjana Mirkovic,3,2,6,0,9,1,15
-6,19,SRB,21,Jovana Kocic,3,2,8,1,7,0,19
-7,19,SRB,2,Katarina Lazovic,0,0,1,0,0,0,5
-8,19,SRB,5,Mina Popovic,0,0,0,0,0,0,0
-9,19,SRB,6,Maja Savic,0,0,0,0,0,0,0
-10,19,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,19,SRB,22,Sara Lozo,0,0,0,0,0,0,0
-12,19,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
-13,19,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,25,SRB,13,Ana Bjelica,35,34,65,1,6,0,19
-1,25,SRB,5,Mina Popovic,17,13,19,3,16,1,20
-2,25,SRB,14,Maja Aleksic,14,10,14,4,20,0,13
-3,25,SRB,20,Jelena Blagojevic,11,10,24,1,9,0,13
-4,25,SRB,19,Bojana Milenkovic,10,9,21,0,2,1,13
-5,25,SRB,1,Bianka Busa,2,2,13,0,1,0,9
-6,25,SRB,8,Sladjana Mirkovic,1,0,6,0,7,1,15
-7,25,SRB,22,Sara Lozo,1,1,3,0,0,0,2
-8,25,SRB,2,Katarina Lazovic,0,0,2,0,1,0,3
-9,25,SRB,6,Maja Savic,0,0,0,0,0,0,0
-10,25,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,25,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-12,25,SRB,23,Mila Djordjevic,0,0,1,0,0,0,0
-13,25,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,35,SRB,1,Bianka Busa,19,18,38,1,4,0,11
-1,35,SRB,5,Mina Popovic,14,9,15,3,13,2,19
-2,35,SRB,13,Ana Bjelica,14,13,43,1,6,0,13
-3,35,SRB,20,Jelena Blagojevic,13,12,22,0,5,1,16
-4,35,SRB,14,Maja Aleksic,7,4,8,2,12,1,7
-5,35,SRB,8,Sladjana Mirkovic,2,2,4,0,4,0,9
-6,35,SRB,2,Katarina Lazovic,1,0,0,0,0,1,2
-7,35,SRB,6,Maja Savic,0,0,1,0,3,0,2
-8,35,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-9,35,SRB,19,Bojana Milenkovic,0,0,0,0,0,0,0
-10,35,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-11,35,SRB,22,Sara Lozo,0,0,1,0,0,0,2
-12,35,SRB,23,Mila Djordjevic,0,0,1,0,1,0,0
-13,35,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,39,SRB,2,Katarina Lazovic,20,15,23,1,5,4,17
-1,39,SRB,5,Mina Popovic,10,4,6,4,11,2,8
-2,39,SRB,19,Bojana Milenkovic,10,9,21,0,5,1,11
-3,39,SRB,13,Ana Bjelica,8,7,17,1,5,0,7
-4,39,SRB,14,Maja Aleksic,6,1,5,4,13,1,6
-5,39,SRB,22,Sara Lozo,4,4,9,0,1,0,6
-6,39,SRB,8,Sladjana Mirkovic,3,2,5,0,4,1,12
-7,39,SRB,23,Mila Djordjevic,1,0,0,1,2,0,0
-8,39,SRB,1,Bianka Busa,0,0,0,0,0,0,0
-9,39,SRB,6,Maja Savic,0,0,0,0,0,0,0
-10,39,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,39,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,5
-12,39,SRB,21,Jovana Kocic,0,0,0,0,2,0,2
-13,39,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,43,SRB,13,Ana Bjelica,22,21,48,0,8,1,17
-1,43,SRB,20,Jelena Blagojevic,15,15,31,0,4,0,13
-2,43,SRB,2,Katarina Lazovic,11,9,19,1,3,1,11
-3,43,SRB,5,Mina Popovic,7,7,11,0,7,0,13
-4,43,SRB,14,Maja Aleksic,7,6,11,1,17,0,7
-5,43,SRB,19,Bojana Milenkovic,4,4,13,0,2,0,6
-6,43,SRB,8,Sladjana Mirkovic,3,2,6,0,2,1,16
-7,43,SRB,1,Bianka Busa,0,0,0,0,0,0,4
-8,43,SRB,6,Maja Savic,0,0,0,0,0,0,0
-9,43,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-10,43,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-11,43,SRB,22,Sara Lozo,0,0,0,0,0,0,0
-12,43,SRB,23,Mila Djordjevic,0,0,0,0,0,0,1
-13,43,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,54,SRB,5,Mina Popovic,24,17,24,5,14,2,14
-1,54,SRB,13,Ana Bjelica,14,13,46,1,4,0,14
-2,54,SRB,20,Jelena Blagojevic,14,12,31,2,5,0,20
-3,54,SRB,14,Maja Aleksic,11,8,15,3,11,0,8
-4,54,SRB,19,Bojana Milenkovic,10,10,31,0,2,0,9
-5,54,SRB,1,Bianka Busa,2,2,7,0,0,0,4
-6,54,SRB,8,Sladjana Mirkovic,2,2,3,0,9,0,21
-7,54,SRB,23,Mila Djordjevic,1,0,2,1,2,0,0
-8,54,SRB,2,Katarina Lazovic,0,0,3,0,0,0,6
-9,54,SRB,6,Maja Savic,0,0,0,0,0,0,0
-10,54,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,54,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-12,54,SRB,22,Sara Lozo,0,0,0,0,0,0,0
-13,54,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,58,SRB,2,Katarina Lazovic,14,14,36,0,2,0,11
-1,58,SRB,13,Ana Bjelica,14,14,36,0,6,0,8
-2,58,SRB,1,Bianka Busa,5,4,15,0,0,1,7
-3,58,SRB,14,Maja Aleksic,3,2,6,1,8,0,4
-4,58,SRB,6,Maja Savic,2,2,4,0,5,0,4
-5,58,SRB,21,Jovana Kocic,2,1,4,1,4,0,6
-6,58,SRB,22,Sara Lozo,2,2,3,0,0,0,1
-7,58,SRB,8,Sladjana Mirkovic,1,0,0,0,0,1,8
-8,58,SRB,5,Mina Popovic,0,0,0,0,0,0,0
-9,58,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-10,58,SRB,19,Bojana Milenkovic,0,0,0,0,0,0,0
-11,58,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,2
-12,58,SRB,23,Mila Djordjevic,0,0,0,0,0,0,2
-13,58,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,62,SRB,13,Ana Bjelica,19,16,45,2,15,1,12
-1,62,SRB,5,Mina Popovic,16,12,22,3,16,1,13
-2,62,SRB,20,Jelena Blagojevic,10,9,27,1,6,0,14
-3,62,SRB,14,Maja Aleksic,9,7,12,2,14,0,12
-4,62,SRB,2,Katarina Lazovic,8,5,24,3,7,0,15
-5,62,SRB,19,Bojana Milenkovic,4,3,8,0,4,1,4
-6,62,SRB,8,Sladjana Mirkovic,3,2,4,0,4,1,14
-7,62,SRB,22,Sara Lozo,1,1,6,0,1,0,1
-8,62,SRB,1,Bianka Busa,0,0,0,0,0,0,1
-9,62,SRB,6,Maja Savic,0,0,0,0,0,0,0
-10,62,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
-11,62,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
-12,62,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
-13,62,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
-0,5,BRA,24,Lorenne Geraldo Teixeira,23,20,43,2,9,1,12
-1,5,BRA,10,Gabriela Braga Guimaraes,17,14,46,2,12,1,25
-2,5,BRA,1,Fabiana Claudino,16,10,19,6,25,0,15
-3,5,BRA,21,Drussyla Costa,13,11,34,2,7,0,11
-4,5,BRA,20,Ana Beatriz Correa,11,5,11,5,27,1,16
-5,5,BRA,13,Sheilla Castro De Paula Blassioli,4,4,12,0,3,0,4
-6,5,BRA,3,Macris Fernanda Silva Carneiro,1,0,2,1,9,0,17
-7,5,BRA,2,Mara Ferreira Leao,0,0,0,0,0,0,0
-8,5,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-9,5,BRA,7,Amanda Francisco,0,0,0,0,0,0,6
-10,5,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,3
-11,5,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-12,5,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,5,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,11,BRA,10,Gabriela Braga Guimaraes,17,11,27,3,12,3,16
-1,11,BRA,7,Amanda Francisco,11,11,18,0,3,0,12
-2,11,BRA,1,Fabiana Claudino,10,5,8,5,16,0,9
-3,11,BRA,24,Lorenne Geraldo Teixeira,9,9,20,0,4,0,4
-4,11,BRA,20,Ana Beatriz Correa,8,2,5,5,17,1,13
-5,11,BRA,13,Sheilla Castro De Paula Blassioli,4,3,9,1,3,0,3
-6,11,BRA,15,Ana Carolina Da Silva,3,1,4,2,4,0,0
-7,11,BRA,3,Macris Fernanda Silva Carneiro,2,0,0,0,3,2,10
-8,11,BRA,2,Mara Ferreira Leao,1,0,1,1,1,0,2
-9,11,BRA,6,Gabriela Candido Da Silva,0,0,2,0,1,0,0
-10,11,BRA,9,Roberta Silva Ratzke,0,0,1,0,1,0,5
-11,11,BRA,18,Camila Brait,0,0,0,0,0,0,0
-12,11,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-13,11,BRA,21,Drussyla Costa,0,0,0,0,0,0,0
-0,17,BRA,24,Lorenne Geraldo Teixeira,13,12,38,1,10,0,7
-1,17,BRA,10,Gabriela Braga Guimaraes,12,12,30,0,6,0,17
-2,17,BRA,21,Drussyla Costa,12,12,22,0,9,0,6
-3,17,BRA,1,Fabiana Claudino,5,3,8,2,6,0,9
-4,17,BRA,13,Sheilla Castro De Paula Blassioli,4,3,5,1,3,0,0
-5,17,BRA,20,Ana Beatriz Correa,4,4,12,0,13,0,8
-6,17,BRA,3,Macris Fernanda Silva Carneiro,1,1,1,0,3,0,11
-7,17,BRA,2,Mara Ferreira Leao,0,0,0,0,0,0,0
-8,17,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-9,17,BRA,7,Amanda Francisco,0,0,0,0,0,0,2
-10,17,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
-11,17,BRA,15,Ana Carolina Da Silva,0,0,1,0,1,0,2
-12,17,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,17,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,23,BRA,2,Mara Ferreira Leao,15,9,12,5,11,1,10
-1,23,BRA,7,Amanda Francisco,12,11,23,1,7,0,15
-2,23,BRA,10,Gabriela Braga Guimaraes,9,8,14,1,4,0,10
-3,23,BRA,15,Ana Carolina Da Silva,7,7,13,0,5,0,5
-4,23,BRA,24,Lorenne Geraldo Teixeira,7,4,19,2,8,1,6
-5,23,BRA,13,Sheilla Castro De Paula Blassioli,5,4,11,1,5,0,2
-6,23,BRA,1,Fabiana Claudino,2,2,4,0,7,0,7
-7,23,BRA,3,Macris Fernanda Silva Carneiro,2,2,2,0,2,0,7
-8,23,BRA,6,Gabriela Candido Da Silva,0,0,7,0,0,0,4
-9,23,BRA,9,Roberta Silva Ratzke,0,0,0,0,3,0,6
-10,23,BRA,18,Camila Brait,0,0,0,0,0,0,0
-11,23,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-12,23,BRA,20,Ana Beatriz Correa,0,0,0,0,3,0,2
-13,23,BRA,21,Drussyla Costa,0,0,0,0,0,0,0
-0,29,BRA,10,Gabriela Braga Guimaraes,12,12,18,0,6,0,10
-1,29,BRA,21,Drussyla Costa,12,12,28,0,3,0,8
-2,29,BRA,2,Mara Ferreira Leao,6,5,9,1,4,0,6
-3,29,BRA,24,Lorenne Geraldo Teixeira,6,6,23,0,4,0,7
-4,29,BRA,20,Ana Beatriz Correa,4,2,8,1,15,1,7
-5,29,BRA,1,Fabiana Claudino,3,2,5,1,7,0,3
-6,29,BRA,9,Roberta Silva Ratzke,1,0,0,0,1,1,8
-7,29,BRA,13,Sheilla Castro De Paula Blassioli,1,0,3,1,3,0,2
-8,29,BRA,3,Macris Fernanda Silva Carneiro,0,0,0,0,0,0,7
-9,29,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-10,29,BRA,7,Amanda Francisco,0,0,0,0,0,0,3
-11,29,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-12,29,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,29,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,34,BRA,10,Gabriela Braga Guimaraes,22,20,52,1,3,1,18
-1,34,BRA,2,Mara Ferreira Leao,19,15,22,4,17,0,11
-2,34,BRA,24,Lorenne Geraldo Teixeira,16,14,33,0,5,2,12
-3,34,BRA,21,Drussyla Costa,12,11,30,0,5,1,18
-4,34,BRA,20,Ana Beatriz Correa,7,2,8,4,10,1,15
-5,34,BRA,3,Macris Fernanda Silva Carneiro,6,4,4,0,6,2,17
-6,34,BRA,13,Sheilla Castro De Paula Blassioli,3,3,9,0,0,0,0
-7,34,BRA,1,Fabiana Claudino,0,0,0,0,0,0,0
-8,34,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-9,34,BRA,7,Amanda Francisco,0,0,0,0,0,0,5
-10,34,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
-11,34,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-12,34,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,34,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,38,BRA,10,Gabriela Braga Guimaraes,22,20,45,1,8,1,16
-1,38,BRA,24,Lorenne Geraldo Teixeira,18,16,31,2,7,0,7
-2,38,BRA,2,Mara Ferreira Leao,8,6,12,2,12,0,14
-3,38,BRA,7,Amanda Francisco,8,7,20,0,8,1,18
-4,38,BRA,1,Fabiana Claudino,7,4,8,3,9,0,8
-5,38,BRA,13,Sheilla Castro De Paula Blassioli,5,4,12,1,4,0,0
-6,38,BRA,20,Ana Beatriz Correa,2,2,5,0,6,0,5
-7,38,BRA,3,Macris Fernanda Silva Carneiro,1,1,3,0,3,0,17
-8,38,BRA,9,Roberta Silva Ratzke,1,0,2,0,0,1,10
-9,38,BRA,21,Drussyla Costa,1,0,0,0,0,1,2
-10,38,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-11,38,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-12,38,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,38,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,48,BRA,10,Gabriela Braga Guimaraes,15,14,44,1,8,0,9
-1,48,BRA,24,Lorenne Geraldo Teixeira,15,13,23,2,7,0,7
-2,48,BRA,1,Fabiana Claudino,12,11,17,0,15,1,14
-3,48,BRA,2,Mara Ferreira Leao,6,2,7,4,18,0,12
-4,48,BRA,21,Drussyla Costa,4,3,17,1,3,0,5
-5,48,BRA,13,Sheilla Castro De Paula Blassioli,2,1,7,1,2,0,0
-6,48,BRA,3,Macris Fernanda Silva Carneiro,1,0,0,1,2,0,13
-7,48,BRA,7,Amanda Francisco,1,1,6,0,2,0,10
-8,48,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-9,48,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,4
-10,48,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-11,48,BRA,18,Camila Brait,0,0,0,0,0,0,0
-12,48,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-13,48,BRA,20,Ana Beatriz Correa,0,0,0,0,0,0,0
-0,51,BRA,2,Mara Ferreira Leao,10,9,12,1,8,0,6
-1,51,BRA,24,Lorenne Geraldo Teixeira,10,9,23,1,2,0,4
-2,51,BRA,10,Gabriela Braga Guimaraes,8,6,13,0,2,2,18
-3,51,BRA,7,Amanda Francisco,6,4,6,1,2,1,11
-4,51,BRA,1,Fabiana Claudino,5,4,4,1,2,0,2
-5,51,BRA,13,Sheilla Castro De Paula Blassioli,5,3,7,2,3,0,0
-6,51,BRA,20,Ana Beatriz Correa,5,3,10,2,3,0,4
-7,51,BRA,21,Drussyla Costa,4,3,9,0,1,1,9
-8,51,BRA,3,Macris Fernanda Silva Carneiro,2,1,2,0,1,1,13
-9,51,BRA,6,Gabriela Candido Da Silva,1,1,1,0,0,0,1
-10,51,BRA,9,Roberta Silva Ratzke,1,0,0,0,0,1,5
-11,51,BRA,15,Ana Carolina Da Silva,1,1,1,0,0,0,1
-12,51,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,51,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,55,BRA,24,Lorenne Geraldo Teixeira,23,20,34,3,15,0,9
-1,55,BRA,10,Gabriela Braga Guimaraes,14,14,34,0,7,0,22
-2,55,BRA,21,Drussyla Costa,10,9,21,0,2,1,7
-3,55,BRA,2,Mara Ferreira Leao,7,7,11,0,8,0,8
-4,55,BRA,7,Amanda Francisco,7,7,12,0,2,0,6
-5,55,BRA,1,Fabiana Claudino,5,3,9,2,11,0,8
-6,55,BRA,20,Ana Beatriz Correa,5,5,7,0,6,0,7
-7,55,BRA,13,Sheilla Castro De Paula Blassioli,3,1,10,1,3,1,2
-8,55,BRA,3,Macris Fernanda Silva Carneiro,1,0,0,0,5,1,18
-9,55,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-10,55,BRA,9,Roberta Silva Ratzke,0,0,0,0,2,0,3
-11,55,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-12,55,BRA,18,Camila Brait,0,0,0,0,0,0,0
-13,55,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-0,63,BRA,24,Lorenne Geraldo Teixeira,21,16,38,3,8,2,11
-1,63,BRA,7,Amanda Francisco,17,16,30,1,6,0,16
-2,63,BRA,1,Fabiana Claudino,14,10,16,2,19,2,13
-3,63,BRA,2,Mara Ferreira Leao,14,9,16,5,15,0,15
-4,63,BRA,10,Gabriela Braga Guimaraes,11,9,31,1,8,1,18
-5,63,BRA,3,Macris Fernanda Silva Carneiro,3,1,2,1,3,1,14
-6,63,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
-7,63,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
-8,63,BRA,13,Sheilla Castro De Paula Blassioli,0,0,7,0,0,0,0
-9,63,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
-10,63,BRA,18,Camila Brait,0,0,0,0,0,0,0
-11,63,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
-12,63,BRA,20,Ana Beatriz Correa,0,0,0,0,0,0,1
-13,63,BRA,21,Drussyla Costa,0,0,0,0,0,0,4
-0,6,DOM,21,Jineiry Martinez,12,9,21,3,21,0,11
-1,6,DOM,18,Bethania De La Cruz De Peña,11,11,40,0,10,0,13
-2,6,DOM,20,Brayelin Elizabeth Martinez,11,11,29,0,5,0,9
-3,6,DOM,23,Gaila Ceneida Gonzalez Lopez,10,9,26,1,13,0,9
-4,6,DOM,14,Prisilla Rivera Brens,6,6,22,0,3,0,9
-5,6,DOM,1,Annerys Victoria Vargas Valdez,4,4,7,0,9,0,3
-6,6,DOM,3,Lisvel Elisa Eve Mejia,3,2,5,1,13,0,8
-7,6,DOM,7,Niverka Dharlenis Marte Frica,1,1,2,0,9,0,11
-8,6,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-9,6,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-10,6,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-11,6,DOM,16,Yonkaira Paola Peña Isabel,0,0,1,0,0,0,0
-12,6,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-13,6,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,10,DOM,20,Brayelin Elizabeth Martinez,26,26,48,0,6,0,19
-1,10,DOM,18,Bethania De La Cruz De Peña,19,17,40,0,8,2,15
-2,10,DOM,14,Prisilla Rivera Brens,11,11,35,0,9,0,14
-3,10,DOM,21,Jineiry Martinez,11,9,16,2,17,0,21
-4,10,DOM,3,Lisvel Elisa Eve Mejia,6,2,8,4,11,0,11
-5,10,DOM,23,Gaila Ceneida Gonzalez Lopez,3,3,3,0,0,0,0
-6,10,DOM,7,Niverka Dharlenis Marte Frica,2,2,2,0,5,0,18
-7,10,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
-8,10,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-9,10,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-10,10,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-11,10,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
-12,10,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-13,10,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,14,DOM,16,Yonkaira Paola Peña Isabel,23,21,45,1,6,1,16
-1,14,DOM,20,Brayelin Elizabeth Martinez,21,20,42,1,11,0,12
-2,14,DOM,23,Gaila Ceneida Gonzalez Lopez,16,12,31,4,9,0,11
-3,14,DOM,1,Annerys Victoria Vargas Valdez,9,5,13,4,20,0,23
-4,14,DOM,17,Gina Altagracia Mambru Casilla,7,5,13,0,2,2,14
-5,14,DOM,8,Candida Estefany Arias Perez,4,2,8,2,16,0,4
-6,14,DOM,7,Niverka Dharlenis Marte Frica,3,2,3,0,5,1,28
-7,14,DOM,21,Jineiry Martinez,3,3,4,0,3,0,1
-8,14,DOM,3,Lisvel Elisa Eve Mejia,1,0,1,1,5,0,5
-9,14,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-10,14,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-11,14,DOM,14,Prisilla Rivera Brens,0,0,1,0,0,0,2
-12,14,DOM,18,Bethania De La Cruz De Peña,0,0,0,0,0,0,0
-13,14,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,22,DOM,21,Jineiry Martinez,11,7,11,3,5,1,8
-1,22,DOM,18,Bethania De La Cruz De Peña,9,7,22,1,5,1,9
-2,22,DOM,14,Prisilla Rivera Brens,6,5,11,0,2,1,7
-3,22,DOM,23,Gaila Ceneida Gonzalez Lopez,6,6,12,0,0,0,6
-4,22,DOM,16,Yonkaira Paola Peña Isabel,4,4,8,0,1,0,4
-5,22,DOM,20,Brayelin Elizabeth Martinez,4,4,15,0,1,0,4
-6,22,DOM,3,Lisvel Elisa Eve Mejia,3,3,9,0,0,0,5
-7,22,DOM,1,Annerys Victoria Vargas Valdez,2,1,4,0,0,1,7
-8,22,DOM,7,Niverka Dharlenis Marte Frica,1,0,0,1,3,0,7
-9,22,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-10,22,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,2,0,3
-11,22,DOM,8,Candida Estefany Arias Perez,0,0,0,0,1,0,0
-12,22,DOM,17,Gina Altagracia Mambru Casilla,0,0,1,0,0,0,1
-13,22,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,26,DOM,18,Bethania De La Cruz De Peña,24,18,45,3,5,3,18
-1,26,DOM,20,Brayelin Elizabeth Martinez,22,20,56,1,5,1,12
-2,26,DOM,3,Lisvel Elisa Eve Mejia,8,6,14,1,17,1,16
-3,26,DOM,14,Prisilla Rivera Brens,8,8,21,0,3,0,17
-4,26,DOM,23,Gaila Ceneida Gonzalez Lopez,4,3,7,1,4,0,0
-5,26,DOM,8,Candida Estefany Arias Perez,3,0,7,3,10,0,9
-6,26,DOM,7,Niverka Dharlenis Marte Frica,2,2,5,0,9,0,16
-7,26,DOM,21,Jineiry Martinez,2,2,5,0,3,0,6
-8,26,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,1,0,0
-9,26,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-10,26,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,1
-11,26,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
-12,26,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-13,26,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,32,DOM,18,Bethania De La Cruz De Peña,16,12,22,1,7,3,13
-1,32,DOM,20,Brayelin Elizabeth Martinez,14,13,27,1,6,0,7
-2,32,DOM,14,Prisilla Rivera Brens,9,9,26,0,6,0,20
-3,32,DOM,1,Annerys Victoria Vargas Valdez,8,3,8,4,18,1,9
-4,32,DOM,3,Lisvel Elisa Eve Mejia,7,4,10,2,12,1,13
-5,32,DOM,7,Niverka Dharlenis Marte Frica,1,1,2,0,2,0,10
-6,32,DOM,16,Yonkaira Paola Peña Isabel,1,1,1,0,0,0,0
-7,32,DOM,17,Gina Altagracia Mambru Casilla,1,1,2,0,0,0,1
-8,32,DOM,23,Gaila Ceneida Gonzalez Lopez,1,1,1,0,0,0,1
-9,32,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-10,32,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-11,32,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-12,32,DOM,21,Jineiry Martinez,0,0,0,0,0,0,0
-13,32,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,38,DOM,20,Brayelin Elizabeth Martinez,19,17,42,1,6,1,18
-1,38,DOM,18,Bethania De La Cruz De Peña,18,17,36,0,3,1,17
-2,38,DOM,14,Prisilla Rivera Brens,13,10,30,3,7,0,10
-3,38,DOM,21,Jineiry Martinez,9,7,21,2,12,0,9
-4,38,DOM,3,Lisvel Elisa Eve Mejia,7,5,13,2,9,0,13
-5,38,DOM,7,Niverka Dharlenis Marte Frica,2,2,5,0,8,0,14
-6,38,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
-7,38,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-8,38,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-9,38,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-10,38,DOM,16,Yonkaira Paola Peña Isabel,0,0,1,0,0,0,2
-11,38,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-12,38,DOM,23,Gaila Ceneida Gonzalez Lopez,0,0,3,0,2,0,0
-13,38,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,44,DOM,23,Gaila Ceneida Gonzalez Lopez,14,10,28,4,4,0,9
-1,44,DOM,20,Brayelin Elizabeth Martinez,8,7,18,1,5,0,6
-2,44,DOM,21,Jineiry Martinez,7,6,10,1,8,0,9
-3,44,DOM,3,Lisvel Elisa Eve Mejia,3,0,2,2,9,1,8
-4,44,DOM,18,Bethania De La Cruz De Peña,3,2,15,0,2,1,9
-5,44,DOM,16,Yonkaira Paola Peña Isabel,2,2,8,0,0,0,3
-6,44,DOM,8,Candida Estefany Arias Perez,1,0,0,0,1,1,3
-7,44,DOM,17,Gina Altagracia Mambru Casilla,1,0,2,1,1,0,1
-8,44,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
-9,44,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-10,44,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-11,44,DOM,7,Niverka Dharlenis Marte Frica,0,0,1,0,1,0,8
-12,44,DOM,14,Prisilla Rivera Brens,0,0,0,0,0,0,0
-13,44,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,50,DOM,20,Brayelin Elizabeth Martinez,26,24,40,1,6,1,11
-1,50,DOM,3,Lisvel Elisa Eve Mejia,11,7,13,4,14,0,14
-2,50,DOM,18,Bethania De La Cruz De Peña,10,7,21,1,7,2,10
-3,50,DOM,14,Prisilla Rivera Brens,7,7,22,0,6,0,14
-4,50,DOM,21,Jineiry Martinez,6,5,9,1,15,0,7
-5,50,DOM,7,Niverka Dharlenis Marte Frica,1,0,3,1,3,0,20
-6,50,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
-7,50,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-8,50,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-9,50,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-10,50,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
-11,50,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-12,50,DOM,23,Gaila Ceneida Gonzalez Lopez,0,0,1,0,1,0,0
-13,50,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,56,DOM,20,Brayelin Elizabeth Martinez,26,22,46,4,9,0,13
-1,56,DOM,18,Bethania De La Cruz De Peña,17,13,32,3,8,1,26
-2,56,DOM,21,Jineiry Martinez,11,10,18,1,20,0,11
-3,56,DOM,3,Lisvel Elisa Eve Mejia,10,7,12,3,8,0,19
-4,56,DOM,14,Prisilla Rivera Brens,6,4,22,2,9,0,22
-5,56,DOM,7,Niverka Dharlenis Marte Frica,4,3,5,1,17,0,13
-6,56,DOM,23,Gaila Ceneida Gonzalez Lopez,4,3,4,1,2,0,1
-7,56,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,1,0,0
-8,56,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-9,56,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-10,56,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-11,56,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,1,0,3
-12,56,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-13,56,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,62,DOM,18,Bethania De La Cruz De Peña,21,14,33,3,13,4,20
-1,62,DOM,20,Brayelin Elizabeth Martinez,20,17,36,3,9,0,18
-2,62,DOM,23,Gaila Ceneida Gonzalez Lopez,16,11,33,3,9,2,20
-3,62,DOM,21,Jineiry Martinez,12,9,23,2,12,1,11
-4,62,DOM,3,Lisvel Elisa Eve Mejia,11,6,18,5,19,0,12
-5,62,DOM,7,Niverka Dharlenis Marte Frica,1,0,3,1,9,0,13
-6,62,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,2,0,0
-7,62,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
-8,62,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
-9,62,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
-10,62,DOM,14,Prisilla Rivera Brens,0,0,0,0,0,0,2
-11,62,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
-12,62,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
-13,62,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
-0,6,JPN,2,Sarina Koga,28,26,75,1,9,1,16
-1,6,JPN,7,Yuki Ishii,21,21,49,0,10,0,16
-2,6,JPN,4,Risa Shinnabe,12,11,23,0,4,1,16
-3,6,JPN,5,Erika Shinomiya,9,5,10,4,17,0,15
-4,6,JPN,13,Mai Okumura,7,6,8,0,22,1,12
-5,6,JPN,21,Miwako Osanai,6,5,13,1,1,0,2
-6,6,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-7,6,JPN,6,Haruka Miyashita,0,0,0,0,0,0,1
-8,6,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
-9,6,JPN,12,Miya Sato,0,0,2,0,4,0,14
-10,6,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-11,6,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-12,6,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
-13,6,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,6
-0,12,JPN,7,Yuki Ishii,28,24,59,1,8,3,20
-1,12,JPN,28,Mayu Ishikawa,20,19,44,0,2,1,17
-2,12,JPN,4,Risa Shinnabe,9,9,27,0,1,0,11
-3,12,JPN,5,Erika Shinomiya,8,6,10,1,17,1,16
-4,12,JPN,13,Mai Okumura,5,2,13,3,23,0,8
-5,12,JPN,12,Miya Sato,1,0,2,0,6,1,14
-6,12,JPN,2,Sarina Koga,0,0,8,0,0,0,0
-7,12,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-8,12,JPN,6,Haruka Miyashita,0,0,0,0,0,0,3
-9,12,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
-10,12,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-11,12,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-12,12,JPN,21,Miwako Osanai,0,0,0,0,0,0,1
-13,12,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
-0,18,JPN,28,Mayu Ishikawa,17,16,39,1,4,0,17
-1,18,JPN,7,Yuki Ishii,15,14,32,0,1,1,10
-2,18,JPN,4,Risa Shinnabe,11,11,30,0,7,0,11
-3,18,JPN,5,Erika Shinomiya,8,6,12,1,19,1,14
-4,18,JPN,2,Sarina Koga,7,7,25,0,0,0,3
-5,18,JPN,24,Aika Akutagawa,6,4,9,1,10,1,7
-6,18,JPN,3,Nana Iwasaka,4,3,6,0,5,1,9
-7,18,JPN,21,Miwako Osanai,4,4,8,0,2,0,0
-8,18,JPN,12,Miya Sato,2,0,2,0,8,2,16
-9,18,JPN,6,Haruka Miyashita,0,0,0,0,0,0,4
-10,18,JPN,11,Yurie Nabeya,0,0,0,0,0,0,1
-11,18,JPN,13,Mai Okumura,0,0,0,0,0,0,0
-12,18,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-13,18,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-0,24,JPN,2,Sarina Koga,12,8,31,1,3,3,11
-1,24,JPN,7,Yuki Ishii,12,11,24,0,3,1,17
-2,24,JPN,21,Miwako Osanai,10,9,21,0,7,1,11
-3,24,JPN,24,Aika Akutagawa,7,5,11,1,10,1,10
-4,24,JPN,13,Mai Okumura,6,2,7,3,11,1,9
-5,24,JPN,11,Yurie Nabeya,4,4,4,0,1,0,1
-6,24,JPN,6,Haruka Miyashita,1,0,0,0,0,1,7
-7,24,JPN,12,Miya Sato,1,1,2,0,2,0,7
-8,24,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-9,24,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
-10,24,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
-11,24,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-12,24,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-13,24,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,1
-0,30,JPN,4,Risa Shinnabe,8,7,13,1,3,0,11
-1,30,JPN,28,Mayu Ishikawa,7,7,15,0,0,0,2
-2,30,JPN,7,Yuki Ishii,6,6,32,0,4,0,8
-3,30,JPN,2,Sarina Koga,5,5,18,0,0,0,4
-4,30,JPN,5,Erika Shinomiya,4,3,10,0,7,1,8
-5,30,JPN,3,Nana Iwasaka,2,1,6,1,8,0,7
-6,30,JPN,21,Miwako Osanai,2,2,5,0,0,0,1
-7,30,JPN,11,Yurie Nabeya,1,1,7,0,1,0,2
-8,30,JPN,6,Haruka Miyashita,0,0,0,0,0,0,0
-9,30,JPN,12,Miya Sato,0,0,0,0,3,0,3
-10,30,JPN,13,Mai Okumura,0,0,0,0,0,0,0
-11,30,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-12,30,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-13,30,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
-0,36,JPN,28,Mayu Ishikawa,23,21,59,1,3,1,17
-1,36,JPN,7,Yuki Ishii,21,20,55,0,9,1,18
-2,36,JPN,4,Risa Shinnabe,15,13,35,1,7,1,13
-3,36,JPN,5,Erika Shinomiya,11,9,20,2,16,0,15
-4,36,JPN,13,Mai Okumura,4,3,9,1,9,0,14
-5,36,JPN,21,Miwako Osanai,4,4,8,0,2,0,0
-6,36,JPN,12,Miya Sato,1,1,1,0,8,0,16
-7,36,JPN,2,Sarina Koga,0,0,0,0,0,0,0
-8,36,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-9,36,JPN,6,Haruka Miyashita,0,0,0,0,0,0,7
-10,36,JPN,11,Yurie Nabeya,0,0,0,0,0,0,4
-11,36,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-12,36,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-13,36,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
-0,42,JPN,2,Sarina Koga,13,12,25,1,3,0,7
-1,42,JPN,21,Miwako Osanai,13,13,26,0,4,0,9
-2,42,JPN,7,Yuki Ishii,11,10,25,0,2,1,13
-3,42,JPN,24,Aika Akutagawa,7,6,12,0,6,1,6
-4,42,JPN,11,Yurie Nabeya,5,5,11,0,0,0,3
-5,42,JPN,3,Nana Iwasaka,4,3,8,1,6,0,12
-6,42,JPN,28,Mayu Ishikawa,4,3,6,0,1,1,8
-7,42,JPN,13,Mai Okumura,3,2,5,1,5,0,4
-8,42,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
-9,42,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
-10,42,JPN,6,Haruka Miyashita,0,0,0,0,0,0,3
-11,42,JPN,12,Miya Sato,0,0,1,0,4,0,9
-12,42,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-13,42,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-0,48,JPN,7,Yuki Ishii,12,11,42,1,10,0,7
-1,48,JPN,4,Risa Shinnabe,8,8,27,0,4,0,9
-2,48,JPN,13,Mai Okumura,8,6,13,1,11,1,12
-3,48,JPN,28,Mayu Ishikawa,8,8,37,0,2,0,8
-4,48,JPN,2,Sarina Koga,5,4,17,1,1,0,2
-5,48,JPN,5,Erika Shinomiya,5,3,8,1,14,1,12
-6,48,JPN,12,Miya Sato,2,1,4,1,4,0,8
-7,48,JPN,21,Miwako Osanai,1,1,2,0,0,0,0
-8,48,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-9,48,JPN,6,Haruka Miyashita,0,0,0,0,0,0,1
-10,48,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
-11,48,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-12,48,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-13,48,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
-0,54,JPN,7,Yuki Ishii,19,19,40,0,4,0,14
-1,54,JPN,11,Yurie Nabeya,18,14,40,1,2,3,21
-2,54,JPN,13,Mai Okumura,13,7,9,6,23,0,14
-3,54,JPN,24,Aika Akutagawa,13,10,20,1,16,2,17
-4,54,JPN,4,Risa Shinnabe,8,5,20,3,8,0,17
-5,54,JPN,2,Sarina Koga,6,5,24,0,0,1,7
-6,54,JPN,16,Ai Kurogo,3,3,7,0,2,0,0
-7,54,JPN,12,Miya Sato,1,1,2,0,4,0,13
-8,54,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-9,54,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
-10,54,JPN,6,Haruka Miyashita,0,0,0,0,0,0,4
-11,54,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-12,54,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-13,54,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,0
-0,60,JPN,2,Sarina Koga,18,17,35,1,6,0,9
-1,60,JPN,21,Miwako Osanai,15,15,25,0,7,0,7
-2,60,JPN,11,Yurie Nabeya,14,12,23,0,2,2,15
-3,60,JPN,24,Aika Akutagawa,6,5,9,1,9,0,7
-4,60,JPN,16,Ai Kurogo,4,4,9,0,1,0,0
-5,60,JPN,3,Nana Iwasaka,3,1,5,2,11,0,15
-6,60,JPN,12,Miya Sato,3,0,1,1,6,2,14
-7,60,JPN,28,Mayu Ishikawa,1,1,1,0,0,0,0
-8,60,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
-9,60,JPN,6,Haruka Miyashita,0,0,0,0,0,0,8
-10,60,JPN,7,Yuki Ishii,0,0,0,0,0,0,0
-11,60,JPN,13,Mai Okumura,0,0,0,0,0,0,0
-12,60,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-13,60,JPN,18,Akane Moriya,0,0,0,0,0,0,0
-0,66,JPN,7,Yuki Ishii,25,22,56,1,8,2,15
-1,66,JPN,4,Risa Shinnabe,19,17,35,2,12,0,10
-2,66,JPN,11,Yurie Nabeya,10,9,39,0,1,1,23
-3,66,JPN,28,Mayu Ishikawa,10,10,24,0,3,0,2
-4,66,JPN,24,Aika Akutagawa,9,5,16,1,24,3,18
-5,66,JPN,13,Mai Okumura,4,2,8,1,16,1,15
-6,66,JPN,16,Ai Kurogo,4,4,12,0,3,0,0
-7,66,JPN,12,Miya Sato,3,2,2,0,3,1,12
-8,66,JPN,6,Haruka Miyashita,1,0,0,0,0,1,5
-9,66,JPN,2,Sarina Koga,0,0,0,0,0,0,0
-10,66,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
-11,66,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
-12,66,JPN,14,Mako Kobata,0,0,0,0,0,0,0
-13,66,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+Match Num,Team,Number,Name,Points Scored,Attacks Won,Attacks Attempted,Blocks Won,Blocks Attempted,Serves Won,Serves Attempted
+1,USA,11,Andrea Drews,15,12,22,1,12,2,10
+1,USA,10,Jordan Larson,14,10,23,1,3,3,15
+1,USA,24,Chiaka Ogbogu,12,9,11,3,15,0,9
+1,USA,23,Kelsey Robinson,11,10,19,0,1,1,10
+1,USA,22,Haleigh Washington,3,3,5,0,4,0,8
+1,USA,25,Karsta Lowe,3,3,4,0,1,0,0
+1,USA,2,Jordyn Poulter,2,0,1,1,3,1,19
+1,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+1,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+1,USA,7,Lauren Carlini,0,0,0,0,0,0,2
+1,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,0
+1,USA,15,Kimberly Hill,0,0,0,0,0,0,0
+1,USA,17,Megan Courtney,0,0,0,0,0,0,0
+1,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+9,USA,22,Haleigh Washington,16,11,19,5,18,0,14
+9,USA,23,Kelsey Robinson,16,13,22,2,3,1,18
+9,USA,25,Karsta Lowe,16,13,21,2,5,1,10
+9,USA,10,Jordan Larson,12,11,24,0,4,1,18
+9,USA,24,Chiaka Ogbogu,12,8,14,4,19,0,11
+9,USA,11,Andrea Drews,3,3,10,0,1,0,3
+9,USA,2,Jordyn Poulter,2,0,1,2,8,0,16
+9,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+9,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+9,USA,7,Lauren Carlini,0,0,0,0,0,0,0
+9,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,7
+9,USA,15,Kimberly Hill,0,0,0,0,0,0,0
+9,USA,17,Megan Courtney,0,0,0,0,0,0,0
+9,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+15,USA,25,Karsta Lowe,22,20,44,1,7,1,15
+15,USA,14,Michelle Bartsch-Hackley,21,14,34,5,13,2,15
+15,USA,6,Tetori Dixon,12,7,12,4,24,1,19
+15,USA,15,Kimberly Hill,10,10,25,0,6,0,14
+15,USA,19,Hannah Tapp,9,7,14,0,13,2,15
+15,USA,7,Lauren Carlini,5,2,3,3,13,0,14
+15,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
+15,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+15,USA,10,Jordan Larson,0,0,0,0,0,0,0
+15,USA,11,Andrea Drews,0,0,0,0,0,0,0
+15,USA,17,Megan Courtney,0,0,0,0,0,0,0
+15,USA,22,Haleigh Washington,0,0,0,0,0,0,0
+15,USA,23,Kelsey Robinson,0,0,0,0,0,0,0
+15,USA,24,Chiaka Ogbogu,0,0,0,0,0,0,0
+21,USA,23,Kelsey Robinson,16,16,26,0,1,0,9
+21,USA,10,Jordan Larson,14,9,19,1,7,4,17
+21,USA,11,Andrea Drews,13,11,24,1,5,1,10
+21,USA,22,Haleigh Washington,6,5,8,1,4,0,11
+21,USA,2,Jordyn Poulter,5,1,1,2,5,2,16
+21,USA,24,Chiaka Ogbogu,3,3,12,0,18,0,8
+21,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+21,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+21,USA,7,Lauren Carlini,0,0,0,0,0,0,0
+21,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,1
+21,USA,15,Kimberly Hill,0,0,0,0,0,0,1
+21,USA,17,Megan Courtney,0,0,0,0,0,0,0
+21,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+21,USA,25,Karsta Lowe,0,0,0,0,0,0,0
+29,USA,23,Kelsey Robinson,15,14,31,1,3,0,9
+29,USA,11,Andrea Drews,14,12,27,2,12,0,6
+29,USA,24,Chiaka Ogbogu,12,6,8,4,20,2,10
+29,USA,22,Haleigh Washington,10,9,13,1,9,0,6
+29,USA,10,Jordan Larson,8,8,18,0,0,0,10
+29,USA,2,Jordyn Poulter,1,0,0,0,3,1,22
+29,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+29,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+29,USA,7,Lauren Carlini,0,0,0,0,0,0,0
+29,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,6
+29,USA,15,Kimberly Hill,0,0,0,0,0,0,4
+29,USA,17,Megan Courtney,0,0,0,0,0,0,0
+29,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+29,USA,25,Karsta Lowe,0,0,0,0,0,0,0
+36,USA,14,Michelle Bartsch-Hackley,30,26,46,3,7,1,18
+36,USA,25,Karsta Lowe,18,17,37,1,9,0,5
+36,USA,24,Chiaka Ogbogu,17,9,15,8,30,0,13
+36,USA,23,Kelsey Robinson,14,13,41,1,5,0,17
+36,USA,22,Haleigh Washington,9,5,13,3,19,1,15
+36,USA,11,Andrea Drews,4,4,15,0,8,0,6
+36,USA,2,Jordyn Poulter,2,1,2,1,6,0,28
+36,USA,15,Kimberly Hill,1,1,5,0,0,0,5
+36,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+36,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+36,USA,7,Lauren Carlini,0,0,0,0,0,0,0
+36,USA,10,Jordan Larson,0,0,0,0,0,0,3
+36,USA,17,Megan Courtney,0,0,0,0,0,0,0
+36,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+40,USA,10,Jordan Larson,10,9,28,1,6,0,12
+40,USA,25,Karsta Lowe,9,8,18,1,6,0,4
+40,USA,24,Chiaka Ogbogu,7,5,10,2,4,0,5
+40,USA,11,Andrea Drews,5,5,12,0,2,0,3
+40,USA,22,Haleigh Washington,5,4,11,1,6,0,6
+40,USA,23,Kelsey Robinson,5,5,17,0,1,0,5
+40,USA,14,Michelle Bartsch-Hackley,3,3,11,0,0,0,2
+40,USA,2,Jordyn Poulter,1,0,2,1,6,0,6
+40,USA,6,Tetori Dixon,1,1,1,0,3,0,1
+40,USA,7,Lauren Carlini,1,0,0,0,1,1,9
+40,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+40,USA,15,Kimberly Hill,0,0,0,0,0,0,3
+40,USA,17,Megan Courtney,0,0,0,0,0,0,0
+40,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+44,USA,11,Andrea Drews,23,19,30,2,8,2,12
+44,USA,24,Chiaka Ogbogu,12,8,17,4,10,0,7
+44,USA,14,Michelle Bartsch-Hackley,11,9,26,1,4,1,9
+44,USA,22,Haleigh Washington,8,3,8,2,6,3,14
+44,USA,10,Jordan Larson,4,2,11,1,7,1,12
+44,USA,23,Kelsey Robinson,4,3,5,0,0,1,5
+44,USA,7,Lauren Carlini,1,0,3,1,2,0,13
+44,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
+44,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+44,USA,6,Tetori Dixon,0,0,0,0,0,0,0
+44,USA,15,Kimberly Hill,0,0,2,0,1,0,1
+44,USA,17,Megan Courtney,0,0,0,0,0,0,0
+44,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+44,USA,25,Karsta Lowe,0,0,0,0,0,0,0
+53,USA,23,Kelsey Robinson,26,21,42,1,8,4,23
+53,USA,11,Andrea Drews,22,19,45,1,11,2,13
+53,USA,10,Jordan Larson,17,16,34,1,6,0,15
+53,USA,22,Haleigh Washington,9,3,9,4,18,2,16
+53,USA,6,Tetori Dixon,4,4,8,0,7,0,8
+53,USA,2,Jordyn Poulter,2,1,5,0,7,1,22
+53,USA,24,Chiaka Ogbogu,2,1,5,0,6,1,7
+53,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+53,USA,7,Lauren Carlini,0,0,0,0,0,0,0
+53,USA,14,Michelle Bartsch-Hackley,0,0,0,0,0,0,1
+53,USA,15,Kimberly Hill,0,0,0,0,0,0,0
+53,USA,17,Megan Courtney,0,0,0,0,0,0,0
+53,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+53,USA,25,Karsta Lowe,0,0,0,0,0,0,0
+57,USA,25,Karsta Lowe,18,14,22,3,8,1,13
+57,USA,14,Michelle Bartsch-Hackley,13,11,25,2,9,0,9
+57,USA,19,Hannah Tapp,13,8,13,4,12,1,7
+57,USA,6,Tetori Dixon,10,7,10,2,11,1,14
+57,USA,15,Kimberly Hill,8,7,18,1,3,0,7
+57,USA,7,Lauren Carlini,3,1,2,1,3,1,23
+57,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
+57,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+57,USA,10,Jordan Larson,0,0,0,0,0,0,0
+57,USA,11,Andrea Drews,0,0,0,0,0,0,0
+57,USA,17,Megan Courtney,0,0,0,0,0,0,0
+57,USA,22,Haleigh Washington,0,0,0,0,0,0,0
+57,USA,23,Kelsey Robinson,0,0,0,0,0,0,0
+57,USA,24,Chiaka Ogbogu,0,0,0,0,0,0,0
+61,USA,11,Andrea Drews,24,20,40,2,12,2,13
+61,USA,24,Chiaka Ogbogu,16,8,13,7,22,1,8
+61,USA,14,Michelle Bartsch-Hackley,12,9,19,0,6,3,25
+61,USA,23,Kelsey Robinson,9,8,27,1,4,0,11
+61,USA,7,Lauren Carlini,2,1,1,1,6,0,17
+61,USA,22,Haleigh Washington,2,2,7,0,6,0,6
+61,USA,2,Jordyn Poulter,0,0,0,0,0,0,0
+61,USA,4,Justine Wong-Orantes,0,0,0,0,0,0,0
+61,USA,6,Tetori Dixon,0,0,0,0,3,0,4
+61,USA,10,Jordan Larson,0,0,3,0,0,0,0
+61,USA,15,Kimberly Hill,0,0,0,0,0,0,6
+61,USA,17,Megan Courtney,0,0,0,0,0,0,0
+61,USA,19,Hannah Tapp,0,0,0,0,0,0,0
+61,USA,25,Karsta Lowe,0,0,0,0,0,0,0
+1,KEN,5,Sharon Chepchumba Kiprono,11,11,27,0,3,0,8
+1,KEN,10,Noel Murambi,6,4,13,1,5,1,6
+1,KEN,14,Mercy Moim,6,5,17,1,2,0,12
+1,KEN,15,Lorine Chebet Kaei,5,3,8,2,5,0,3
+1,KEN,7,Janet Wanja,2,2,3,0,1,0,7
+1,KEN,8,Trizah Atuka,2,2,7,0,8,0,2
+1,KEN,19,Edith Mukuvilani,2,2,4,0,2,0,4
+1,KEN,3,Violet Makuto,1,0,3,0,1,1,4
+1,KEN,1,Jane Wacu Wairimu,0,0,0,0,1,0,3
+1,KEN,4,Leonida Kasaya,0,0,0,0,0,0,1
+1,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+1,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+1,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+1,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+7,KEN,14,Mercy Moim,8,6,17,2,4,0,10
+7,KEN,3,Violet Makuto,7,4,9,1,1,2,8
+7,KEN,5,Sharon Chepchumba Kiprono,6,6,18,0,0,0,4
+7,KEN,4,Leonida Kasaya,5,4,8,1,3,0,8
+7,KEN,8,Trizah Atuka,5,4,14,1,6,0,5
+7,KEN,1,Jane Wacu Wairimu,1,1,1,0,0,0,3
+7,KEN,7,Janet Wanja,1,0,1,0,0,1,4
+7,KEN,10,Noel Murambi,1,1,7,0,0,0,1
+7,KEN,19,Edith Mukuvilani,1,1,5,0,4,0,2
+7,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+7,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+7,KEN,15,Lorine Chebet Kaei,0,0,0,0,1,0,3
+7,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+7,KEN,18,Emmaculate Chemtai,0,0,4,0,0,0,2
+13,KEN,5,Sharon Chepchumba Kiprono,8,7,26,1,6,0,3
+13,KEN,19,Edith Mukuvilani,7,5,9,2,11,0,4
+13,KEN,14,Mercy Moim,5,4,19,1,5,0,6
+13,KEN,4,Leonida Kasaya,4,4,15,0,1,0,3
+13,KEN,3,Violet Makuto,2,2,4,0,2,0,5
+13,KEN,8,Trizah Atuka,2,1,6,1,4,0,4
+13,KEN,10,Noel Murambi,2,2,3,0,1,0,4
+13,KEN,15,Lorine Chebet Kaei,1,1,4,0,2,0,1
+13,KEN,18,Emmaculate Chemtai,1,0,4,0,0,1,2
+13,KEN,1,Jane Wacu Wairimu,0,0,0,0,4,0,5
+13,KEN,7,Janet Wanja,0,0,0,0,0,0,3
+13,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+13,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,3
+13,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+23,KEN,14,Mercy Moim,9,7,27,2,2,0,8
+23,KEN,5,Sharon Chepchumba Kiprono,8,7,24,0,2,1,7
+23,KEN,19,Edith Mukuvilani,8,7,12,1,17,0,9
+23,KEN,4,Leonida Kasaya,7,7,18,0,4,0,4
+23,KEN,8,Trizah Atuka,4,4,11,0,13,0,9
+23,KEN,10,Noel Murambi,4,3,15,1,2,0,4
+23,KEN,3,Violet Makuto,1,0,6,1,1,0,2
+23,KEN,1,Jane Wacu Wairimu,0,0,4,0,3,0,4
+23,KEN,7,Janet Wanja,0,0,3,0,1,0,5
+23,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+23,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+23,KEN,15,Lorine Chebet Kaei,0,0,0,0,2,0,0
+23,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+23,KEN,18,Emmaculate Chemtai,0,0,1,0,1,0,0
+27,KEN,5,Sharon Chepchumba Kiprono,10,10,21,0,8,0,4
+27,KEN,15,Lorine Chebet Kaei,7,5,12,1,9,1,7
+27,KEN,4,Leonida Kasaya,6,6,18,0,5,0,7
+27,KEN,14,Mercy Moim,6,5,12,1,3,0,5
+27,KEN,7,Janet Wanja,4,3,4,0,0,1,5
+27,KEN,19,Edith Mukuvilani,2,2,9,0,4,0,8
+27,KEN,1,Jane Wacu Wairimu,1,0,1,0,0,1,5
+27,KEN,3,Violet Makuto,1,1,2,0,0,0,2
+27,KEN,10,Noel Murambi,1,1,6,0,0,0,1
+27,KEN,8,Trizah Atuka,0,0,2,0,0,0,2
+27,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+27,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,3
+27,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+27,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+32,KEN,4,Leonida Kasaya,12,12,27,0,2,0,5
+32,KEN,5,Sharon Chepchumba Kiprono,9,7,20,0,1,2,7
+32,KEN,14,Mercy Moim,6,6,15,0,3,0,6
+32,KEN,3,Violet Makuto,5,4,8,0,1,1,6
+32,KEN,15,Lorine Chebet Kaei,4,1,7,2,6,1,7
+32,KEN,19,Edith Mukuvilani,4,1,9,3,10,0,4
+32,KEN,10,Noel Murambi,2,2,14,0,3,0,5
+32,KEN,7,Janet Wanja,1,0,0,0,1,1,6
+32,KEN,1,Jane Wacu Wairimu,0,0,0,0,1,0,5
+32,KEN,8,Trizah Atuka,0,0,5,0,1,0,5
+32,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+32,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+32,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+32,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+42,KEN,19,Edith Mukuvilani,13,11,17,1,13,1,11
+42,KEN,4,Leonida Kasaya,11,10,30,1,3,0,10
+42,KEN,5,Sharon Chepchumba Kiprono,7,5,20,2,9,0,3
+42,KEN,14,Mercy Moim,7,4,13,3,4,0,6
+42,KEN,3,Violet Makuto,4,3,7,1,9,0,8
+42,KEN,1,Jane Wacu Wairimu,2,2,2,0,1,0,7
+42,KEN,10,Noel Murambi,2,2,6,0,1,0,4
+42,KEN,8,Trizah Atuka,1,1,2,0,1,0,1
+42,KEN,7,Janet Wanja,0,0,1,0,0,0,5
+42,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+42,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+42,KEN,15,Lorine Chebet Kaei,0,0,0,0,1,0,2
+42,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+42,KEN,18,Emmaculate Chemtai,0,0,3,0,4,0,4
+46,KEN,5,Sharon Chepchumba Kiprono,10,8,23,1,3,1,6
+46,KEN,4,Leonida Kasaya,7,7,23,0,3,0,3
+46,KEN,14,Mercy Moim,7,5,16,0,0,2,9
+46,KEN,10,Noel Murambi,4,4,11,0,1,0,3
+46,KEN,19,Edith Mukuvilani,3,3,8,0,6,0,4
+46,KEN,3,Violet Makuto,1,1,5,0,3,0,4
+46,KEN,13,Carolyne Sirengo,1,1,1,0,0,0,0
+46,KEN,1,Jane Wacu Wairimu,0,0,0,0,0,0,4
+46,KEN,7,Janet Wanja,0,0,1,0,0,0,4
+46,KEN,8,Trizah Atuka,0,0,1,0,1,0,1
+46,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+46,KEN,15,Lorine Chebet Kaei,0,0,2,0,0,0,2
+46,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+46,KEN,18,Emmaculate Chemtai,0,0,1,0,0,0,0
+49,KEN,5,Sharon Chepchumba Kiprono,10,10,18,0,5,0,7
+49,KEN,4,Leonida Kasaya,8,6,25,1,10,1,8
+49,KEN,8,Trizah Atuka,8,6,11,2,8,0,9
+49,KEN,19,Edith Mukuvilani,7,5,11,2,8,0,5
+49,KEN,7,Janet Wanja,2,0,0,0,2,2,8
+49,KEN,14,Mercy Moim,2,1,5,0,2,1,13
+49,KEN,1,Jane Wacu Wairimu,0,0,0,0,2,0,3
+49,KEN,3,Violet Makuto,0,0,0,0,0,0,1
+49,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+49,KEN,10,Noel Murambi,0,0,4,0,0,0,0
+49,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+49,KEN,15,Lorine Chebet Kaei,0,0,0,0,0,0,0
+49,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+49,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+59,KEN,4,Leonida Kasaya,10,10,25,0,2,0,11
+59,KEN,8,Trizah Atuka,8,5,14,0,7,3,13
+59,KEN,19,Edith Mukuvilani,8,7,19,1,11,0,9
+59,KEN,14,Mercy Moim,7,5,11,0,3,2,10
+59,KEN,5,Sharon Chepchumba Kiprono,5,5,14,0,2,0,6
+59,KEN,1,Jane Wacu Wairimu,2,2,3,0,1,0,8
+59,KEN,3,Violet Makuto,2,1,2,1,1,0,2
+59,KEN,7,Janet Wanja,0,0,0,0,1,0,1
+59,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+59,KEN,10,Noel Murambi,0,0,4,0,1,0,1
+59,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+59,KEN,15,Lorine Chebet Kaei,0,0,0,0,0,0,0
+59,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+59,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+65,KEN,14,Mercy Moim,19,15,23,3,6,1,12
+65,KEN,5,Sharon Chepchumba Kiprono,18,18,40,0,7,0,9
+65,KEN,8,Trizah Atuka,12,7,13,5,15,0,12
+65,KEN,19,Edith Mukuvilani,10,9,18,1,7,0,11
+65,KEN,10,Noel Murambi,7,5,17,1,6,1,17
+65,KEN,4,Leonida Kasaya,2,2,9,0,0,0,2
+65,KEN,1,Jane Wacu Wairimu,1,1,5,0,4,0,17
+65,KEN,15,Lorine Chebet Kaei,1,1,1,0,1,0,1
+65,KEN,3,Violet Makuto,0,0,2,0,1,0,6
+65,KEN,7,Janet Wanja,0,0,1,0,2,0,2
+65,KEN,9,Elizabeth Wanyama,0,0,0,0,0,0,0
+65,KEN,13,Carolyne Sirengo,0,0,0,0,0,0,0
+65,KEN,16,Agripina Khayesi Kundu,0,0,0,0,0,0,0
+65,KEN,18,Emmaculate Chemtai,0,0,0,0,0,0,0
+2,CMR,2,Christelle Tchoudjang Nana,9,8,21,0,5,1,8
+2,CMR,16,Estelle Adiana,5,4,8,1,3,0,3
+2,CMR,1,Stephanie Fotso Mogoung,4,1,7,3,11,0,5
+2,CMR,6,Laetitia Crescence Moma Bassoko,4,4,23,0,0,0,8
+2,CMR,10,Berthrade Simone Flore Bikatal,2,1,4,1,1,0,2
+2,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,2,3,0,2,0,7
+2,CMR,9,Honorine Djakao Gamkoua,1,0,2,1,1,0,2
+2,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+2,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+2,CMR,12,Abdoulkarim Fawziya,0,0,2,0,0,0,1
+2,CMR,14,Yolande Juliana Amana Guigolo,0,0,1,0,0,0,3
+2,CMR,15,Ezssi Emelda Piata,0,0,0,0,2,0,2
+2,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+8,CMR,16,Estelle Adiana,10,10,13,0,2,0,2
+8,CMR,6,Laetitia Crescence Moma Bassoko,9,8,21,0,5,1,6
+8,CMR,2,Christelle Tchoudjang Nana,8,5,17,3,4,0,7
+8,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,7,5,7,1,9,1,8
+8,CMR,10,Berthrade Simone Flore Bikatal,5,5,14,0,4,0,7
+8,CMR,1,Stephanie Fotso Mogoung,3,3,7,0,3,0,7
+8,CMR,9,Honorine Djakao Gamkoua,1,1,3,0,0,0,1
+8,CMR,14,Yolande Juliana Amana Guigolo,1,0,2,0,1,1,6
+8,CMR,15,Ezssi Emelda Piata,1,0,3,0,2,1,8
+8,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+8,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+8,CMR,12,Abdoulkarim Fawziya,0,0,0,0,0,0,0
+8,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+14,CMR,6,Laetitia Crescence Moma Bassoko,26,24,54,1,8,1,12
+14,CMR,1,Stephanie Fotso Mogoung,16,10,25,4,18,2,16
+14,CMR,2,Christelle Tchoudjang Nana,12,12,44,0,6,0,19
+14,CMR,10,Berthrade Simone Flore Bikatal,8,7,26,0,6,1,16
+14,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,8,5,9,2,14,1,17
+14,CMR,20,Ruth Manuela Marie Bibinbe,2,1,1,1,1,0,0
+14,CMR,12,Abdoulkarim Fawziya,1,1,2,0,0,0,0
+14,CMR,16,Estelle Adiana,1,1,5,0,1,0,1
+14,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+14,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,2,0,4
+14,CMR,14,Yolande Juliana Amana Guigolo,0,0,4,0,5,0,9
+14,CMR,15,Ezssi Emelda Piata,0,0,2,0,0,0,3
+14,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+24,CMR,6,Laetitia Crescence Moma Bassoko,16,16,38,0,4,0,9
+24,CMR,2,Christelle Tchoudjang Nana,7,6,19,1,6,0,12
+24,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,5,2,11,3,7,0,10
+24,CMR,10,Berthrade Simone Flore Bikatal,4,4,14,0,3,0,5
+24,CMR,15,Ezssi Emelda Piata,3,0,5,3,4,0,1
+24,CMR,1,Stephanie Fotso Mogoung,2,2,5,0,5,0,8
+24,CMR,12,Abdoulkarim Fawziya,2,2,8,0,1,0,2
+24,CMR,14,Yolande Juliana Amana Guigolo,1,0,0,0,3,1,5
+24,CMR,16,Estelle Adiana,1,1,5,0,2,0,1
+24,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+24,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+24,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,2,0,1
+24,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+24,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,1,0,1
+28,CMR,6,Laetitia Crescence Moma Bassoko,14,14,26,0,4,0,11
+28,CMR,2,Christelle Tchoudjang Nana,5,5,21,0,6,0,6
+28,CMR,12,Abdoulkarim Fawziya,5,4,12,1,5,0,7
+28,CMR,15,Ezssi Emelda Piata,5,4,8,1,8,0,9
+28,CMR,16,Estelle Adiana,4,2,4,0,1,2,5
+28,CMR,1,Stephanie Fotso Mogoung,2,2,4,0,4,0,3
+28,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,2,6,0,2,0,5
+28,CMR,14,Yolande Juliana Amana Guigolo,2,1,1,1,5,0,6
+28,CMR,9,Honorine Djakao Gamkoua,1,0,0,0,2,1,4
+28,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+28,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+28,CMR,10,Berthrade Simone Flore Bikatal,0,0,1,0,1,0,3
+28,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+28,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
+33,CMR,10,Berthrade Simone Flore Bikatal,10,9,13,1,5,0,5
+33,CMR,16,Estelle Adiana,9,8,22,0,3,1,7
+33,CMR,6,Laetitia Crescence Moma Bassoko,6,6,17,0,3,0,6
+33,CMR,1,Stephanie Fotso Mogoung,4,1,6,2,7,1,4
+33,CMR,14,Yolande Juliana Amana Guigolo,3,1,1,1,4,1,10
+33,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,4,1,3,1,11
+33,CMR,12,Abdoulkarim Fawziya,2,2,10,0,2,0,3
+33,CMR,15,Ezssi Emelda Piata,1,0,1,1,2,0,3
+33,CMR,2,Christelle Tchoudjang Nana,0,0,0,0,0,0,0
+33,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+33,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+33,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
+33,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+33,CMR,20,Ruth Manuela Marie Bibinbe,0,0,1,0,0,0,0
+39,CMR,6,Laetitia Crescence Moma Bassoko,14,14,29,0,12,0,7
+39,CMR,16,Estelle Adiana,8,6,21,0,3,2,11
+39,CMR,10,Berthrade Simone Flore Bikatal,6,5,15,1,3,0,7
+39,CMR,15,Ezssi Emelda Piata,4,2,5,1,6,1,4
+39,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,3,1,4,1,6
+39,CMR,14,Yolande Juliana Amana Guigolo,2,1,4,1,2,0,10
+39,CMR,20,Ruth Manuela Marie Bibinbe,2,2,2,0,0,0,1
+39,CMR,1,Stephanie Fotso Mogoung,1,1,9,0,5,0,5
+39,CMR,12,Abdoulkarim Fawziya,1,1,7,0,2,0,3
+39,CMR,2,Christelle Tchoudjang Nana,0,0,0,0,0,0,0
+39,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+39,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+39,CMR,9,Honorine Djakao Gamkoua,0,0,2,0,1,0,0
+39,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+45,CMR,6,Laetitia Crescence Moma Bassoko,24,23,54,1,9,0,14
+45,CMR,16,Estelle Adiana,15,13,36,2,13,0,9
+45,CMR,10,Berthrade Simone Flore Bikatal,13,13,23,0,9,0,17
+45,CMR,1,Stephanie Fotso Mogoung,11,7,13,3,22,1,10
+45,CMR,15,Ezssi Emelda Piata,9,8,13,1,13,0,12
+45,CMR,2,Christelle Tchoudjang Nana,5,3,7,1,2,1,5
+45,CMR,14,Yolande Juliana Amana Guigolo,4,1,4,2,9,1,23
+45,CMR,12,Abdoulkarim Fawziya,1,1,3,0,0,0,6
+45,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+45,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+45,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
+45,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,0,0,0,0,1,0,6
+45,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+45,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
+51,CMR,6,Laetitia Crescence Moma Bassoko,14,11,35,1,3,2,9
+51,CMR,2,Christelle Tchoudjang Nana,6,5,16,0,8,1,5
+51,CMR,12,Abdoulkarim Fawziya,3,1,9,1,5,1,4
+51,CMR,16,Estelle Adiana,3,3,9,0,1,0,3
+51,CMR,1,Stephanie Fotso Mogoung,2,1,6,1,3,0,5
+51,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,2,0,3,2,4,0,7
+51,CMR,14,Yolande Juliana Amana Guigolo,1,0,1,0,4,1,10
+51,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+51,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+51,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
+51,CMR,10,Berthrade Simone Flore Bikatal,0,0,6,0,1,0,2
+51,CMR,15,Ezssi Emelda Piata,0,0,3,0,3,0,2
+51,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+51,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
+57,CMR,6,Laetitia Crescence Moma Bassoko,7,7,31,0,3,0,6
+57,CMR,16,Estelle Adiana,6,4,18,0,10,2,6
+57,CMR,15,Ezssi Emelda Piata,5,4,11,0,7,1,8
+57,CMR,14,Yolande Juliana Amana Guigolo,4,2,2,0,4,2,10
+57,CMR,1,Stephanie Fotso Mogoung,3,2,6,1,6,0,3
+57,CMR,10,Berthrade Simone Flore Bikatal,2,2,5,0,2,0,1
+57,CMR,2,Christelle Tchoudjang Nana,0,0,6,0,3,0,4
+57,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+57,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+57,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
+57,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,0,0,0,0,0,0,2
+57,CMR,12,Abdoulkarim Fawziya,0,0,0,0,1,0,1
+57,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+57,CMR,20,Ruth Manuela Marie Bibinbe,0,0,0,0,0,0,0
+65,CMR,2,Christelle Tchoudjang Nana,23,20,40,3,7,0,16
+65,CMR,1,Stephanie Fotso Mogoung,11,7,19,4,13,0,9
+65,CMR,10,Berthrade Simone Flore Bikatal,10,8,14,2,4,0,10
+65,CMR,16,Estelle Adiana,8,8,15,0,3,0,13
+65,CMR,20,Ruth Manuela Marie Bibinbe,6,3,5,2,4,1,10
+65,CMR,6,Laetitia Crescence Moma Bassoko,2,2,16,0,3,0,4
+65,CMR,14,Yolande Juliana Amana Guigolo,2,0,2,1,4,1,17
+65,CMR,11,Adetutu Sherilyn Adedayo Oghale Bashorun,1,1,6,0,2,0,2
+65,CMR,12,Abdoulkarim Fawziya,1,1,6,0,0,0,2
+65,CMR,4,Raissa Nasser,0,0,0,0,0,0,0
+65,CMR,5,Paule Arielle Olomo,0,0,0,0,0,0,0
+65,CMR,9,Honorine Djakao Gamkoua,0,0,0,0,0,0,0
+65,CMR,15,Ezssi Emelda Piata,0,0,2,0,3,0,3
+65,CMR,18,Odette Ahirnidi Menkred,0,0,0,0,0,0,0
+2,RUS,6,Irina Koroleva,13,8,10,3,7,2,12
+2,RUS,8,Nataliya Goncharova,11,9,19,1,3,1,10
+2,RUS,16,Irina Voronkova,11,8,13,1,4,2,10
+2,RUS,18,Kseniia Parubets,9,7,12,0,3,2,10
+2,RUS,26,Anna Lazareva,4,3,5,0,1,1,6
+2,RUS,3,Ekaterina Efimova,3,1,7,2,6,0,12
+2,RUS,13,Evgeniya Startseva,2,1,2,1,1,0,4
+2,RUS,19,Mariia Khaletskaia,2,1,2,1,2,0,2
+2,RUS,7,Tatiana Romanova,1,1,2,0,1,0,3
+2,RUS,1,Angelina Lazarenko,0,0,1,0,0,0,2
+2,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+2,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+2,RUS,11,Margarita Kurilo,0,0,5,0,0,0,0
+2,RUS,25,Yulia Brovkina,0,0,0,0,0,0,2
+12,RUS,8,Nataliya Goncharova,31,28,57,3,9,0,15
+12,RUS,6,Irina Koroleva,20,15,19,5,23,0,17
+12,RUS,16,Irina Voronkova,15,12,27,0,8,3,20
+12,RUS,18,Kseniia Parubets,15,12,26,3,9,0,10
+12,RUS,3,Ekaterina Efimova,5,2,5,3,15,0,23
+12,RUS,13,Evgeniya Startseva,5,3,3,2,3,0,14
+12,RUS,7,Tatiana Romanova,1,0,0,0,0,1,6
+12,RUS,25,Yulia Brovkina,1,1,1,0,2,0,1
+12,RUS,26,Anna Lazareva,1,0,4,1,1,0,4
+12,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,1
+12,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+12,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+12,RUS,11,Margarita Kurilo,0,0,1,0,0,0,1
+12,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,0
+16,RUS,16,Irina Voronkova,11,11,20,0,6,0,8
+16,RUS,8,Nataliya Goncharova,10,10,25,0,5,0,6
+16,RUS,3,Ekaterina Efimova,7,4,7,3,12,0,7
+16,RUS,6,Irina Koroleva,6,3,8,3,8,0,9
+16,RUS,19,Mariia Khaletskaia,6,6,7,0,2,0,3
+16,RUS,18,Kseniia Parubets,5,5,17,0,2,0,7
+16,RUS,7,Tatiana Romanova,1,0,0,1,6,0,5
+16,RUS,13,Evgeniya Startseva,1,1,4,0,4,0,4
+16,RUS,26,Anna Lazareva,1,1,9,0,2,0,3
+16,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,0
+16,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+16,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+16,RUS,11,Margarita Kurilo,0,0,1,0,1,0,5
+16,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+20,RUS,8,Nataliya Goncharova,13,13,23,0,7,0,12
+20,RUS,16,Irina Voronkova,12,11,19,0,3,1,12
+20,RUS,18,Kseniia Parubets,11,9,20,0,3,2,11
+20,RUS,6,Irina Koroleva,10,5,9,3,12,2,11
+20,RUS,3,Ekaterina Efimova,5,2,5,2,6,1,12
+20,RUS,1,Angelina Lazarenko,3,1,1,2,3,0,2
+20,RUS,13,Evgeniya Startseva,3,1,1,2,8,0,9
+20,RUS,7,Tatiana Romanova,1,1,1,0,2,0,0
+20,RUS,26,Anna Lazareva,1,0,0,0,0,1,2
+20,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+20,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+20,RUS,11,Margarita Kurilo,0,0,0,0,0,0,1
+20,RUS,19,Mariia Khaletskaia,0,0,2,0,1,0,5
+20,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+26,RUS,8,Nataliya Goncharova,26,22,55,3,7,1,13
+26,RUS,18,Kseniia Parubets,21,20,37,0,4,1,19
+26,RUS,6,Irina Koroleva,12,9,17,3,27,0,15
+26,RUS,16,Irina Voronkova,12,10,30,2,8,0,19
+26,RUS,3,Ekaterina Efimova,11,4,6,5,16,2,10
+26,RUS,26,Anna Lazareva,6,4,8,0,1,2,3
+26,RUS,13,Evgeniya Startseva,3,2,4,1,2,0,11
+26,RUS,1,Angelina Lazarenko,2,2,4,0,8,0,8
+26,RUS,7,Tatiana Romanova,1,0,0,1,4,0,2
+26,RUS,19,Mariia Khaletskaia,1,1,2,0,1,0,5
+26,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+26,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+26,RUS,11,Margarita Kurilo,0,0,0,0,0,0,5
+26,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+35,RUS,8,Nataliya Goncharova,21,17,34,3,9,1,11
+35,RUS,18,Kseniia Parubets,18,17,30,0,2,1,15
+35,RUS,6,Irina Koroleva,16,13,19,3,21,0,12
+35,RUS,16,Irina Voronkova,10,8,22,1,4,1,11
+35,RUS,3,Ekaterina Efimova,7,3,7,3,16,1,25
+35,RUS,26,Anna Lazareva,2,2,4,0,2,0,2
+35,RUS,13,Evgeniya Startseva,1,0,1,1,5,0,13
+35,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,1
+35,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+35,RUS,7,Tatiana Romanova,0,0,0,0,1,0,0
+35,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+35,RUS,11,Margarita Kurilo,0,0,0,0,0,0,0
+35,RUS,19,Mariia Khaletskaia,0,0,2,0,4,0,4
+35,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+41,RUS,8,Nataliya Goncharova,12,10,25,1,6,1,10
+41,RUS,18,Kseniia Parubets,12,8,25,3,7,1,12
+41,RUS,6,Irina Koroleva,9,5,11,4,9,0,12
+41,RUS,3,Ekaterina Efimova,8,5,8,3,8,0,12
+41,RUS,16,Irina Voronkova,6,6,11,0,4,0,10
+41,RUS,13,Evgeniya Startseva,3,2,4,1,5,0,12
+41,RUS,26,Anna Lazareva,3,2,4,1,3,0,1
+41,RUS,19,Mariia Khaletskaia,2,1,5,1,4,0,1
+41,RUS,1,Angelina Lazarenko,1,1,2,0,4,0,1
+41,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+41,RUS,7,Tatiana Romanova,0,0,0,0,2,0,2
+41,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+41,RUS,11,Margarita Kurilo,0,0,0,0,0,0,0
+41,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+47,RUS,8,Nataliya Goncharova,15,13,34,2,5,0,15
+47,RUS,16,Irina Voronkova,13,9,27,3,11,1,7
+47,RUS,6,Irina Koroleva,12,7,9,4,19,1,9
+47,RUS,18,Kseniia Parubets,10,8,15,0,4,2,15
+47,RUS,3,Ekaterina Efimova,5,2,5,2,8,1,11
+47,RUS,7,Tatiana Romanova,2,0,0,1,7,1,8
+47,RUS,1,Angelina Lazarenko,0,0,0,0,0,0,4
+47,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+47,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+47,RUS,11,Margarita Kurilo,0,0,1,0,0,0,2
+47,RUS,13,Evgeniya Startseva,0,0,0,0,3,0,2
+47,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,2
+47,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+47,RUS,26,Anna Lazareva,0,0,0,0,0,0,0
+53,RUS,8,Nataliya Goncharova,23,21,47,1,3,1,18
+53,RUS,16,Irina Voronkova,18,14,27,3,7,1,12
+53,RUS,6,Irina Koroleva,17,10,15,6,15,1,16
+53,RUS,18,Kseniia Parubets,8,8,23,0,3,0,6
+53,RUS,26,Anna Lazareva,7,6,11,1,3,0,10
+53,RUS,1,Angelina Lazarenko,4,3,4,0,8,1,15
+53,RUS,3,Ekaterina Efimova,4,1,5,3,12,0,6
+53,RUS,7,Tatiana Romanova,1,0,1,1,3,0,6
+53,RUS,11,Margarita Kurilo,1,1,2,0,0,0,2
+53,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+53,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+53,RUS,13,Evgeniya Startseva,0,0,5,0,8,0,9
+53,RUS,19,Mariia Khaletskaia,0,0,0,0,0,0,1
+53,RUS,25,Yulia Brovkina,0,0,0,0,0,0,2
+59,RUS,8,Nataliya Goncharova,25,21,30,4,8,0,13
+59,RUS,6,Irina Koroleva,10,5,13,5,16,0,7
+59,RUS,18,Kseniia Parubets,6,5,12,1,2,0,17
+59,RUS,26,Anna Lazareva,6,5,16,1,5,0,5
+59,RUS,3,Ekaterina Efimova,5,1,4,4,10,0,9
+59,RUS,16,Irina Voronkova,3,3,4,0,1,0,6
+59,RUS,1,Angelina Lazarenko,1,0,0,0,0,1,4
+59,RUS,19,Mariia Khaletskaia,1,1,2,0,0,0,1
+59,RUS,25,Yulia Brovkina,1,0,0,1,1,0,0
+59,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+59,RUS,7,Tatiana Romanova,0,0,1,0,1,0,10
+59,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+59,RUS,11,Margarita Kurilo,0,0,1,0,2,0,1
+59,RUS,13,Evgeniya Startseva,0,0,0,0,0,0,0
+63,RUS,8,Nataliya Goncharova,22,20,61,2,5,0,12
+63,RUS,18,Kseniia Parubets,14,14,32,0,7,0,16
+63,RUS,16,Irina Voronkova,11,9,23,2,5,0,11
+63,RUS,6,Irina Koroleva,10,8,14,2,15,0,14
+63,RUS,3,Ekaterina Efimova,9,5,8,3,13,1,16
+63,RUS,7,Tatiana Romanova,3,1,1,2,7,0,11
+63,RUS,11,Margarita Kurilo,3,1,5,1,2,1,5
+63,RUS,19,Mariia Khaletskaia,1,0,0,0,0,1,3
+63,RUS,1,Angelina Lazarenko,0,0,0,0,1,0,2
+63,RUS,4,Daria Chikrizova,0,0,0,0,0,0,0
+63,RUS,9,Alla Galkina,0,0,0,0,0,0,0
+63,RUS,13,Evgeniya Startseva,0,0,1,0,0,0,1
+63,RUS,25,Yulia Brovkina,0,0,0,0,0,0,0
+63,RUS,26,Anna Lazareva,0,0,0,0,0,0,0
+3,ARG,4,Daniela Bulaich Simian,11,9,21,1,2,1,8
+3,ARG,26,Sol Piccolo,8,8,15,0,1,0,2
+3,ARG,3,Paula Yamila Nizetich,7,6,27,0,4,1,9
+3,ARG,11,Julieta Constanza Lazcano,5,4,11,1,10,0,7
+3,ARG,1,Elina Rodriguez,3,3,8,0,0,0,3
+3,ARG,5,Lucia Fresco,2,2,15,0,4,0,4
+3,ARG,8,Agnes Victoria Michel Tosi,1,1,3,0,9,0,5
+3,ARG,13,Bianca Farriol,1,1,1,0,2,0,3
+3,ARG,14,Victoria Mayer,1,1,1,0,0,0,11
+3,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+3,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+3,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
+3,ARG,24,Candela Sol Salinas,0,0,1,0,0,0,0
+3,ARG,30,Azul Benitez,0,0,0,0,0,0,1
+11,ARG,3,Paula Yamila Nizetich,9,7,20,0,1,2,11
+11,ARG,26,Sol Piccolo,9,9,19,0,1,0,4
+11,ARG,1,Elina Rodriguez,6,4,13,2,4,0,4
+11,ARG,4,Daniela Bulaich Simian,6,5,19,1,1,0,3
+11,ARG,5,Lucia Fresco,5,5,17,0,0,0,2
+11,ARG,11,Julieta Constanza Lazcano,4,4,12,0,13,0,7
+11,ARG,13,Bianca Farriol,4,2,2,2,6,0,3
+11,ARG,14,Victoria Mayer,2,1,4,1,4,0,8
+11,ARG,8,Agnes Victoria Michel Tosi,1,0,1,1,5,0,3
+11,ARG,23,Agostina Denisse Soria,1,1,9,0,0,0,2
+11,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+11,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+11,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+11,ARG,30,Azul Benitez,0,0,0,0,0,0,6
+15,ARG,5,Lucia Fresco,17,15,50,2,7,0,10
+15,ARG,1,Elina Rodriguez,14,13,26,0,4,1,13
+15,ARG,3,Paula Yamila Nizetich,11,9,24,1,5,1,10
+15,ARG,11,Julieta Constanza Lazcano,7,7,14,0,6,0,11
+15,ARG,13,Bianca Farriol,7,4,6,3,15,0,13
+15,ARG,26,Sol Piccolo,2,2,8,0,1,0,0
+15,ARG,4,Daniela Bulaich Simian,0,0,1,0,0,0,0
+15,ARG,8,Agnes Victoria Michel Tosi,0,0,2,0,2,0,1
+15,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+15,ARG,14,Victoria Mayer,0,0,3,0,1,0,17
+15,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+15,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
+15,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+15,ARG,30,Azul Benitez,0,0,0,0,0,0,0
+19,ARG,4,Daniela Bulaich Simian,16,15,29,1,6,0,7
+19,ARG,26,Sol Piccolo,15,12,28,2,7,1,11
+19,ARG,3,Paula Yamila Nizetich,14,11,30,0,2,3,16
+19,ARG,13,Bianca Farriol,9,4,12,4,22,1,13
+19,ARG,11,Julieta Constanza Lazcano,6,5,16,1,11,0,7
+19,ARG,1,Elina Rodriguez,5,5,16,0,2,0,8
+19,ARG,14,Victoria Mayer,5,2,2,3,10,0,19
+19,ARG,5,Lucia Fresco,2,2,9,0,0,0,1
+19,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
+19,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+19,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+19,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,3
+19,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+19,ARG,30,Azul Benitez,0,0,0,0,0,0,2
+27,ARG,5,Lucia Fresco,23,22,40,1,7,0,4
+27,ARG,4,Daniela Bulaich Simian,15,14,27,1,5,0,11
+27,ARG,3,Paula Yamila Nizetich,9,5,13,2,6,2,8
+27,ARG,13,Bianca Farriol,4,1,6,1,9,2,12
+27,ARG,14,Victoria Mayer,4,2,3,0,1,2,20
+27,ARG,8,Agnes Victoria Michel Tosi,3,2,3,1,7,0,8
+27,ARG,24,Candela Sol Salinas,1,1,1,0,1,0,0
+27,ARG,30,Azul Benitez,1,0,0,0,0,1,4
+27,ARG,1,Elina Rodriguez,0,0,0,0,0,0,0
+27,ARG,11,Julieta Constanza Lazcano,0,0,1,0,0,0,3
+27,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+27,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+27,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,4
+27,ARG,26,Sol Piccolo,0,0,0,0,0,0,0
+31,ARG,5,Lucia Fresco,23,23,46,0,9,0,6
+31,ARG,4,Daniela Bulaich Simian,14,13,34,0,5,1,15
+31,ARG,3,Paula Yamila Nizetich,8,7,19,0,4,1,10
+31,ARG,13,Bianca Farriol,7,3,9,4,19,0,7
+31,ARG,1,Elina Rodriguez,3,3,17,0,2,0,6
+31,ARG,23,Agostina Denisse Soria,2,1,2,1,2,0,2
+31,ARG,11,Julieta Constanza Lazcano,1,1,7,0,6,0,8
+31,ARG,26,Sol Piccolo,1,1,9,0,2,0,1
+31,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,1
+31,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+31,ARG,14,Victoria Mayer,0,0,3,0,7,0,13
+31,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+31,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+31,ARG,30,Azul Benitez,0,0,0,0,1,0,4
+41,ARG,3,Paula Yamila Nizetich,13,12,28,0,5,1,8
+41,ARG,1,Elina Rodriguez,5,5,23,0,2,0,7
+41,ARG,4,Daniela Bulaich Simian,5,5,14,0,1,0,5
+41,ARG,5,Lucia Fresco,5,5,16,0,3,0,3
+41,ARG,11,Julieta Constanza Lazcano,5,4,13,1,15,0,8
+41,ARG,14,Victoria Mayer,3,3,4,0,1,0,13
+41,ARG,26,Sol Piccolo,3,3,7,0,2,0,1
+41,ARG,13,Bianca Farriol,2,1,3,0,10,1,10
+41,ARG,24,Candela Sol Salinas,2,1,4,1,2,0,1
+41,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
+41,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+41,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+41,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
+41,ARG,30,Azul Benitez,0,0,0,0,0,0,3
+45,ARG,5,Lucia Fresco,31,28,67,0,3,3,18
+45,ARG,3,Paula Yamila Nizetich,15,11,34,0,8,4,15
+45,ARG,4,Daniela Bulaich Simian,14,13,41,0,8,1,23
+45,ARG,13,Bianca Farriol,10,5,10,5,15,0,11
+45,ARG,11,Julieta Constanza Lazcano,8,5,20,2,18,1,9
+45,ARG,14,Victoria Mayer,5,2,3,1,11,2,22
+45,ARG,8,Agnes Victoria Michel Tosi,1,1,1,0,4,0,3
+45,ARG,26,Sol Piccolo,1,1,1,0,2,0,0
+45,ARG,1,Elina Rodriguez,0,0,0,0,0,0,0
+45,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+45,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+45,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,4
+45,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+45,ARG,30,Azul Benitez,0,0,0,0,0,0,1
+50,ARG,5,Lucia Fresco,14,14,37,0,1,0,3
+50,ARG,3,Paula Yamila Nizetich,13,11,27,0,3,2,11
+50,ARG,1,Elina Rodriguez,6,5,9,1,5,0,4
+50,ARG,11,Julieta Constanza Lazcano,5,5,16,0,8,0,6
+50,ARG,4,Daniela Bulaich Simian,4,3,13,0,1,1,7
+50,ARG,26,Sol Piccolo,3,3,10,0,1,0,2
+50,ARG,8,Agnes Victoria Michel Tosi,2,1,2,1,4,0,13
+50,ARG,14,Victoria Mayer,2,2,3,0,1,0,10
+50,ARG,13,Bianca Farriol,1,1,5,0,4,0,4
+50,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+50,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+50,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,2
+50,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+50,ARG,30,Azul Benitez,0,0,0,0,0,0,3
+60,ARG,1,Elina Rodriguez,12,11,26,1,3,0,9
+60,ARG,3,Paula Yamila Nizetich,7,4,13,1,4,2,8
+60,ARG,5,Lucia Fresco,6,4,17,2,4,0,5
+60,ARG,11,Julieta Constanza Lazcano,4,4,12,0,5,0,8
+60,ARG,13,Bianca Farriol,4,3,7,1,8,0,6
+60,ARG,24,Candela Sol Salinas,4,3,7,1,1,0,2
+60,ARG,26,Sol Piccolo,3,3,10,0,1,0,1
+60,ARG,4,Daniela Bulaich Simian,2,2,8,0,1,0,1
+60,ARG,8,Agnes Victoria Michel Tosi,0,0,0,0,0,0,0
+60,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+60,ARG,14,Victoria Mayer,0,0,1,0,3,0,10
+60,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+60,ARG,23,Agostina Denisse Soria,0,0,0,0,0,0,1
+60,ARG,30,Azul Benitez,0,0,0,0,0,0,3
+64,ARG,5,Lucia Fresco,13,12,32,1,7,0,3
+64,ARG,1,Elina Rodriguez,12,11,24,1,4,0,5
+64,ARG,3,Paula Yamila Nizetich,5,4,12,0,3,1,6
+64,ARG,4,Daniela Bulaich Simian,2,1,6,1,2,0,0
+64,ARG,8,Agnes Victoria Michel Tosi,2,1,4,0,2,1,9
+64,ARG,11,Julieta Constanza Lazcano,1,1,5,0,6,0,4
+64,ARG,26,Sol Piccolo,1,1,3,0,0,0,0
+64,ARG,12,Tatiana Soledad Rizzo,0,0,0,0,0,0,0
+64,ARG,13,Bianca Farriol,0,0,1,0,1,0,1
+64,ARG,14,Victoria Mayer,0,0,2,0,5,0,8
+64,ARG,18,Valentina Andrea Gonzalez,0,0,0,0,0,0,0
+64,ARG,23,Agostina Denisse Soria,0,0,3,0,0,0,4
+64,ARG,24,Candela Sol Salinas,0,0,0,0,0,0,0
+64,ARG,30,Azul Benitez,0,0,0,0,0,0,5
+3,NED,11,Anne Buijs,16,14,30,1,6,1,13
+3,NED,22,Nicole Koolhaas,11,8,9,2,16,1,14
+3,NED,10,Lonneke Slöetjes,10,8,22,1,4,1,7
+3,NED,3,Yvon Belien,8,7,10,1,9,0,9
+3,NED,18,Marrit Jasper,7,5,14,2,6,0,12
+3,NED,4,Celeste Plak,4,3,6,1,2,0,0
+3,NED,12,Britt Bongaerts,2,2,2,0,5,0,10
+3,NED,7,Juliet Lohuis,1,0,0,0,0,1,2
+3,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+3,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
+3,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+3,NED,14,Laura Dijkema,0,0,0,0,0,0,6
+3,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+3,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+7,NED,6,Maret Balkestein-Grothues,11,10,17,0,2,1,10
+7,NED,10,Lonneke Slöetjes,9,8,17,1,4,0,6
+7,NED,11,Anne Buijs,8,5,13,2,6,1,16
+7,NED,7,Juliet Lohuis,7,3,6,2,8,2,12
+7,NED,4,Celeste Plak,5,5,8,0,0,0,3
+7,NED,31,Eline Timmerman,4,2,4,2,3,0,6
+7,NED,3,Yvon Belien,3,2,3,0,4,1,4
+7,NED,12,Britt Bongaerts,2,2,2,0,1,0,6
+7,NED,17,Nicole Oude Luttikhuis,1,1,3,0,0,0,1
+7,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+7,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+7,NED,14,Laura Dijkema,0,0,1,0,1,0,9
+7,NED,18,Marrit Jasper,0,0,0,0,0,0,0
+7,NED,22,Nicole Koolhaas,0,0,0,0,0,0,0
+17,NED,10,Lonneke Slöetjes,26,25,49,1,8,0,6
+17,NED,11,Anne Buijs,12,10,33,1,7,1,15
+17,NED,22,Nicole Koolhaas,11,8,14,2,13,1,10
+17,NED,3,Yvon Belien,8,6,14,2,13,0,18
+17,NED,6,Maret Balkestein-Grothues,4,4,14,0,2,0,11
+17,NED,12,Britt Bongaerts,3,2,3,1,6,0,10
+17,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+17,NED,4,Celeste Plak,0,0,0,0,0,0,0
+17,NED,7,Juliet Lohuis,0,0,0,0,0,0,3
+17,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+17,NED,14,Laura Dijkema,0,0,0,0,0,0,0
+17,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+17,NED,18,Marrit Jasper,0,0,0,0,0,0,0
+17,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+21,NED,10,Lonneke Slöetjes,10,10,23,0,3,0,5
+21,NED,3,Yvon Belien,8,6,12,2,11,0,13
+21,NED,6,Maret Balkestein-Grothues,7,7,14,0,2,0,10
+21,NED,11,Anne Buijs,7,7,19,0,3,0,10
+21,NED,22,Nicole Koolhaas,6,4,5,2,8,0,3
+21,NED,4,Celeste Plak,3,3,7,0,0,0,3
+21,NED,7,Juliet Lohuis,2,1,1,1,3,0,7
+21,NED,12,Britt Bongaerts,2,1,4,1,3,0,9
+21,NED,18,Marrit Jasper,1,0,0,1,2,0,1
+21,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+21,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+21,NED,14,Laura Dijkema,0,0,0,0,0,0,1
+21,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+21,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+25,NED,10,Lonneke Slöetjes,20,17,47,2,13,1,11
+25,NED,3,Yvon Belien,18,12,17,6,23,0,16
+25,NED,11,Anne Buijs,15,13,35,0,9,2,17
+25,NED,22,Nicole Koolhaas,9,6,10,3,13,0,4
+25,NED,6,Maret Balkestein-Grothues,7,7,21,0,2,0,19
+25,NED,4,Celeste Plak,6,6,13,0,5,0,2
+25,NED,7,Juliet Lohuis,5,3,8,1,7,1,8
+25,NED,12,Britt Bongaerts,3,1,2,1,8,1,21
+25,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+25,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+25,NED,14,Laura Dijkema,0,0,0,0,0,0,0
+25,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+25,NED,18,Marrit Jasper,0,0,0,0,0,0,4
+25,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+33,NED,4,Celeste Plak,18,15,24,2,6,1,10
+33,NED,7,Juliet Lohuis,14,7,11,3,9,4,15
+33,NED,6,Maret Balkestein-Grothues,9,7,13,0,4,2,11
+33,NED,18,Marrit Jasper,7,7,12,0,2,0,11
+33,NED,22,Nicole Koolhaas,7,6,7,0,11,1,13
+33,NED,10,Lonneke Slöetjes,3,3,5,0,0,0,0
+33,NED,14,Laura Dijkema,2,2,2,0,2,0,11
+33,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+33,NED,3,Yvon Belien,0,0,0,0,0,0,0
+33,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+33,NED,11,Anne Buijs,0,0,0,0,0,0,0
+33,NED,12,Britt Bongaerts,0,0,0,0,1,0,2
+33,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+33,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+37,NED,4,Celeste Plak,20,16,34,2,4,2,14
+37,NED,18,Marrit Jasper,14,10,19,3,9,1,19
+37,NED,6,Maret Balkestein-Grothues,10,10,19,0,2,0,4
+37,NED,7,Juliet Lohuis,10,5,11,4,24,1,12
+37,NED,10,Lonneke Slöetjes,10,10,24,0,2,0,2
+37,NED,3,Yvon Belien,9,8,8,0,11,1,13
+37,NED,11,Anne Buijs,8,8,21,0,1,0,10
+37,NED,14,Laura Dijkema,2,2,3,0,0,0,8
+37,NED,22,Nicole Koolhaas,2,2,2,0,5,0,8
+37,NED,12,Britt Bongaerts,1,0,0,0,3,1,5
+37,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+37,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+37,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+37,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+47,NED,10,Lonneke Slöetjes,15,13,32,2,6,0,4
+47,NED,11,Anne Buijs,13,12,25,1,7,0,6
+47,NED,6,Maret Balkestein-Grothues,9,7,22,0,6,2,14
+47,NED,4,Celeste Plak,5,5,14,0,0,0,2
+47,NED,22,Nicole Koolhaas,5,2,7,2,10,1,10
+47,NED,3,Yvon Belien,4,4,7,0,7,0,10
+47,NED,12,Britt Bongaerts,2,1,2,0,2,1,8
+47,NED,7,Juliet Lohuis,1,0,2,0,4,1,3
+47,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+47,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+47,NED,14,Laura Dijkema,0,0,0,0,0,0,3
+47,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+47,NED,18,Marrit Jasper,0,0,0,0,0,0,3
+47,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+52,NED,10,Lonneke Slöetjes,22,21,49,1,7,0,13
+52,NED,6,Maret Balkestein-Grothues,12,11,23,1,7,0,10
+52,NED,11,Anne Buijs,8,8,29,0,3,0,16
+52,NED,7,Juliet Lohuis,6,5,9,1,12,0,12
+52,NED,31,Eline Timmerman,6,3,3,1,9,2,10
+52,NED,14,Laura Dijkema,3,3,5,0,10,0,11
+52,NED,4,Celeste Plak,2,2,3,0,0,0,1
+52,NED,18,Marrit Jasper,2,2,2,0,0,0,0
+52,NED,12,Britt Bongaerts,1,1,1,0,0,0,2
+52,NED,22,Nicole Koolhaas,1,1,3,0,4,0,5
+52,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+52,NED,3,Yvon Belien,0,0,0,0,0,0,0
+52,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+52,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+56,NED,10,Lonneke Slöetjes,28,26,59,2,10,0,15
+56,NED,4,Celeste Plak,18,16,32,2,7,0,11
+56,NED,18,Marrit Jasper,14,13,31,0,8,1,22
+56,NED,22,Nicole Koolhaas,7,5,13,1,12,1,18
+56,NED,11,Anne Buijs,6,5,17,1,3,0,9
+56,NED,7,Juliet Lohuis,3,2,6,0,9,1,9
+56,NED,12,Britt Bongaerts,2,0,0,2,4,0,5
+56,NED,14,Laura Dijkema,2,2,4,0,3,0,7
+56,NED,31,Eline Timmerman,1,1,4,0,5,0,5
+56,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+56,NED,3,Yvon Belien,0,0,0,0,0,0,0
+56,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
+56,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+56,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+66,NED,10,Lonneke Slöetjes,18,15,51,3,18,0,9
+66,NED,11,Anne Buijs,15,14,50,1,8,0,16
+66,NED,18,Marrit Jasper,14,11,29,1,15,2,16
+66,NED,4,Celeste Plak,11,9,15,2,6,0,1
+66,NED,7,Juliet Lohuis,6,4,9,1,19,1,15
+66,NED,22,Nicole Koolhaas,5,2,9,2,19,1,16
+66,NED,14,Laura Dijkema,3,3,4,0,9,0,15
+66,NED,1,Kirsten Knip,0,0,0,0,0,0,0
+66,NED,3,Yvon Belien,0,0,0,0,0,0,0
+66,NED,6,Maret Balkestein-Grothues,0,0,0,0,0,0,0
+66,NED,9,Myrthe Schoot,0,0,0,0,0,0,0
+66,NED,12,Britt Bongaerts,0,0,0,0,0,0,3
+66,NED,17,Nicole Oude Luttikhuis,0,0,0,0,0,0,0
+66,NED,31,Eline Timmerman,0,0,0,0,0,0,0
+4,CHN,2,Ting Zhu,21,18,29,2,5,1,13
+4,CHN,1,Xinyue Yuan,11,6,10,4,8,1,13
+4,CHN,6,Xiangyu Gong,10,8,23,1,8,1,9
+4,CHN,17,Ni Yan,9,4,11,4,9,1,13
+4,CHN,9,Changning Zhang,8,8,24,0,4,0,5
+4,CHN,12,Yingying Li,4,2,4,1,1,1,10
+4,CHN,16,Xia Ding,1,0,1,0,2,1,10
+4,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+4,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+4,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+4,CHN,11,Di Yao,0,0,1,0,1,0,0
+4,CHN,15,Li Lin,0,0,0,0,0,0,0
+4,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+4,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
+8,CHN,12,Yingying Li,21,17,25,4,5,0,10
+8,CHN,10,Xiaotong Liu,9,6,17,0,0,3,11
+8,CHN,8,Chunlei Zeng,7,4,9,1,7,2,10
+8,CHN,14,Yixin Zheng,6,5,7,1,7,0,9
+8,CHN,7,Yuanyuan Wang,5,4,9,1,7,0,10
+8,CHN,4,Hanyu Yang,3,3,5,0,0,0,3
+8,CHN,6,Xiangyu Gong,3,2,5,0,0,1,11
+8,CHN,19,Yanhan Liu,2,2,6,0,2,0,1
+8,CHN,11,Di Yao,1,0,1,0,1,1,8
+8,CHN,16,Xia Ding,1,1,1,0,0,0,1
+8,CHN,1,Xinyue Yuan,0,0,0,0,0,0,0
+8,CHN,9,Changning Zhang,0,0,0,0,0,0,0
+8,CHN,15,Li Lin,0,0,0,0,0,0,0
+8,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+16,CHN,2,Ting Zhu,22,21,33,1,5,0,10
+16,CHN,9,Changning Zhang,16,14,28,1,4,1,8
+16,CHN,1,Xinyue Yuan,10,7,12,2,8,1,13
+16,CHN,17,Ni Yan,9,6,15,3,10,0,12
+16,CHN,6,Xiangyu Gong,7,4,18,2,10,1,12
+16,CHN,16,Xia Ding,5,1,3,0,4,4,19
+16,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
+16,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+16,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+16,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+16,CHN,11,Di Yao,0,0,0,0,0,0,0
+16,CHN,12,Yingying Li,0,0,0,0,0,0,0
+16,CHN,15,Li Lin,0,0,0,0,0,0,0
+16,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+22,CHN,2,Ting Zhu,20,18,26,1,3,1,13
+22,CHN,12,Yingying Li,12,10,17,2,5,0,13
+22,CHN,1,Xinyue Yuan,11,9,11,1,14,1,15
+22,CHN,17,Ni Yan,8,4,8,4,10,0,9
+22,CHN,6,Xiangyu Gong,6,6,13,0,3,0,9
+22,CHN,9,Changning Zhang,1,1,2,0,0,0,1
+22,CHN,19,Yanhan Liu,1,1,3,0,1,0,3
+22,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
+22,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+22,CHN,10,Xiaotong Liu,0,0,1,0,0,0,1
+22,CHN,11,Di Yao,0,0,0,0,0,0,0
+22,CHN,15,Li Lin,0,0,0,0,0,0,0
+22,CHN,16,Xia Ding,0,0,1,0,9,0,9
+22,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+30,CHN,9,Changning Zhang,18,12,22,1,7,5,16
+30,CHN,2,Ting Zhu,15,12,27,1,2,2,14
+30,CHN,1,Xinyue Yuan,14,12,18,2,14,0,8
+30,CHN,17,Ni Yan,14,8,12,6,17,0,7
+30,CHN,6,Xiangyu Gong,9,5,17,4,10,0,10
+30,CHN,16,Xia Ding,1,0,1,0,7,1,18
+30,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+30,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+30,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+30,CHN,11,Di Yao,0,0,0,0,0,0,0
+30,CHN,12,Yingying Li,0,0,0,0,0,0,0
+30,CHN,14,Yixin Zheng,0,0,0,0,0,0,0
+30,CHN,15,Li Lin,0,0,0,0,0,0,0
+30,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+34,CHN,2,Ting Zhu,25,25,49,0,3,0,19
+34,CHN,1,Xinyue Yuan,24,19,36,5,25,0,16
+34,CHN,9,Changning Zhang,13,10,20,3,6,0,12
+34,CHN,6,Xiangyu Gong,10,5,17,4,11,1,17
+34,CHN,17,Ni Yan,8,7,12,1,15,0,20
+34,CHN,16,Xia Ding,6,1,2,3,7,2,16
+34,CHN,12,Yingying Li,2,2,12,0,1,0,7
+34,CHN,8,Chunlei Zeng,1,1,4,0,3,0,2
+34,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
+34,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+34,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+34,CHN,11,Di Yao,0,0,0,0,0,0,0
+34,CHN,15,Li Lin,0,0,0,0,0,0,0
+34,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+40,CHN,2,Ting Zhu,23,17,36,5,9,1,13
+40,CHN,9,Changning Zhang,13,11,20,1,7,1,12
+40,CHN,1,Xinyue Yuan,10,6,11,2,12,2,13
+40,CHN,6,Xiangyu Gong,6,5,15,1,7,0,13
+40,CHN,17,Ni Yan,6,4,11,1,11,1,10
+40,CHN,16,Xia Ding,1,1,1,0,6,0,13
+40,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+40,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+40,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+40,CHN,11,Di Yao,0,0,0,0,0,0,0
+40,CHN,12,Yingying Li,0,0,0,0,0,0,0
+40,CHN,15,Li Lin,0,0,0,0,0,0,0
+40,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+40,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
+46,CHN,6,Xiangyu Gong,13,12,16,0,3,1,14
+46,CHN,9,Changning Zhang,10,9,15,0,3,1,12
+46,CHN,12,Yingying Li,10,7,15,1,6,2,10
+46,CHN,4,Hanyu Yang,9,3,6,2,7,4,19
+46,CHN,7,Yuanyuan Wang,9,6,13,3,12,0,11
+46,CHN,11,Di Yao,1,0,0,0,3,1,5
+46,CHN,19,Yanhan Liu,1,1,6,0,1,0,2
+46,CHN,1,Xinyue Yuan,0,0,0,0,0,0,0
+46,CHN,2,Ting Zhu,0,0,0,0,0,0,0
+46,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+46,CHN,14,Yixin Zheng,0,0,0,0,0,0,0
+46,CHN,15,Li Lin,0,0,0,0,0,0,0
+46,CHN,16,Xia Ding,0,0,0,0,0,0,0
+46,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+52,CHN,2,Ting Zhu,22,20,35,1,3,1,19
+52,CHN,1,Xinyue Yuan,17,13,17,3,13,1,12
+52,CHN,9,Changning Zhang,14,10,28,2,13,2,11
+52,CHN,6,Xiangyu Gong,11,9,19,2,11,0,14
+52,CHN,17,Ni Yan,10,4,9,6,17,0,20
+52,CHN,12,Yingying Li,1,1,6,0,1,0,1
+52,CHN,16,Xia Ding,1,1,5,0,1,0,17
+52,CHN,4,Hanyu Yang,0,0,0,0,0,0,0
+52,CHN,7,Yuanyuan Wang,0,0,0,0,0,0,0
+52,CHN,8,Chunlei Zeng,0,0,0,0,1,0,1
+52,CHN,11,Di Yao,0,0,0,0,1,0,0
+52,CHN,15,Li Lin,0,0,0,0,0,0,0
+52,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+52,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
+58,CHN,2,Ting Zhu,18,16,32,1,5,1,21
+58,CHN,9,Changning Zhang,14,13,24,1,7,0,9
+58,CHN,6,Xiangyu Gong,10,7,18,1,3,2,12
+58,CHN,17,Ni Yan,8,4,9,4,19,0,9
+58,CHN,1,Xinyue Yuan,6,5,8,1,8,0,8
+58,CHN,16,Xia Ding,3,1,1,1,6,1,13
+58,CHN,7,Yuanyuan Wang,2,1,1,1,2,0,1
+58,CHN,8,Chunlei Zeng,0,0,0,0,0,0,0
+58,CHN,10,Xiaotong Liu,0,0,0,0,0,0,0
+58,CHN,11,Di Yao,0,0,0,0,0,0,0
+58,CHN,12,Yingying Li,0,0,0,0,0,0,0
+58,CHN,15,Li Lin,0,0,0,0,0,0,0
+58,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+58,CHN,19,Yanhan Liu,0,0,0,0,0,0,0
+64,CHN,6,Xiangyu Gong,15,11,21,3,13,1,14
+64,CHN,1,Xinyue Yuan,13,10,13,3,10,0,7
+64,CHN,2,Ting Zhu,12,6,13,4,6,2,14
+64,CHN,17,Ni Yan,11,4,6,5,11,2,8
+64,CHN,9,Changning Zhang,10,9,18,1,6,0,8
+64,CHN,12,Yingying Li,2,2,3,0,1,0,0
+64,CHN,16,Xia Ding,1,0,0,0,5,1,5
+64,CHN,19,Yanhan Liu,1,0,0,0,0,1,2
+64,CHN,7,Yuanyuan Wang,0,0,1,0,0,0,0
+64,CHN,10,Xiaotong Liu,0,0,0,0,0,0,1
+64,CHN,11,Di Yao,0,0,0,0,0,0,12
+64,CHN,14,Yixin Zheng,0,0,0,0,0,0,2
+64,CHN,15,Li Lin,0,0,0,0,0,0,0
+64,CHN,18,Mengjie Wang,0,0,0,0,0,0,0
+4,KOR,17,Jaeyeong Lee,15,13,31,1,3,1,12
+4,KOR,10,Yeon Koung Kim,11,11,23,0,1,0,7
+4,KOR,14,Hyo Jin Yang,7,4,7,2,12,1,7
+4,KOR,4,Heejin Kim,6,5,18,1,3,0,3
+4,KOR,11,Su Ji Kim,2,2,3,0,4,0,4
+4,KOR,1,Soyoung Lee,1,1,4,0,1,0,1
+4,KOR,13,Jeongah Park,1,1,12,0,3,0,3
+4,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
+4,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+4,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+4,KOR,8,Eunjin Park,0,0,0,0,0,0,0
+4,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+4,KOR,15,Sohwi Kang,0,0,0,0,0,0,1
+4,KOR,19,Dayeong Lee,0,0,1,0,2,0,14
+10,KOR,4,Heejin Kim,22,21,58,1,8,0,12
+10,KOR,10,Yeon Koung Kim,17,17,43,0,3,0,9
+10,KOR,17,Jaeyeong Lee,10,8,22,1,5,1,10
+10,KOR,11,Su Ji Kim,9,6,12,2,10,1,20
+10,KOR,13,Jeongah Park,9,7,24,0,4,2,11
+10,KOR,8,Eunjin Park,3,1,3,1,2,1,5
+10,KOR,14,Hyo Jin Yang,3,2,6,1,14,0,5
+10,KOR,19,Dayeong Lee,1,0,2,1,8,0,14
+10,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
+10,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
+10,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+10,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+10,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+10,KOR,15,Sohwi Kang,0,0,3,0,1,0,4
+18,KOR,17,Jaeyeong Lee,24,23,45,1,6,0,14
+18,KOR,10,Yeon Koung Kim,23,19,47,3,6,1,15
+18,KOR,4,Heejin Kim,17,15,33,2,10,0,16
+18,KOR,11,Su Ji Kim,11,4,8,6,20,1,17
+18,KOR,19,Dayeong Lee,6,1,3,3,10,2,21
+18,KOR,13,Jeongah Park,2,0,3,1,2,1,4
+18,KOR,14,Hyo Jin Yang,2,1,3,1,22,0,9
+18,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
+18,KOR,3,Hye Seon Yeum,0,0,0,0,0,0,0
+18,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+18,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+18,KOR,8,Eunjin Park,0,0,0,0,0,0,0
+18,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+18,KOR,15,Sohwi Kang,0,0,0,0,0,0,3
+20,KOR,15,Sohwi Kang,9,8,25,1,3,0,8
+20,KOR,13,Jeongah Park,8,7,23,0,1,1,11
+20,KOR,4,Heejin Kim,7,7,20,0,0,0,7
+20,KOR,11,Su Ji Kim,4,3,8,1,9,0,7
+20,KOR,7,Hyejin Ha,3,3,4,0,1,0,2
+20,KOR,1,Soyoung Lee,2,2,3,0,0,0,2
+20,KOR,8,Eunjin Park,2,1,2,0,6,1,10
+20,KOR,19,Dayeong Lee,2,1,1,0,2,1,11
+20,KOR,3,Hye Seon Yeum,1,1,1,0,0,0,1
+20,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+20,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+20,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
+20,KOR,14,Hyo Jin Yang,0,0,0,0,0,0,0
+20,KOR,17,Jaeyeong Lee,0,0,0,0,0,0,0
+28,KOR,10,Yeon Koung Kim,14,11,20,1,6,2,12
+28,KOR,13,Jeongah Park,12,8,20,1,4,3,15
+28,KOR,17,Jaeyeong Lee,9,8,20,1,1,0,9
+28,KOR,8,Eunjin Park,7,5,12,2,7,0,5
+28,KOR,7,Hyejin Ha,5,4,4,0,0,1,4
+28,KOR,15,Sohwi Kang,3,3,4,0,1,0,4
+28,KOR,1,Soyoung Lee,2,1,3,1,1,0,1
+28,KOR,3,Hye Seon Yeum,2,0,0,0,1,2,11
+28,KOR,19,Dayeong Lee,2,1,2,1,2,0,2
+28,KOR,11,Su Ji Kim,1,1,2,0,4,0,3
+28,KOR,14,Hyo Jin Yang,1,1,2,0,5,0,6
+28,KOR,4,Heejin Kim,0,0,0,0,0,0,1
+28,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+28,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+31,KOR,4,Heejin Kim,23,17,44,3,10,3,17
+31,KOR,17,Jaeyeong Lee,22,20,47,2,7,0,20
+31,KOR,10,Yeon Koung Kim,12,11,20,1,4,0,14
+31,KOR,14,Hyo Jin Yang,10,6,9,4,21,0,10
+31,KOR,13,Jeongah Park,5,5,7,0,1,0,2
+31,KOR,8,Eunjin Park,4,4,5,0,3,0,8
+31,KOR,11,Su Ji Kim,2,1,2,1,3,0,3
+31,KOR,19,Dayeong Lee,1,0,1,0,4,1,18
+31,KOR,1,Soyoung Lee,0,0,4,0,0,0,2
+31,KOR,3,Hye Seon Yeum,0,0,0,0,1,0,1
+31,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+31,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+31,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+31,KOR,15,Sohwi Kang,0,0,0,0,0,0,0
+37,KOR,17,Jaeyeong Lee,16,14,43,1,6,1,19
+37,KOR,4,Heejin Kim,15,14,41,1,4,0,6
+37,KOR,14,Hyo Jin Yang,10,5,8,3,14,2,16
+37,KOR,19,Dayeong Lee,9,4,4,3,6,2,14
+37,KOR,13,Jeongah Park,6,5,17,1,5,0,5
+37,KOR,1,Soyoung Lee,3,2,8,0,0,1,4
+37,KOR,8,Eunjin Park,3,1,3,1,5,1,7
+37,KOR,11,Su Ji Kim,3,2,9,1,13,0,8
+37,KOR,15,Sohwi Kang,3,1,4,0,1,2,10
+37,KOR,3,Hye Seon Yeum,2,2,7,0,2,0,1
+37,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+37,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+37,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+37,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
+43,KOR,10,Yeon Koung Kim,20,17,36,2,3,1,14
+43,KOR,4,Heejin Kim,19,17,40,0,13,2,17
+43,KOR,17,Jaeyeong Lee,16,13,33,2,6,1,15
+43,KOR,11,Su Ji Kim,9,6,11,2,13,1,11
+43,KOR,1,Soyoung Lee,3,2,5,1,1,0,1
+43,KOR,14,Hyo Jin Yang,3,2,14,1,10,0,8
+43,KOR,15,Sohwi Kang,2,2,2,0,0,0,5
+43,KOR,3,Hye Seon Yeum,0,0,2,0,2,0,14
+43,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+43,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+43,KOR,8,Eunjin Park,0,0,0,0,0,0,2
+43,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+43,KOR,13,Jeongah Park,0,0,4,0,0,0,2
+43,KOR,19,Dayeong Lee,0,0,0,0,0,0,0
+49,KOR,7,Hyejin Ha,9,9,21,0,4,0,3
+49,KOR,4,Heejin Kim,8,7,10,0,2,1,5
+49,KOR,13,Jeongah Park,6,5,9,1,2,0,3
+49,KOR,1,Soyoung Lee,5,5,11,0,1,0,6
+49,KOR,8,Eunjin Park,5,5,8,0,4,0,8
+49,KOR,11,Su Ji Kim,5,2,3,0,3,3,6
+49,KOR,17,Jaeyeong Lee,5,5,6,0,0,0,6
+49,KOR,14,Hyo Jin Yang,4,4,8,0,5,0,5
+49,KOR,15,Sohwi Kang,4,3,10,0,4,1,6
+49,KOR,3,Hye Seon Yeum,3,1,1,0,1,2,13
+49,KOR,19,Dayeong Lee,3,0,0,0,1,3,12
+49,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+49,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+49,KOR,10,Yeon Koung Kim,0,0,0,0,0,0,0
+55,KOR,10,Yeon Koung Kim,25,19,44,1,7,5,20
+55,KOR,17,Jaeyeong Lee,20,20,42,0,5,0,14
+55,KOR,4,Heejin Kim,13,10,31,1,5,2,13
+55,KOR,11,Su Ji Kim,8,7,9,1,13,0,10
+55,KOR,8,Eunjin Park,6,6,6,0,2,0,7
+55,KOR,19,Dayeong Lee,3,0,3,3,11,0,16
+55,KOR,14,Hyo Jin Yang,2,1,3,1,7,0,5
+55,KOR,13,Jeongah Park,1,1,4,0,1,0,1
+55,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
+55,KOR,3,Hye Seon Yeum,0,0,1,0,0,0,2
+55,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+55,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+55,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+55,KOR,15,Sohwi Kang,0,0,0,0,0,0,4
+61,KOR,13,Jeongah Park,15,12,23,1,5,2,6
+61,KOR,10,Yeon Koung Kim,14,12,30,1,2,1,13
+61,KOR,4,Heejin Kim,9,9,24,0,3,0,9
+61,KOR,8,Eunjin Park,6,3,11,3,9,0,9
+61,KOR,14,Hyo Jin Yang,6,4,8,2,6,0,4
+61,KOR,17,Jaeyeong Lee,6,6,18,0,2,0,8
+61,KOR,15,Sohwi Kang,4,3,12,0,1,1,11
+61,KOR,11,Su Ji Kim,2,1,3,1,8,0,6
+61,KOR,19,Dayeong Lee,2,1,1,1,1,0,5
+61,KOR,1,Soyoung Lee,0,0,0,0,0,0,0
+61,KOR,3,Hye Seon Yeum,0,0,1,0,1,0,14
+61,KOR,5,Hae Ran Kim,0,0,0,0,0,0,0
+61,KOR,7,Hyejin Ha,0,0,0,0,0,0,0
+61,KOR,9,Jiyoung Oh,0,0,0,0,0,0,0
+5,SRB,13,Ana Bjelica,24,22,60,1,8,1,15
+5,SRB,1,Bianka Busa,18,14,50,1,7,3,18
+5,SRB,2,Katarina Lazovic,15,14,35,1,8,0,19
+5,SRB,6,Maja Savic,8,3,10,4,23,1,12
+5,SRB,14,Maja Aleksic,7,3,14,4,19,0,12
+5,SRB,8,Sladjana Mirkovic,4,2,2,2,14,0,19
+5,SRB,5,Mina Popovic,0,0,0,0,0,0,0
+5,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+5,SRB,19,Bojana Milenkovic,0,0,1,0,0,0,0
+5,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,5
+5,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+5,SRB,22,Sara Lozo,0,0,0,0,0,0,1
+5,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
+5,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+9,SRB,13,Ana Bjelica,18,15,28,1,4,2,13
+9,SRB,2,Katarina Lazovic,14,14,29,0,5,0,13
+9,SRB,14,Maja Aleksic,9,7,12,1,6,1,11
+9,SRB,22,Sara Lozo,8,8,23,0,1,0,6
+9,SRB,19,Bojana Milenkovic,4,4,8,0,2,0,4
+9,SRB,8,Sladjana Mirkovic,3,2,3,0,1,1,10
+9,SRB,6,Maja Savic,2,0,4,2,9,0,7
+9,SRB,21,Jovana Kocic,2,1,2,1,2,0,3
+9,SRB,1,Bianka Busa,0,0,0,0,1,0,2
+9,SRB,5,Mina Popovic,0,0,0,0,0,0,0
+9,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+9,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,4
+9,SRB,23,Mila Djordjevic,0,0,0,0,0,0,1
+9,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+13,SRB,13,Ana Bjelica,13,9,19,2,8,2,10
+13,SRB,14,Maja Aleksic,11,6,10,4,12,1,6
+13,SRB,5,Mina Popovic,8,6,10,0,8,2,14
+13,SRB,19,Bojana Milenkovic,7,6,7,1,1,0,6
+13,SRB,20,Jelena Blagojevic,7,4,9,2,2,1,13
+13,SRB,2,Katarina Lazovic,4,4,8,0,4,0,7
+13,SRB,1,Bianka Busa,3,2,8,0,1,1,7
+13,SRB,8,Sladjana Mirkovic,3,2,4,0,1,1,5
+13,SRB,22,Sara Lozo,2,2,6,0,4,0,1
+13,SRB,23,Mila Djordjevic,2,1,2,1,1,0,3
+13,SRB,21,Jovana Kocic,1,1,2,0,1,0,1
+13,SRB,6,Maja Savic,0,0,0,0,0,0,0
+13,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+13,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+19,SRB,13,Ana Bjelica,28,23,46,3,14,2,21
+19,SRB,20,Jelena Blagojevic,15,12,32,3,9,0,12
+19,SRB,14,Maja Aleksic,14,9,12,4,18,1,12
+19,SRB,19,Bojana Milenkovic,10,8,19,2,8,0,6
+19,SRB,1,Bianka Busa,7,7,17,0,3,0,7
+19,SRB,8,Sladjana Mirkovic,3,2,6,0,9,1,15
+19,SRB,21,Jovana Kocic,3,2,8,1,7,0,19
+19,SRB,2,Katarina Lazovic,0,0,1,0,0,0,5
+19,SRB,5,Mina Popovic,0,0,0,0,0,0,0
+19,SRB,6,Maja Savic,0,0,0,0,0,0,0
+19,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+19,SRB,22,Sara Lozo,0,0,0,0,0,0,0
+19,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
+19,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+25,SRB,13,Ana Bjelica,35,34,65,1,6,0,19
+25,SRB,5,Mina Popovic,17,13,19,3,16,1,20
+25,SRB,14,Maja Aleksic,14,10,14,4,20,0,13
+25,SRB,20,Jelena Blagojevic,11,10,24,1,9,0,13
+25,SRB,19,Bojana Milenkovic,10,9,21,0,2,1,13
+25,SRB,1,Bianka Busa,2,2,13,0,1,0,9
+25,SRB,8,Sladjana Mirkovic,1,0,6,0,7,1,15
+25,SRB,22,Sara Lozo,1,1,3,0,0,0,2
+25,SRB,2,Katarina Lazovic,0,0,2,0,1,0,3
+25,SRB,6,Maja Savic,0,0,0,0,0,0,0
+25,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+25,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+25,SRB,23,Mila Djordjevic,0,0,1,0,0,0,0
+25,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+35,SRB,1,Bianka Busa,19,18,38,1,4,0,11
+35,SRB,5,Mina Popovic,14,9,15,3,13,2,19
+35,SRB,13,Ana Bjelica,14,13,43,1,6,0,13
+35,SRB,20,Jelena Blagojevic,13,12,22,0,5,1,16
+35,SRB,14,Maja Aleksic,7,4,8,2,12,1,7
+35,SRB,8,Sladjana Mirkovic,2,2,4,0,4,0,9
+35,SRB,2,Katarina Lazovic,1,0,0,0,0,1,2
+35,SRB,6,Maja Savic,0,0,1,0,3,0,2
+35,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+35,SRB,19,Bojana Milenkovic,0,0,0,0,0,0,0
+35,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+35,SRB,22,Sara Lozo,0,0,1,0,0,0,2
+35,SRB,23,Mila Djordjevic,0,0,1,0,1,0,0
+35,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+39,SRB,2,Katarina Lazovic,20,15,23,1,5,4,17
+39,SRB,5,Mina Popovic,10,4,6,4,11,2,8
+39,SRB,19,Bojana Milenkovic,10,9,21,0,5,1,11
+39,SRB,13,Ana Bjelica,8,7,17,1,5,0,7
+39,SRB,14,Maja Aleksic,6,1,5,4,13,1,6
+39,SRB,22,Sara Lozo,4,4,9,0,1,0,6
+39,SRB,8,Sladjana Mirkovic,3,2,5,0,4,1,12
+39,SRB,23,Mila Djordjevic,1,0,0,1,2,0,0
+39,SRB,1,Bianka Busa,0,0,0,0,0,0,0
+39,SRB,6,Maja Savic,0,0,0,0,0,0,0
+39,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+39,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,5
+39,SRB,21,Jovana Kocic,0,0,0,0,2,0,2
+39,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+43,SRB,13,Ana Bjelica,22,21,48,0,8,1,17
+43,SRB,20,Jelena Blagojevic,15,15,31,0,4,0,13
+43,SRB,2,Katarina Lazovic,11,9,19,1,3,1,11
+43,SRB,5,Mina Popovic,7,7,11,0,7,0,13
+43,SRB,14,Maja Aleksic,7,6,11,1,17,0,7
+43,SRB,19,Bojana Milenkovic,4,4,13,0,2,0,6
+43,SRB,8,Sladjana Mirkovic,3,2,6,0,2,1,16
+43,SRB,1,Bianka Busa,0,0,0,0,0,0,4
+43,SRB,6,Maja Savic,0,0,0,0,0,0,0
+43,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+43,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+43,SRB,22,Sara Lozo,0,0,0,0,0,0,0
+43,SRB,23,Mila Djordjevic,0,0,0,0,0,0,1
+43,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+54,SRB,5,Mina Popovic,24,17,24,5,14,2,14
+54,SRB,13,Ana Bjelica,14,13,46,1,4,0,14
+54,SRB,20,Jelena Blagojevic,14,12,31,2,5,0,20
+54,SRB,14,Maja Aleksic,11,8,15,3,11,0,8
+54,SRB,19,Bojana Milenkovic,10,10,31,0,2,0,9
+54,SRB,1,Bianka Busa,2,2,7,0,0,0,4
+54,SRB,8,Sladjana Mirkovic,2,2,3,0,9,0,21
+54,SRB,23,Mila Djordjevic,1,0,2,1,2,0,0
+54,SRB,2,Katarina Lazovic,0,0,3,0,0,0,6
+54,SRB,6,Maja Savic,0,0,0,0,0,0,0
+54,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+54,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+54,SRB,22,Sara Lozo,0,0,0,0,0,0,0
+54,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+58,SRB,2,Katarina Lazovic,14,14,36,0,2,0,11
+58,SRB,13,Ana Bjelica,14,14,36,0,6,0,8
+58,SRB,1,Bianka Busa,5,4,15,0,0,1,7
+58,SRB,14,Maja Aleksic,3,2,6,1,8,0,4
+58,SRB,6,Maja Savic,2,2,4,0,5,0,4
+58,SRB,21,Jovana Kocic,2,1,4,1,4,0,6
+58,SRB,22,Sara Lozo,2,2,3,0,0,0,1
+58,SRB,8,Sladjana Mirkovic,1,0,0,0,0,1,8
+58,SRB,5,Mina Popovic,0,0,0,0,0,0,0
+58,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+58,SRB,19,Bojana Milenkovic,0,0,0,0,0,0,0
+58,SRB,20,Jelena Blagojevic,0,0,0,0,0,0,2
+58,SRB,23,Mila Djordjevic,0,0,0,0,0,0,2
+58,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+62,SRB,13,Ana Bjelica,19,16,45,2,15,1,12
+62,SRB,5,Mina Popovic,16,12,22,3,16,1,13
+62,SRB,20,Jelena Blagojevic,10,9,27,1,6,0,14
+62,SRB,14,Maja Aleksic,9,7,12,2,14,0,12
+62,SRB,2,Katarina Lazovic,8,5,24,3,7,0,15
+62,SRB,19,Bojana Milenkovic,4,3,8,0,4,1,4
+62,SRB,8,Sladjana Mirkovic,3,2,4,0,4,1,14
+62,SRB,22,Sara Lozo,1,1,6,0,1,0,1
+62,SRB,1,Bianka Busa,0,0,0,0,0,0,1
+62,SRB,6,Maja Savic,0,0,0,0,0,0,0
+62,SRB,12,Teodora Pusic,0,0,0,0,0,0,0
+62,SRB,21,Jovana Kocic,0,0,0,0,0,0,0
+62,SRB,23,Mila Djordjevic,0,0,0,0,0,0,0
+62,SRB,32,Bojana Gocanin,0,0,0,0,0,0,0
+5,BRA,24,Lorenne Geraldo Teixeira,23,20,43,2,9,1,12
+5,BRA,10,Gabriela Braga Guimaraes,17,14,46,2,12,1,25
+5,BRA,1,Fabiana Claudino,16,10,19,6,25,0,15
+5,BRA,21,Drussyla Costa,13,11,34,2,7,0,11
+5,BRA,20,Ana Beatriz Correa,11,5,11,5,27,1,16
+5,BRA,13,Sheilla Castro De Paula Blassioli,4,4,12,0,3,0,4
+5,BRA,3,Macris Fernanda Silva Carneiro,1,0,2,1,9,0,17
+5,BRA,2,Mara Ferreira Leao,0,0,0,0,0,0,0
+5,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+5,BRA,7,Amanda Francisco,0,0,0,0,0,0,6
+5,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,3
+5,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+5,BRA,18,Camila Brait,0,0,0,0,0,0,0
+5,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+11,BRA,10,Gabriela Braga Guimaraes,17,11,27,3,12,3,16
+11,BRA,7,Amanda Francisco,11,11,18,0,3,0,12
+11,BRA,1,Fabiana Claudino,10,5,8,5,16,0,9
+11,BRA,24,Lorenne Geraldo Teixeira,9,9,20,0,4,0,4
+11,BRA,20,Ana Beatriz Correa,8,2,5,5,17,1,13
+11,BRA,13,Sheilla Castro De Paula Blassioli,4,3,9,1,3,0,3
+11,BRA,15,Ana Carolina Da Silva,3,1,4,2,4,0,0
+11,BRA,3,Macris Fernanda Silva Carneiro,2,0,0,0,3,2,10
+11,BRA,2,Mara Ferreira Leao,1,0,1,1,1,0,2
+11,BRA,6,Gabriela Candido Da Silva,0,0,2,0,1,0,0
+11,BRA,9,Roberta Silva Ratzke,0,0,1,0,1,0,5
+11,BRA,18,Camila Brait,0,0,0,0,0,0,0
+11,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+11,BRA,21,Drussyla Costa,0,0,0,0,0,0,0
+17,BRA,24,Lorenne Geraldo Teixeira,13,12,38,1,10,0,7
+17,BRA,10,Gabriela Braga Guimaraes,12,12,30,0,6,0,17
+17,BRA,21,Drussyla Costa,12,12,22,0,9,0,6
+17,BRA,1,Fabiana Claudino,5,3,8,2,6,0,9
+17,BRA,13,Sheilla Castro De Paula Blassioli,4,3,5,1,3,0,0
+17,BRA,20,Ana Beatriz Correa,4,4,12,0,13,0,8
+17,BRA,3,Macris Fernanda Silva Carneiro,1,1,1,0,3,0,11
+17,BRA,2,Mara Ferreira Leao,0,0,0,0,0,0,0
+17,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+17,BRA,7,Amanda Francisco,0,0,0,0,0,0,2
+17,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
+17,BRA,15,Ana Carolina Da Silva,0,0,1,0,1,0,2
+17,BRA,18,Camila Brait,0,0,0,0,0,0,0
+17,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+23,BRA,2,Mara Ferreira Leao,15,9,12,5,11,1,10
+23,BRA,7,Amanda Francisco,12,11,23,1,7,0,15
+23,BRA,10,Gabriela Braga Guimaraes,9,8,14,1,4,0,10
+23,BRA,15,Ana Carolina Da Silva,7,7,13,0,5,0,5
+23,BRA,24,Lorenne Geraldo Teixeira,7,4,19,2,8,1,6
+23,BRA,13,Sheilla Castro De Paula Blassioli,5,4,11,1,5,0,2
+23,BRA,1,Fabiana Claudino,2,2,4,0,7,0,7
+23,BRA,3,Macris Fernanda Silva Carneiro,2,2,2,0,2,0,7
+23,BRA,6,Gabriela Candido Da Silva,0,0,7,0,0,0,4
+23,BRA,9,Roberta Silva Ratzke,0,0,0,0,3,0,6
+23,BRA,18,Camila Brait,0,0,0,0,0,0,0
+23,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+23,BRA,20,Ana Beatriz Correa,0,0,0,0,3,0,2
+23,BRA,21,Drussyla Costa,0,0,0,0,0,0,0
+29,BRA,10,Gabriela Braga Guimaraes,12,12,18,0,6,0,10
+29,BRA,21,Drussyla Costa,12,12,28,0,3,0,8
+29,BRA,2,Mara Ferreira Leao,6,5,9,1,4,0,6
+29,BRA,24,Lorenne Geraldo Teixeira,6,6,23,0,4,0,7
+29,BRA,20,Ana Beatriz Correa,4,2,8,1,15,1,7
+29,BRA,1,Fabiana Claudino,3,2,5,1,7,0,3
+29,BRA,9,Roberta Silva Ratzke,1,0,0,0,1,1,8
+29,BRA,13,Sheilla Castro De Paula Blassioli,1,0,3,1,3,0,2
+29,BRA,3,Macris Fernanda Silva Carneiro,0,0,0,0,0,0,7
+29,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+29,BRA,7,Amanda Francisco,0,0,0,0,0,0,3
+29,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+29,BRA,18,Camila Brait,0,0,0,0,0,0,0
+29,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+34,BRA,10,Gabriela Braga Guimaraes,22,20,52,1,3,1,18
+34,BRA,2,Mara Ferreira Leao,19,15,22,4,17,0,11
+34,BRA,24,Lorenne Geraldo Teixeira,16,14,33,0,5,2,12
+34,BRA,21,Drussyla Costa,12,11,30,0,5,1,18
+34,BRA,20,Ana Beatriz Correa,7,2,8,4,10,1,15
+34,BRA,3,Macris Fernanda Silva Carneiro,6,4,4,0,6,2,17
+34,BRA,13,Sheilla Castro De Paula Blassioli,3,3,9,0,0,0,0
+34,BRA,1,Fabiana Claudino,0,0,0,0,0,0,0
+34,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+34,BRA,7,Amanda Francisco,0,0,0,0,0,0,5
+34,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
+34,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+34,BRA,18,Camila Brait,0,0,0,0,0,0,0
+34,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+38,BRA,10,Gabriela Braga Guimaraes,22,20,45,1,8,1,16
+38,BRA,24,Lorenne Geraldo Teixeira,18,16,31,2,7,0,7
+38,BRA,2,Mara Ferreira Leao,8,6,12,2,12,0,14
+38,BRA,7,Amanda Francisco,8,7,20,0,8,1,18
+38,BRA,1,Fabiana Claudino,7,4,8,3,9,0,8
+38,BRA,13,Sheilla Castro De Paula Blassioli,5,4,12,1,4,0,0
+38,BRA,20,Ana Beatriz Correa,2,2,5,0,6,0,5
+38,BRA,3,Macris Fernanda Silva Carneiro,1,1,3,0,3,0,17
+38,BRA,9,Roberta Silva Ratzke,1,0,2,0,0,1,10
+38,BRA,21,Drussyla Costa,1,0,0,0,0,1,2
+38,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+38,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+38,BRA,18,Camila Brait,0,0,0,0,0,0,0
+38,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+48,BRA,10,Gabriela Braga Guimaraes,15,14,44,1,8,0,9
+48,BRA,24,Lorenne Geraldo Teixeira,15,13,23,2,7,0,7
+48,BRA,1,Fabiana Claudino,12,11,17,0,15,1,14
+48,BRA,2,Mara Ferreira Leao,6,2,7,4,18,0,12
+48,BRA,21,Drussyla Costa,4,3,17,1,3,0,5
+48,BRA,13,Sheilla Castro De Paula Blassioli,2,1,7,1,2,0,0
+48,BRA,3,Macris Fernanda Silva Carneiro,1,0,0,1,2,0,13
+48,BRA,7,Amanda Francisco,1,1,6,0,2,0,10
+48,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+48,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,4
+48,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+48,BRA,18,Camila Brait,0,0,0,0,0,0,0
+48,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+48,BRA,20,Ana Beatriz Correa,0,0,0,0,0,0,0
+51,BRA,2,Mara Ferreira Leao,10,9,12,1,8,0,6
+51,BRA,24,Lorenne Geraldo Teixeira,10,9,23,1,2,0,4
+51,BRA,10,Gabriela Braga Guimaraes,8,6,13,0,2,2,18
+51,BRA,7,Amanda Francisco,6,4,6,1,2,1,11
+51,BRA,1,Fabiana Claudino,5,4,4,1,2,0,2
+51,BRA,13,Sheilla Castro De Paula Blassioli,5,3,7,2,3,0,0
+51,BRA,20,Ana Beatriz Correa,5,3,10,2,3,0,4
+51,BRA,21,Drussyla Costa,4,3,9,0,1,1,9
+51,BRA,3,Macris Fernanda Silva Carneiro,2,1,2,0,1,1,13
+51,BRA,6,Gabriela Candido Da Silva,1,1,1,0,0,0,1
+51,BRA,9,Roberta Silva Ratzke,1,0,0,0,0,1,5
+51,BRA,15,Ana Carolina Da Silva,1,1,1,0,0,0,1
+51,BRA,18,Camila Brait,0,0,0,0,0,0,0
+51,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+55,BRA,24,Lorenne Geraldo Teixeira,23,20,34,3,15,0,9
+55,BRA,10,Gabriela Braga Guimaraes,14,14,34,0,7,0,22
+55,BRA,21,Drussyla Costa,10,9,21,0,2,1,7
+55,BRA,2,Mara Ferreira Leao,7,7,11,0,8,0,8
+55,BRA,7,Amanda Francisco,7,7,12,0,2,0,6
+55,BRA,1,Fabiana Claudino,5,3,9,2,11,0,8
+55,BRA,20,Ana Beatriz Correa,5,5,7,0,6,0,7
+55,BRA,13,Sheilla Castro De Paula Blassioli,3,1,10,1,3,1,2
+55,BRA,3,Macris Fernanda Silva Carneiro,1,0,0,0,5,1,18
+55,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+55,BRA,9,Roberta Silva Ratzke,0,0,0,0,2,0,3
+55,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+55,BRA,18,Camila Brait,0,0,0,0,0,0,0
+55,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+63,BRA,24,Lorenne Geraldo Teixeira,21,16,38,3,8,2,11
+63,BRA,7,Amanda Francisco,17,16,30,1,6,0,16
+63,BRA,1,Fabiana Claudino,14,10,16,2,19,2,13
+63,BRA,2,Mara Ferreira Leao,14,9,16,5,15,0,15
+63,BRA,10,Gabriela Braga Guimaraes,11,9,31,1,8,1,18
+63,BRA,3,Macris Fernanda Silva Carneiro,3,1,2,1,3,1,14
+63,BRA,6,Gabriela Candido Da Silva,0,0,0,0,0,0,0
+63,BRA,9,Roberta Silva Ratzke,0,0,0,0,0,0,6
+63,BRA,13,Sheilla Castro De Paula Blassioli,0,0,7,0,0,0,0
+63,BRA,15,Ana Carolina Da Silva,0,0,0,0,0,0,0
+63,BRA,18,Camila Brait,0,0,0,0,0,0,0
+63,BRA,19,Leia Henrique Da Silva Nicolosi,0,0,0,0,0,0,0
+63,BRA,20,Ana Beatriz Correa,0,0,0,0,0,0,1
+63,BRA,21,Drussyla Costa,0,0,0,0,0,0,4
+6,DOM,21,Jineiry Martinez,12,9,21,3,21,0,11
+6,DOM,18,Bethania De La Cruz De Peña,11,11,40,0,10,0,13
+6,DOM,20,Brayelin Elizabeth Martinez,11,11,29,0,5,0,9
+6,DOM,23,Gaila Ceneida Gonzalez Lopez,10,9,26,1,13,0,9
+6,DOM,14,Prisilla Rivera Brens,6,6,22,0,3,0,9
+6,DOM,1,Annerys Victoria Vargas Valdez,4,4,7,0,9,0,3
+6,DOM,3,Lisvel Elisa Eve Mejia,3,2,5,1,13,0,8
+6,DOM,7,Niverka Dharlenis Marte Frica,1,1,2,0,9,0,11
+6,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+6,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+6,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+6,DOM,16,Yonkaira Paola Peña Isabel,0,0,1,0,0,0,0
+6,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+6,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+10,DOM,20,Brayelin Elizabeth Martinez,26,26,48,0,6,0,19
+10,DOM,18,Bethania De La Cruz De Peña,19,17,40,0,8,2,15
+10,DOM,14,Prisilla Rivera Brens,11,11,35,0,9,0,14
+10,DOM,21,Jineiry Martinez,11,9,16,2,17,0,21
+10,DOM,3,Lisvel Elisa Eve Mejia,6,2,8,4,11,0,11
+10,DOM,23,Gaila Ceneida Gonzalez Lopez,3,3,3,0,0,0,0
+10,DOM,7,Niverka Dharlenis Marte Frica,2,2,2,0,5,0,18
+10,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
+10,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+10,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+10,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+10,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
+10,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+10,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+14,DOM,16,Yonkaira Paola Peña Isabel,23,21,45,1,6,1,16
+14,DOM,20,Brayelin Elizabeth Martinez,21,20,42,1,11,0,12
+14,DOM,23,Gaila Ceneida Gonzalez Lopez,16,12,31,4,9,0,11
+14,DOM,1,Annerys Victoria Vargas Valdez,9,5,13,4,20,0,23
+14,DOM,17,Gina Altagracia Mambru Casilla,7,5,13,0,2,2,14
+14,DOM,8,Candida Estefany Arias Perez,4,2,8,2,16,0,4
+14,DOM,7,Niverka Dharlenis Marte Frica,3,2,3,0,5,1,28
+14,DOM,21,Jineiry Martinez,3,3,4,0,3,0,1
+14,DOM,3,Lisvel Elisa Eve Mejia,1,0,1,1,5,0,5
+14,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+14,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+14,DOM,14,Prisilla Rivera Brens,0,0,1,0,0,0,2
+14,DOM,18,Bethania De La Cruz De Peña,0,0,0,0,0,0,0
+14,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+22,DOM,21,Jineiry Martinez,11,7,11,3,5,1,8
+22,DOM,18,Bethania De La Cruz De Peña,9,7,22,1,5,1,9
+22,DOM,14,Prisilla Rivera Brens,6,5,11,0,2,1,7
+22,DOM,23,Gaila Ceneida Gonzalez Lopez,6,6,12,0,0,0,6
+22,DOM,16,Yonkaira Paola Peña Isabel,4,4,8,0,1,0,4
+22,DOM,20,Brayelin Elizabeth Martinez,4,4,15,0,1,0,4
+22,DOM,3,Lisvel Elisa Eve Mejia,3,3,9,0,0,0,5
+22,DOM,1,Annerys Victoria Vargas Valdez,2,1,4,0,0,1,7
+22,DOM,7,Niverka Dharlenis Marte Frica,1,0,0,1,3,0,7
+22,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+22,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,2,0,3
+22,DOM,8,Candida Estefany Arias Perez,0,0,0,0,1,0,0
+22,DOM,17,Gina Altagracia Mambru Casilla,0,0,1,0,0,0,1
+22,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+26,DOM,18,Bethania De La Cruz De Peña,24,18,45,3,5,3,18
+26,DOM,20,Brayelin Elizabeth Martinez,22,20,56,1,5,1,12
+26,DOM,3,Lisvel Elisa Eve Mejia,8,6,14,1,17,1,16
+26,DOM,14,Prisilla Rivera Brens,8,8,21,0,3,0,17
+26,DOM,23,Gaila Ceneida Gonzalez Lopez,4,3,7,1,4,0,0
+26,DOM,8,Candida Estefany Arias Perez,3,0,7,3,10,0,9
+26,DOM,7,Niverka Dharlenis Marte Frica,2,2,5,0,9,0,16
+26,DOM,21,Jineiry Martinez,2,2,5,0,3,0,6
+26,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,1,0,0
+26,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+26,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,1
+26,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
+26,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+26,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+32,DOM,18,Bethania De La Cruz De Peña,16,12,22,1,7,3,13
+32,DOM,20,Brayelin Elizabeth Martinez,14,13,27,1,6,0,7
+32,DOM,14,Prisilla Rivera Brens,9,9,26,0,6,0,20
+32,DOM,1,Annerys Victoria Vargas Valdez,8,3,8,4,18,1,9
+32,DOM,3,Lisvel Elisa Eve Mejia,7,4,10,2,12,1,13
+32,DOM,7,Niverka Dharlenis Marte Frica,1,1,2,0,2,0,10
+32,DOM,16,Yonkaira Paola Peña Isabel,1,1,1,0,0,0,0
+32,DOM,17,Gina Altagracia Mambru Casilla,1,1,2,0,0,0,1
+32,DOM,23,Gaila Ceneida Gonzalez Lopez,1,1,1,0,0,0,1
+32,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+32,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+32,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+32,DOM,21,Jineiry Martinez,0,0,0,0,0,0,0
+32,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+38,DOM,20,Brayelin Elizabeth Martinez,19,17,42,1,6,1,18
+38,DOM,18,Bethania De La Cruz De Peña,18,17,36,0,3,1,17
+38,DOM,14,Prisilla Rivera Brens,13,10,30,3,7,0,10
+38,DOM,21,Jineiry Martinez,9,7,21,2,12,0,9
+38,DOM,3,Lisvel Elisa Eve Mejia,7,5,13,2,9,0,13
+38,DOM,7,Niverka Dharlenis Marte Frica,2,2,5,0,8,0,14
+38,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
+38,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+38,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+38,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+38,DOM,16,Yonkaira Paola Peña Isabel,0,0,1,0,0,0,2
+38,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+38,DOM,23,Gaila Ceneida Gonzalez Lopez,0,0,3,0,2,0,0
+38,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+44,DOM,23,Gaila Ceneida Gonzalez Lopez,14,10,28,4,4,0,9
+44,DOM,20,Brayelin Elizabeth Martinez,8,7,18,1,5,0,6
+44,DOM,21,Jineiry Martinez,7,6,10,1,8,0,9
+44,DOM,3,Lisvel Elisa Eve Mejia,3,0,2,2,9,1,8
+44,DOM,18,Bethania De La Cruz De Peña,3,2,15,0,2,1,9
+44,DOM,16,Yonkaira Paola Peña Isabel,2,2,8,0,0,0,3
+44,DOM,8,Candida Estefany Arias Perez,1,0,0,0,1,1,3
+44,DOM,17,Gina Altagracia Mambru Casilla,1,0,2,1,1,0,1
+44,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
+44,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+44,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+44,DOM,7,Niverka Dharlenis Marte Frica,0,0,1,0,1,0,8
+44,DOM,14,Prisilla Rivera Brens,0,0,0,0,0,0,0
+44,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+50,DOM,20,Brayelin Elizabeth Martinez,26,24,40,1,6,1,11
+50,DOM,3,Lisvel Elisa Eve Mejia,11,7,13,4,14,0,14
+50,DOM,18,Bethania De La Cruz De Peña,10,7,21,1,7,2,10
+50,DOM,14,Prisilla Rivera Brens,7,7,22,0,6,0,14
+50,DOM,21,Jineiry Martinez,6,5,9,1,15,0,7
+50,DOM,7,Niverka Dharlenis Marte Frica,1,0,3,1,3,0,20
+50,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,0,0,0
+50,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+50,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+50,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+50,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
+50,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+50,DOM,23,Gaila Ceneida Gonzalez Lopez,0,0,1,0,1,0,0
+50,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+56,DOM,20,Brayelin Elizabeth Martinez,26,22,46,4,9,0,13
+56,DOM,18,Bethania De La Cruz De Peña,17,13,32,3,8,1,26
+56,DOM,21,Jineiry Martinez,11,10,18,1,20,0,11
+56,DOM,3,Lisvel Elisa Eve Mejia,10,7,12,3,8,0,19
+56,DOM,14,Prisilla Rivera Brens,6,4,22,2,9,0,22
+56,DOM,7,Niverka Dharlenis Marte Frica,4,3,5,1,17,0,13
+56,DOM,23,Gaila Ceneida Gonzalez Lopez,4,3,4,1,2,0,1
+56,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,1,0,0
+56,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+56,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+56,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+56,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,1,0,3
+56,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+56,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+62,DOM,18,Bethania De La Cruz De Peña,21,14,33,3,13,4,20
+62,DOM,20,Brayelin Elizabeth Martinez,20,17,36,3,9,0,18
+62,DOM,23,Gaila Ceneida Gonzalez Lopez,16,11,33,3,9,2,20
+62,DOM,21,Jineiry Martinez,12,9,23,2,12,1,11
+62,DOM,3,Lisvel Elisa Eve Mejia,11,6,18,5,19,0,12
+62,DOM,7,Niverka Dharlenis Marte Frica,1,0,3,1,9,0,13
+62,DOM,1,Annerys Victoria Vargas Valdez,0,0,0,0,2,0,0
+62,DOM,2,Yaneirys Rodriguez Duran,0,0,0,0,0,0,0
+62,DOM,6,Camil Inmaculada Dominguez Martinez,0,0,0,0,0,0,0
+62,DOM,8,Candida Estefany Arias Perez,0,0,0,0,0,0,0
+62,DOM,14,Prisilla Rivera Brens,0,0,0,0,0,0,2
+62,DOM,16,Yonkaira Paola Peña Isabel,0,0,0,0,0,0,0
+62,DOM,17,Gina Altagracia Mambru Casilla,0,0,0,0,0,0,0
+62,DOM,25,Larysmer Martinez Caro,0,0,0,0,0,0,0
+6,JPN,2,Sarina Koga,28,26,75,1,9,1,16
+6,JPN,7,Yuki Ishii,21,21,49,0,10,0,16
+6,JPN,4,Risa Shinnabe,12,11,23,0,4,1,16
+6,JPN,5,Erika Shinomiya,9,5,10,4,17,0,15
+6,JPN,13,Mai Okumura,7,6,8,0,22,1,12
+6,JPN,21,Miwako Osanai,6,5,13,1,1,0,2
+6,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+6,JPN,6,Haruka Miyashita,0,0,0,0,0,0,1
+6,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
+6,JPN,12,Miya Sato,0,0,2,0,4,0,14
+6,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+6,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+6,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
+6,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,6
+12,JPN,7,Yuki Ishii,28,24,59,1,8,3,20
+12,JPN,28,Mayu Ishikawa,20,19,44,0,2,1,17
+12,JPN,4,Risa Shinnabe,9,9,27,0,1,0,11
+12,JPN,5,Erika Shinomiya,8,6,10,1,17,1,16
+12,JPN,13,Mai Okumura,5,2,13,3,23,0,8
+12,JPN,12,Miya Sato,1,0,2,0,6,1,14
+12,JPN,2,Sarina Koga,0,0,8,0,0,0,0
+12,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+12,JPN,6,Haruka Miyashita,0,0,0,0,0,0,3
+12,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
+12,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+12,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+12,JPN,21,Miwako Osanai,0,0,0,0,0,0,1
+12,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
+18,JPN,28,Mayu Ishikawa,17,16,39,1,4,0,17
+18,JPN,7,Yuki Ishii,15,14,32,0,1,1,10
+18,JPN,4,Risa Shinnabe,11,11,30,0,7,0,11
+18,JPN,5,Erika Shinomiya,8,6,12,1,19,1,14
+18,JPN,2,Sarina Koga,7,7,25,0,0,0,3
+18,JPN,24,Aika Akutagawa,6,4,9,1,10,1,7
+18,JPN,3,Nana Iwasaka,4,3,6,0,5,1,9
+18,JPN,21,Miwako Osanai,4,4,8,0,2,0,0
+18,JPN,12,Miya Sato,2,0,2,0,8,2,16
+18,JPN,6,Haruka Miyashita,0,0,0,0,0,0,4
+18,JPN,11,Yurie Nabeya,0,0,0,0,0,0,1
+18,JPN,13,Mai Okumura,0,0,0,0,0,0,0
+18,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+18,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+24,JPN,2,Sarina Koga,12,8,31,1,3,3,11
+24,JPN,7,Yuki Ishii,12,11,24,0,3,1,17
+24,JPN,21,Miwako Osanai,10,9,21,0,7,1,11
+24,JPN,24,Aika Akutagawa,7,5,11,1,10,1,10
+24,JPN,13,Mai Okumura,6,2,7,3,11,1,9
+24,JPN,11,Yurie Nabeya,4,4,4,0,1,0,1
+24,JPN,6,Haruka Miyashita,1,0,0,0,0,1,7
+24,JPN,12,Miya Sato,1,1,2,0,2,0,7
+24,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+24,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
+24,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
+24,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+24,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+24,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,1
+30,JPN,4,Risa Shinnabe,8,7,13,1,3,0,11
+30,JPN,28,Mayu Ishikawa,7,7,15,0,0,0,2
+30,JPN,7,Yuki Ishii,6,6,32,0,4,0,8
+30,JPN,2,Sarina Koga,5,5,18,0,0,0,4
+30,JPN,5,Erika Shinomiya,4,3,10,0,7,1,8
+30,JPN,3,Nana Iwasaka,2,1,6,1,8,0,7
+30,JPN,21,Miwako Osanai,2,2,5,0,0,0,1
+30,JPN,11,Yurie Nabeya,1,1,7,0,1,0,2
+30,JPN,6,Haruka Miyashita,0,0,0,0,0,0,0
+30,JPN,12,Miya Sato,0,0,0,0,3,0,3
+30,JPN,13,Mai Okumura,0,0,0,0,0,0,0
+30,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+30,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+30,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
+36,JPN,28,Mayu Ishikawa,23,21,59,1,3,1,17
+36,JPN,7,Yuki Ishii,21,20,55,0,9,1,18
+36,JPN,4,Risa Shinnabe,15,13,35,1,7,1,13
+36,JPN,5,Erika Shinomiya,11,9,20,2,16,0,15
+36,JPN,13,Mai Okumura,4,3,9,1,9,0,14
+36,JPN,21,Miwako Osanai,4,4,8,0,2,0,0
+36,JPN,12,Miya Sato,1,1,1,0,8,0,16
+36,JPN,2,Sarina Koga,0,0,0,0,0,0,0
+36,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+36,JPN,6,Haruka Miyashita,0,0,0,0,0,0,7
+36,JPN,11,Yurie Nabeya,0,0,0,0,0,0,4
+36,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+36,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+36,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
+42,JPN,2,Sarina Koga,13,12,25,1,3,0,7
+42,JPN,21,Miwako Osanai,13,13,26,0,4,0,9
+42,JPN,7,Yuki Ishii,11,10,25,0,2,1,13
+42,JPN,24,Aika Akutagawa,7,6,12,0,6,1,6
+42,JPN,11,Yurie Nabeya,5,5,11,0,0,0,3
+42,JPN,3,Nana Iwasaka,4,3,8,1,6,0,12
+42,JPN,28,Mayu Ishikawa,4,3,6,0,1,1,8
+42,JPN,13,Mai Okumura,3,2,5,1,5,0,4
+42,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
+42,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
+42,JPN,6,Haruka Miyashita,0,0,0,0,0,0,3
+42,JPN,12,Miya Sato,0,0,1,0,4,0,9
+42,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+42,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+48,JPN,7,Yuki Ishii,12,11,42,1,10,0,7
+48,JPN,4,Risa Shinnabe,8,8,27,0,4,0,9
+48,JPN,13,Mai Okumura,8,6,13,1,11,1,12
+48,JPN,28,Mayu Ishikawa,8,8,37,0,2,0,8
+48,JPN,2,Sarina Koga,5,4,17,1,1,0,2
+48,JPN,5,Erika Shinomiya,5,3,8,1,14,1,12
+48,JPN,12,Miya Sato,2,1,4,1,4,0,8
+48,JPN,21,Miwako Osanai,1,1,2,0,0,0,0
+48,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+48,JPN,6,Haruka Miyashita,0,0,0,0,0,0,1
+48,JPN,11,Yurie Nabeya,0,0,0,0,0,0,0
+48,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+48,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+48,JPN,24,Aika Akutagawa,0,0,0,0,0,0,0
+54,JPN,7,Yuki Ishii,19,19,40,0,4,0,14
+54,JPN,11,Yurie Nabeya,18,14,40,1,2,3,21
+54,JPN,13,Mai Okumura,13,7,9,6,23,0,14
+54,JPN,24,Aika Akutagawa,13,10,20,1,16,2,17
+54,JPN,4,Risa Shinnabe,8,5,20,3,8,0,17
+54,JPN,2,Sarina Koga,6,5,24,0,0,1,7
+54,JPN,16,Ai Kurogo,3,3,7,0,2,0,0
+54,JPN,12,Miya Sato,1,1,2,0,4,0,13
+54,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+54,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
+54,JPN,6,Haruka Miyashita,0,0,0,0,0,0,4
+54,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+54,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+54,JPN,28,Mayu Ishikawa,0,0,0,0,0,0,0
+60,JPN,2,Sarina Koga,18,17,35,1,6,0,9
+60,JPN,21,Miwako Osanai,15,15,25,0,7,0,7
+60,JPN,11,Yurie Nabeya,14,12,23,0,2,2,15
+60,JPN,24,Aika Akutagawa,6,5,9,1,9,0,7
+60,JPN,16,Ai Kurogo,4,4,9,0,1,0,0
+60,JPN,3,Nana Iwasaka,3,1,5,2,11,0,15
+60,JPN,12,Miya Sato,3,0,1,1,6,2,14
+60,JPN,28,Mayu Ishikawa,1,1,1,0,0,0,0
+60,JPN,4,Risa Shinnabe,0,0,0,0,0,0,0
+60,JPN,6,Haruka Miyashita,0,0,0,0,0,0,8
+60,JPN,7,Yuki Ishii,0,0,0,0,0,0,0
+60,JPN,13,Mai Okumura,0,0,0,0,0,0,0
+60,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+60,JPN,18,Akane Moriya,0,0,0,0,0,0,0
+66,JPN,7,Yuki Ishii,25,22,56,1,8,2,15
+66,JPN,4,Risa Shinnabe,19,17,35,2,12,0,10
+66,JPN,11,Yurie Nabeya,10,9,39,0,1,1,23
+66,JPN,28,Mayu Ishikawa,10,10,24,0,3,0,2
+66,JPN,24,Aika Akutagawa,9,5,16,1,24,3,18
+66,JPN,13,Mai Okumura,4,2,8,1,16,1,15
+66,JPN,16,Ai Kurogo,4,4,12,0,3,0,0
+66,JPN,12,Miya Sato,3,2,2,0,3,1,12
+66,JPN,6,Haruka Miyashita,1,0,0,0,0,1,5
+66,JPN,2,Sarina Koga,0,0,0,0,0,0,0
+66,JPN,3,Nana Iwasaka,0,0,0,0,0,0,0
+66,JPN,5,Erika Shinomiya,0,0,0,0,0,0,0
+66,JPN,14,Mako Kobata,0,0,0,0,0,0,0
+66,JPN,18,Akane Moriya,0,0,0,0,0,0,0

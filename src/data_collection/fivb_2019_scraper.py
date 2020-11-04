@@ -13,6 +13,7 @@ from datetime import datetime
 index_url = "https://www.volleyball.world/en/volleyball/worldcup/2019/women/schedule"
 
 match_stats_header = [
+    "Match Num",
     "Team",
     "Opponent",
     "Set 1 Duration",
@@ -42,6 +43,7 @@ headers = {"User-Agent": user_agent}
 data_path = Path("data/fivb/")
 match_stats_fname = "2019_women_world_cup_match-wise.csv"
 player_stats_fname = "2019_women_world_cup_player-wise.csv"
+matches_data_fname = "2019_women_world_cup_matches.csv"
 
 start_time = datetime.now()
 print(f"Starting scraping process at {start_time:%d/%m/%y %H:%M:%S}.")
@@ -57,6 +59,17 @@ data = json.loads(
     + "]}"
 )["raw"]
 match_urls = ["https://www.volleyball.world/" + match["Url"] for match in data]
+
+matches_dict = {
+    "Match Num": [match["MatchNumber"] for match in data],
+    "TeamA": [match["TeamA"]["Code"] for match in data],
+    "TeamB": [match["TeamB"]["Code"] for match in data],
+    "TeamA Score": [match["MatchPointsA"] for match in data],
+    "TeamB Score": [match["MatchPointsB"] for match in data],
+    "Winner": [0 if match["MatchPointsA"] > match["MatchPointsB"] else 1 for match in data]
+}
+matches_df = pd.DataFrame(matches_dict)
+matches_df.to_csv(data_path.joinpath(matches_data_fname), index=False)
 print("Complete!")
 
 for url in match_urls:
@@ -168,7 +181,7 @@ print(
     f"\tStoring matchwise stats at {data_path.joinpath(match_stats_fname).absolute()} ...",
     end=" ",
 )
-match_stats.to_csv(data_path.joinpath(match_stats_fname))
+match_stats.to_csv(data_path.joinpath(match_stats_fname), index=False)
 print("Complete!")
 
 print(
@@ -179,7 +192,7 @@ players_df_list = []
 for i in players_stats_by_match.values():
     for j in i:
         players_df_list.append(j)
-player_stats = pd.concat(players_df_list).to_csv(data_path.joinpath(player_stats_fname))
+player_stats = pd.concat(players_df_list).to_csv(data_path.joinpath(player_stats_fname), index=False)
 print("Complete!")
 
 print(
