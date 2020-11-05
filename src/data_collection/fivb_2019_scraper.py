@@ -9,6 +9,7 @@ import pandas as pd
 from pathlib import Path
 import json
 from datetime import datetime
+import os
 
 index_url = "https://www.volleyball.world/en/volleyball/worldcup/2019/women/schedule"
 
@@ -40,7 +41,8 @@ players_stats_by_match = {}
 user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
 headers = {"User-Agent": user_agent}
 
-data_path = Path("data/fivb/")
+current_path = Path(os.path.dirname(os.path.realpath(__file__)))
+data_path = current_path.parent.parent.joinpath(f"data/fivb")
 match_stats_fname = "2019_women_world_cup_match-wise.csv"
 player_stats_fname = "2019_women_world_cup_player-wise.csv"
 matches_data_fname = "2019_women_world_cup_matches.csv"
@@ -52,7 +54,7 @@ print(f"Starting scraping process at {start_time:%d/%m/%y %H:%M:%S}.")
 print(f"\nFetching match list and urls from {index_url} ...", end=" ")
 r = requests.get((index_url), headers=headers)
 html = r.text
-soup = BeautifulSoup(html, "html.parser")
+soup = BeautifulSoup(html, "lxml")
 data = json.loads(
     '{"raw": ['
     + soup.find("div", class_="col-1-1 schedulepage").find("script").string[75:-1753]
