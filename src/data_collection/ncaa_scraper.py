@@ -1,19 +1,25 @@
-"Author : Vedant Shah"
-"Data to scrape NCAA Women's Volleyball stats"
+"""
+Author : Vedant Shah
+Script to scrape NCAA Women's Volleyball stats
+"""
 
 
 import re
 from urllib.request import Request, urlopen
-
+import argparse
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+parser = argparse.parser()
+paser.add_argument("-y", "--year", type=int)
+args = parser.parse_args()
+
+year = args.year
+
 user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
 
-year = "2019"
-
-soup = BeautifulSoup(open("teams_index.html"), "lxml")
+soup = BeautifulSoup(open(f"ncaa_{year}_team_index.html", "r"), "lxml")
 a_list = soup.body.find('div', id='contentarea').find('div', id='national_ranking_div').find_all('a', href=True)
 a_list = a_list[3:]
 
