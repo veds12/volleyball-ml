@@ -13,23 +13,17 @@ user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, lik
 
 year = "2019"
 
-url_team_map = {
-    "Baylor": "https://stats.ncaa.org/teams/481920",  # Use links according to the year
-    "Stanford": "https://stats.ncaa.org/teams/481752",
-    "Wisconsin": "https://stats.ncaa.org/teams/481833",
-    "Texas_A&M": "https://stats.ncaa.org/teams/481771",
-    "Pittsburgh": "https://stats.ncaa.org/team/545.0/14942",
-    "Minnesota": "https://stats.ncaa.org/team/428.0/14942",
-    "Nebraska": "https://stats.ncaa.org/teams/482137",
-    "Washington": "https://stats.ncaa.org/teams/481815",
-    "Kentucky": "https://stats.ncaa.org/team/334.0/14942",
-    "Florida": "https://stats.ncaa.org/team/235.0/14942",
-}
+soup = BeautifulSoup(open("teams_index.html"), "lxml")
+a_list = soup.body.find('div', id='contentarea').find('div', id='national_ranking_div').find_all('a', href=True)
+a_list = a_list[3:]
 
-year = "2019"
+root_url = "https://stats.ncaa.org"
 
-print("<-------Starting Team Data Scraping------->")
-for team_name, root_url in url_team_map.items():
+url_teams_map = {tag.string : root_url + tag['href'] for tag in a_list}
+
+print("<-------Starting Team Data Scraping------->\n")
+
+for team_name, root_url in url_teams_map.items():
     req = Request(root_url, headers={"User-Agent": user_agent})
     root_page = urlopen(req)
     root_html = root_page.read().decode("utf-8")
@@ -52,4 +46,5 @@ for team_name, root_url in url_team_map.items():
     path = f"./../../data/ncaa/{year}/team_stats/{team_name}.csv"
     df.to_csv(path, index=False)
     print(f"{team_name} - Scraped!")
-print("<-------Data Scraped!------->")
+
+print("\n<-------Data Scraped!------->")
