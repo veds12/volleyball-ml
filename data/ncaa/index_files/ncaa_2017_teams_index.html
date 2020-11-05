@@ -1,0 +1,5502 @@
+<html><head>
+  <title>NCAA Statistics</title>
+  <link href="/assets/application-d8b43df8b288f6db98f1342b8bd23f1d.css" media="all" rel="stylesheet" type="text/css">
+  <script src="/assets/pdfmake.min-4bed2d37a29e856f08cf25124b5e5d69.js" type="text/javascript"></script>
+  <script src="/assets/application-47d1ef572bc70631797751ad84a6305e.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg=" name="csrf-token">
+  <style>
+tfoot tr:nth-child(n+2){
+border: initial;
+font-weight: initial;
+}
+
+tfoot tr:nth-child(n+2) td{
+border: initial;
+font-weight: initial;
+}
+  </style>
+
+<script>
+
+$.ajaxSetup ({
+  // Disable caching of AJAX responses
+  cache: false
+});
+
+function changeSport(field){
+  var el = $(field);
+  var tmList = el.parent().next().find('.new-team-year')[0];
+  if (tmList == null){
+    tmList = el.nextAll('.new-team-year')[0];
+  }
+  $.ajax({
+    url: "/game_sport_year_ctls/"+el.val()+"/available_teams",
+    dataType: "script",
+    success: function(data, status){
+      $(tmList).empty();
+      $(tmList).append(("<option value=''>Select team</option>"));
+      $.each(JSON.parse(data), function(k, v){
+        $(tmList).append($("<option></option>")
+            .attr("value", v["id"])
+            .text(v["member_org"]["name_tabular"]));
+      });
+      $(tmList).trigger("chosen:updated");
+    }
+  });
+}
+
+  function set_process_styles(fld, start_color, end_color){
+     $('#'+fld).effect('highlight', {color: '#99CC99'}, 6000);
+  }
+
+  var downImage = "/assets/down12.gif";
+  var rightImage = "/assets/right12.gif";
+
+  function highlight(div_id){
+    $(div_id).effect('highlight', {color: '#99CC99'}, 6000);
+  }
+
+  function show_hide_rows(attr_val, link_id){
+    $('#'+attr_val).toggle();
+    if ($('#'+attr_val).is(':visible')) {
+      $('#'+link_id).attr('src', downImage);
+    }else{
+      $('#'+link_id).attr('src', rightImage);
+    }
+  }
+
+  function mask(label){
+    $('body').mask(label);
+  }
+  function unmask(){
+    $('body').unmask();
+  }
+
+  var winHeight = "auto";
+  var winWidth = "auto";
+  var maxHeight = 700;
+  var maxWidth = 1400;
+  var minHeight = 100;
+  var minWidth = 200;
+  
+  var modalOptions = {"width": winWidth,
+                      "height": winHeight,
+                      "maxHeight": maxHeight,
+                      "maxWidth": maxWidth,
+                      "minHeight": minHeight,
+                      "minWidth": minWidth};
+
+  function dialog(url, title){
+
+    $("#stats_app_dialog").dialog({modal:true, minWidth:minWidth, minHeight:minHeight, maxWidth:maxWidth, maxHeight:maxHeight, width:winWidth, height:winHeight, title:title, closeOnEscape: false});
+  
+    modalOptions.title = title;
+  
+    $("#stats_app_dialog").dialog("option", modalOptions);
+  
+    $("#stats_app_dialog").html("Loading...");
+    $("#stats_app_dialog").load(url).dialog('open');
+  }
+
+  function addDatePicker(){
+  $('.adddatepicker').each(function(i, obj){
+    $(obj).datepicker({ 
+      showOn: 'both', 
+      buttonImage: '/assets/calendar.gif', 
+      buttonImageOnly: true,
+    });
+  });
+  }
+
+ $(document).ready(function() {
+   addDatePicker();
+   $('.chosen-select').chosen({allow_single_deselect: true, search_contains: true, width: '250px'});
+   $('.chosen-select-wide').chosen({allow_single_deselect: true, search_contains: true, width: '400px'});
+ });
+
+ function setClassInputFields(){
+   addDatePicker();
+   $('.chosen-select').chosen({allow_single_deselect: true, search_contains: true, width: '250px'});
+   $('.chosen-select-wide').chosen({allow_single_deselect: true, search_contains: true, width: '400px'});
+ }
+
+</script></head>
+
+
+<body id="body" onload="if (top != self) { top.location=self.location; }" data-new-gr-c-s-check-loaded="14.974.0">
+  <div id="header"><img alt="Titlebar_logo" height="81" src="/assets/titlebar_logo-d1d40bd2268e265b6a42cacb7bb117e9.jpg" style="float: left" width="104">
+    <h1>
+      <span id="title1">NCAA</span><br>
+      <span id="title2">Statistics</span>
+    </h1>
+
+
+    <div id="nav">
+<ul>
+   <li id="active">
+     <a href="/rankings?academic_year=2018&amp;division=1.0&amp;sport_code=WVB"><span>National Rankings</span></a>
+  </li>
+   <li id="notactive">
+     <a href="/active_career_leaders/show_summary_from_rankings?academic_year=2018&amp;division=1.0&amp;sport_code=WVB"><span>Active Career Leaders</span></a> 
+  </li>
+  <li id="notactive">
+    <a href="/contests/scoreboards"><span>Scoreboard</span></a> 
+  </li>
+  <li id="notactive">
+    <a href="/selection_rankings/nitty_gritties"><span>RPI/NET Rankings</span></a> 
+  </li>
+  <li id="notactive">
+    <a href="/head_coaches"><span>Head Coaches</span></a> 
+  </li>
+  <li id="notactive">
+    <a href="/search/players"><span>Player Search</span></a> 
+  </li>
+  <li id="team_search">
+    <script>
+$(function() {
+  $( "#org_name" ).autocomplete({
+    source: '/team/search',
+    select: function( event, ui ) {
+      $("#org_id").val(ui.item.vid);
+      $("#id").val(ui.item.vid);
+      $('#sport_btn').click();
+    }
+  });
+});
+</script>
+
+<span style="display:inline; float:right;">
+<form accept-charset="UTF-8" action="/team/index" id="change_team_form" method="post" onsubmit="mask('Loading');" style="display:inline;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg="></div>
+<div style="display:none;">
+<input id="sport_btn" name="commit" type="submit" value="Submit">
+</div>
+  <div id="team_autocomplete" class="ui-widget">
+    <span style="color: #ccc;">Team Search:</span>
+    <input id="org_name" name="org_name" style="width:200px" type="text" class="ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input id="org_id" name="org_id" type="hidden">
+  </div>
+</form></span>
+  </li>
+<li>
+  <a href="http://twitter.com/ncaastats" class="skipMask" target="TWITTER"><img alt="Twitter" height="17" src="/assets/twitter-6586be4273539dff7a95e70ebdf1a846.png" width="46"></a>
+</li>
+</ul>
+</div>
+
+</div>
+
+  <div id="contentarea">
+     <div id="stats_app_dialog" style="display:none;">
+      </div>
+    <div id="message_box" class="rankings" style="display: none">
+      <span class="message_box_success"></span>
+      <span class="message_box_error"></span>
+    </div>
+    <script language="javascript">
+
+//used in ranking_summary.rhtml
+ function load_ranking_summary(org_id, conf_id, region_id, ncaa_custom_id, user_custom_id){
+    $('#ranking_summary_form_org_id').val(org_id); 
+    $('#ranking_summary_form_conf_id').val(conf_id); 
+    $('#ranking_summary_form_region_id').val(region_id); 
+    $('#ranking_summary_form_ncaa_custom_rank_summary_id').val(ncaa_custom_id); 
+    $('#ranking_summary_form_user_custom_rank_summary_id').val(user_custom_id); 
+    $('#ranking_summary_form_submit_btn').click();
+}
+
+//used in ranking_summary.rhtml
+function showCareer(org_id, player_id){
+    $('#career_form_org_id').val(org_id); 
+    $('#career_form_player_id').val(player_id); 
+    $('#career_form_id').submit();
+ }
+
+ function showLegacyPDF(ranking_period, stat_seq, division, sport_code, academic_year){
+   window.open("http://web1.ncaa.org/stats/StatsSrv/pdf/rankings?rptWeeks="+ranking_period+"&statSeq="+stat_seq+"&div="+division+"&sportCode="+sport_code+"&academicYear="+academic_year+"&rptType=PDF&doWhat=showrankings", "PDF_RANKINGS_"+stat_seq);
+
+ }
+
+    function init_tabs(activate_tab){
+      $("#stat_type_I_N").removeClass("current");
+      $("#stat_type_I_Y").removeClass("current");
+      $("#stat_type_T_N").removeClass("current");
+      $("#stat_type_T_Y").removeClass("current");
+      $("#ranking_summary").removeClass("current");
+      $("#misc_reports").removeClass("current");
+      if(activate_tab != null){
+         $(activate_tab).addClass("current");
+      }
+    }
+
+    function changeRankingSummaryTab(){
+       submitSportYearDivForm("ranking_summary");
+    }
+
+    function changeStatType(tm_ind, gm_high){
+     $('#sport_year_div_game_high').val(gm_high);
+     $('#sport_year_div_team_individual').val(tm_ind);
+     $('#sport_year_div_stat_seq').val('');
+     $('#sport_year_div_ranking_summary').val('N');
+       initRankingSummaryOptions();
+       submitSportYearDivForm("change_sport_year_div");
+    }
+
+    function initRankingSummaryOptions(){
+       $('#sport_year_div_org_id').val("-1"); 
+       $('#sport_year_div_conf_id').val("-1"); 
+       $('#sport_year_div_region_id').val("-1"); 
+       $('#sport_year_div_ncaa_custom_rank_summary_id').val("-1"); 
+       $('#sport_year_div_user_custom_rank_summary_id').val("-1"); 
+    }
+
+    //this gets called after ajax calls to rankings or ranking summary
+    function initRankingsCall(stat_seq, org, conf, region, ncaa_custom, user_custom){
+     $('#sport_year_div_stat_seq').val(stat_seq);
+       $('#sport_year_div_org_id').val(org); 
+       $('#sport_year_div_conf_id').val(conf); 
+       $('#sport_year_div_region_id').val(region); 
+       $('#sport_year_div_ncaa_custom_rank_summary_id').val(ncaa_custom); 
+       $('#sport_year_div_user_custom_rank_summary_id').val(user_custom); 
+       if ( stat_seq > 0 ){
+          $('#sport_year_div_ranking_summary').val("N"); 
+       }else{
+          $('#sport_year_div_ranking_summary').val("Y"); 
+       }
+    }
+
+    function showRankings(stat){
+     $('#ranking_form_stat_seq').val(stat);
+     document.ranking_form.submit();
+    }
+
+    function changeDivisions(val){
+           $('#sport_year_div_division').val(val);
+           $('#sport_year_div_ranking_period').val('');
+           initRankingSummaryOptions();
+           submitSportYearDivForm("change_sport_year_div");
+    }
+
+    function changeYears(val){
+           $('#sport_year_div_academic_year').val(val);
+           $('#sport_year_div_ranking_period').val('');
+           initRankingSummaryOptions();
+           submitSportYearDivForm("change_sport_year_div");
+    }
+
+    function changeSports(val){             
+           $('#sport_year_div_sport_code').val(val);
+           $('#sport_year_div_ranking_period').val('');
+           initRankingSummaryOptions();
+           submitSportYearDivForm("change_sport_year_div");
+    }
+
+    function changeRankingPeriod(val){
+     $('#sport_year_div_ranking_period').val(val);
+       submitSportYearDivForm("change_sport_year_div");
+    }
+
+    function submitSportYearDivForm(action_name){
+      $('#contentArea').mask('Loading...');
+      if ($('#sport_year_div_ranking_summary').val() == "Y" && action_name == "change_sport_year_div"){
+         document.sport_year_div_form.action = "/rankings/ranking_summary";
+      }else{
+         document.sport_year_div_form.action = "/rankings/"+action_name;
+      }
+      document.sport_year_div_form.submit();
+    }
+
+    function playerTeamSummary(val){
+     $('#player_search_id').val(val);
+        document.player_form.submit();
+    }
+
+    function viewRankings(stat_seq){
+      $('#rankings_stat_seq').val(stat_seq);
+      $('#rankings_form_submit_btn').click();
+    }
+</script>
+
+
+
+  <select name="sport" id="sport" onchange="mask('Processing'); changeSports(this.value);">
+    <option value="">Select Sport</option>
+      <option value="MBA">Baseball</option>
+      <option value="MBB">Men's Basketball</option>
+      <option value="MFB">Football</option>
+      <option value="MIH">Men's Ice Hockey</option>
+      <option value="MLA">Men's Lacrosse</option>
+      <option value="MSO">Men's Soccer</option>
+      <option value="MTE">Men's Tennis</option>
+      <option value="MVB">Men's Volleyball</option>
+      <option value="MWP">Men's Water Polo</option>
+      <option value="WBB">Women's Basketball</option>
+      <option value="WBW">Women's Bowling</option>
+      <option value="WFH">Field Hockey</option>
+      <option value="WIH">Women's Ice Hockey</option>
+      <option value="WLA">Women's Lacrosse</option>
+      <option value="WSB">Softball</option>
+      <option value="WSO">Women's Soccer</option>
+      <option value="WSV">Women's Beach Volleyball</option>
+      <option value="WTE">Women's Tennis</option>
+      <option value="WVB" selected="">Women's Volleyball</option>
+      <option value="WWP">Women's Water Polo</option>
+  </select>
+
+|
+
+  <select name="acadyr" id="acadyr" onchange="mask('Processing'); changeYears(this.value);">
+    <option value="2021.0">2020-21</option>
+    <option value="2020.0">2019-20</option>
+    <option value="2019.0">2018-19</option>
+    <option value="2018.0" selected="">2017-18</option>
+    <option value="2017.0">2016-17</option>
+    <option value="2016.0">2015-16</option>
+    <option value="2015.0">2014-15</option>
+    <option value="2014.0">2013-14</option>
+    <option value="2013.0">2012-13</option>
+    <option value="2012.0">2011-12</option>
+    <option value="2011.0">2010-11</option>
+</select>
+
+  |
+
+  <select name="u_div" id="u_div" onchange="mask('Processing'); changeDivisions(this.value);">
+    <option value="1.0" selected="">I</option>
+    <option value="2.0">II</option>
+    <option value="3.0">III</option>
+</select>
+
+  |
+
+  <select name="rp" id="rp" onchange="mask('Processing'); changeRankingPeriod(this.value);">
+    <option value="45.0">12/16/2017-DI Women's Volleyball Championship</option>
+    <option value="81.0" selected="">12/16/2017-Final Statistics</option>
+    <option value="80.0">12/14/2017</option>
+    <option value="79.0">12/09/2017</option>
+    <option value="78.0">12/08/2017</option>
+    <option value="77.0">12/07/2017</option>
+    <option value="76.0">12/06/2017</option>
+    <option value="75.0">12/04/2017</option>
+    <option value="74.0">12/03/2017</option>
+    <option value="73.0">12/02/2017</option>
+    <option value="72.0">12/01/2017</option>
+    <option value="71.0">11/30/2017</option>
+    <option value="70.0">11/29/2017</option>
+    <option value="69.0">11/28/2017</option>
+    <option value="68.0">11/25/2017</option>
+    <option value="67.0">11/24/2017</option>
+    <option value="66.0">11/23/2017</option>
+    <option value="65.0">11/22/2017</option>
+    <option value="64.0">11/21/2017</option>
+    <option value="63.0">11/20/2017</option>
+    <option value="62.0">11/19/2017</option>
+    <option value="61.0">11/16/2017</option>
+    <option value="60.0">11/15/2017</option>
+    <option value="59.0">11/14/2017</option>
+    <option value="58.0">11/13/2017</option>
+    <option value="57.0">11/12/2017</option>
+    <option value="56.0">11/09/2017</option>
+    <option value="55.0">11/08/2017</option>
+    <option value="54.0">11/07/2017</option>
+    <option value="53.0">11/06/2017</option>
+    <option value="52.0">11/05/2017</option>
+    <option value="51.0">11/02/2017</option>
+    <option value="50.0">11/01/2017</option>
+    <option value="49.0">10/31/2017</option>
+    <option value="48.0">10/30/2017</option>
+    <option value="47.0">10/29/2017</option>
+    <option value="46.0">10/26/2017</option>
+    <option value="44.0">10/25/2017</option>
+    <option value="43.0">10/24/2017</option>
+    <option value="42.0">10/23/2017</option>
+    <option value="41.0">10/22/2017</option>
+    <option value="40.0">10/19/2017</option>
+    <option value="39.0">10/18/2017</option>
+    <option value="38.0">10/17/2017</option>
+    <option value="37.0">10/16/2017</option>
+    <option value="36.0">10/15/2017</option>
+    <option value="35.0">10/12/2017</option>
+    <option value="34.0">10/11/2017</option>
+    <option value="33.0">10/10/2017</option>
+    <option value="32.0">10/09/2017</option>
+    <option value="31.0">10/08/2017</option>
+    <option value="30.0">10/05/2017</option>
+    <option value="29.0">10/04/2017</option>
+    <option value="28.0">10/03/2017</option>
+    <option value="26.0">10/01/2017</option>
+    <option value="25.0">09/28/2017</option>
+    <option value="23.0">09/26/2017</option>
+    <option value="22.0">09/25/2017</option>
+    <option value="21.0">09/24/2017</option>
+    <option value="20.0">09/21/2017</option>
+    <option value="19.0">09/20/2017</option>
+    <option value="18.0">09/19/2017</option>
+    <option value="17.0">09/18/2017</option>
+    <option value="16.0">09/17/2017</option>
+    <option value="15.0">09/14/2017</option>
+    <option value="14.0">09/13/2017</option>
+    <option value="13.0">09/12/2017</option>
+    <option value="12.0">09/11/2017</option>
+    <option value="11.0">09/10/2017</option>
+    <option value="10.0">09/07/2017</option>
+    <option value="9.0">09/06/2017</option>
+    <option value="8.0">09/05/2017</option>
+    <option value="7.0">09/04/2017</option>
+    <option value="6.0">08/31/2017</option>
+    <option value="5.0">08/30/2017</option>
+    <option value="4.0">08/29/2017</option>
+    <option value="3.0">08/28/2017</option>
+    <option value="2.0">08/27/2017</option>
+</select>
+
+  <br>
+<!--
+
+<div id="grey_header_menu">
+<div id="nav_bar">
+<div id="primary_nav_wrap">
+  <ul class="current-menu-item">
+    <li>
+      <a href="#" class="skipMask">Women&#x27;s Volleyball</a>
+      <ul class="level2">
+           <li><a href="javascript:changeSports('MBA');">Baseball</a></li>
+           <li><a href="javascript:changeSports('MBB');">Men&#x27;s Basketball</a></li>
+           <li><a href="javascript:changeSports('MFB');">Football</a></li>
+           <li><a href="javascript:changeSports('MIH');">Men&#x27;s Ice Hockey</a></li>
+           <li><a href="javascript:changeSports('MLA');">Men&#x27;s Lacrosse</a></li>
+           <li><a href="javascript:changeSports('MSO');">Men&#x27;s Soccer</a></li>
+           <li><a href="javascript:changeSports('MTE');">Men&#x27;s Tennis</a></li>
+           <li><a href="javascript:changeSports('MVB');">Men&#x27;s Volleyball</a></li>
+           <li><a href="javascript:changeSports('MWP');">Men&#x27;s Water Polo</a></li>
+           <li><a href="javascript:changeSports('WBB');">Women&#x27;s Basketball</a></li>
+           <li><a href="javascript:changeSports('WBW');">Women&#x27;s Bowling</a></li>
+           <li><a href="javascript:changeSports('WFH');">Field Hockey</a></li>
+           <li><a href="javascript:changeSports('WIH');">Women&#x27;s Ice Hockey</a></li>
+           <li><a href="javascript:changeSports('WLA');">Women&#x27;s Lacrosse</a></li>
+           <li><a href="javascript:changeSports('WSB');">Softball</a></li>
+           <li><a href="javascript:changeSports('WSO');">Women&#x27;s Soccer</a></li>
+           <li><a href="javascript:changeSports('WSV');">Women&#x27;s Beach Volleyball</a></li>
+           <li><a href="javascript:changeSports('WTE');">Women&#x27;s Tennis</a></li>
+           <li><a href="javascript:changeSports('WVB');">Women&#x27;s Volleyball</a></li>
+           <li><a href="javascript:changeSports('WWP');">Women&#x27;s Water Polo</a></li>
+      </ul>
+    </li>
+    <li class="sep">|</li>
+     <li>
+    <a href="#">2017-18</a>
+    <ul class="level2">
+      <li><a href="javascript:changeYears(2021.0);">2020-21</a></li>
+      <li><a href="javascript:changeYears(2020.0);">2019-20</a></li>
+      <li><a href="javascript:changeYears(2019.0);">2018-19</a></li>
+      <li><a href="javascript:changeYears(2018.0);">2017-18</a></li>
+      <li><a href="javascript:changeYears(2017.0);">2016-17</a></li>
+      <li><a href="javascript:changeYears(2016.0);">2015-16</a></li>
+      <li><a href="javascript:changeYears(2015.0);">2014-15</a></li>
+      <li><a href="javascript:changeYears(2014.0);">2013-14</a></li>
+      <li><a href="javascript:changeYears(2013.0);">2012-13</a></li>
+      <li><a href="javascript:changeYears(2012.0);">2011-12</a></li>
+      <li><a href="javascript:changeYears(2011.0);">2010-11</a></li>
+    </ul>
+    </li>
+        <li class="sep">|</li>
+     <li>
+    <a href="#" class="skipMask">I</a>
+    <ul class="level2">
+      <li><a href="javascript:changeDivisions(1.0);">I</a></li>
+      <li><a href="javascript:changeDivisions(2.0);">II</a></li>
+      <li><a href="javascript:changeDivisions(3.0);">III</a></li>
+    </ul>
+    </li>
+        <li class="sep">|</li>
+     <li>
+        <a href="#" class="skipMask">Thru Games 12/16/2017-Final Statistics</a>
+    <ul class="level2">
+            <li><a href="javascript:changeRankingPeriod(45.0);">12/16/2017-DI Women&#x27;s Volleyball Championship</a></li>
+            <li><a href="javascript:changeRankingPeriod(81.0);">12/16/2017-Final Statistics</a></li>
+            <li><a href="javascript:changeRankingPeriod(80.0);">12/14/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(79.0);">12/09/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(78.0);">12/08/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(77.0);">12/07/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(76.0);">12/06/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(75.0);">12/04/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(74.0);">12/03/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(73.0);">12/02/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(72.0);">12/01/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(71.0);">11/30/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(70.0);">11/29/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(69.0);">11/28/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(68.0);">11/25/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(67.0);">11/24/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(66.0);">11/23/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(65.0);">11/22/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(64.0);">11/21/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(63.0);">11/20/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(62.0);">11/19/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(61.0);">11/16/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(60.0);">11/15/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(59.0);">11/14/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(58.0);">11/13/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(57.0);">11/12/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(56.0);">11/09/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(55.0);">11/08/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(54.0);">11/07/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(53.0);">11/06/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(52.0);">11/05/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(51.0);">11/02/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(50.0);">11/01/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(49.0);">10/31/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(48.0);">10/30/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(47.0);">10/29/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(46.0);">10/26/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(44.0);">10/25/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(43.0);">10/24/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(42.0);">10/23/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(41.0);">10/22/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(40.0);">10/19/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(39.0);">10/18/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(38.0);">10/17/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(37.0);">10/16/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(36.0);">10/15/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(35.0);">10/12/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(34.0);">10/11/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(33.0);">10/10/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(32.0);">10/09/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(31.0);">10/08/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(30.0);">10/05/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(29.0);">10/04/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(28.0);">10/03/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(26.0);">10/01/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(25.0);">09/28/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(23.0);">09/26/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(22.0);">09/25/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(21.0);">09/24/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(20.0);">09/21/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(19.0);">09/20/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(18.0);">09/19/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(17.0);">09/18/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(16.0);">09/17/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(15.0);">09/14/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(14.0);">09/13/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(13.0);">09/12/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(12.0);">09/11/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(11.0);">09/10/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(10.0);">09/07/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(9.0);">09/06/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(8.0);">09/05/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(7.0);">09/04/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(6.0);">08/31/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(5.0);">08/30/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(4.0);">08/29/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(3.0);">08/28/2017</a></li>
+            <li><a href="javascript:changeRankingPeriod(2.0);">08/27/2017</a></li>
+    </ul>
+    </li>
+   </ul>
+</div>
+</div>
+</div>
+-->
+
+<form accept-charset="UTF-8" action="/rankings/national_ranking" data-remote="true" id="national_ranking_form" method="post" onclick="mask('Loading');"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg="></div>
+
+   <input id="rankings_academic_year" type="hidden" name="academic_year" value="2018.0">
+   <input id="rankings_division" type="hidden" name="division" value="1.0">
+   <input id="rankings_ranking_period" type="hidden" name="ranking_period" value="81.0">
+   <input id="rankings_sport_code" type="hidden" name="sport_code" value="WVB">
+   <input id="rankings_stat_seq" type="hidden" name="stat_seq" value="">
+
+   <input type="submit" name="submit" value="" id="rankings_form_submit_btn" style="display:none;">
+</form>
+ <form accept-charset="UTF-8" action="/rankings/change_sport_year_div" data-remote="true" id="sports_form_id" method="post" onsubmit="mask('Loading');"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg="></div>
+
+   <input id="sports_form_sport_code" type="hidden" name="sport_code" value="WVB">
+   <input id="sports_form_academic_year" type="hidden" name="academic_year" value="2018.0">
+   <input id="sports_form_division" type="hidden" name="division" value="1.0">
+   <input id="sports_form_ranking_period" type="hidden" name="ranking_period" value="81.0">
+   <input id="sports_form_team_individual" type="hidden" name="team_individual" value="T">
+   <input id="sports_form_game_high" type="hidden" name="game_high" value="N">
+   <input id="sports_form_stat_seq" type="hidden" name="stat_seq" value="">
+   <input id="sports_form_ranking_summary" type="hidden" name="ranking_summary" value="N">
+   <input id="sports_form_org_id" type="hidden" name="org_id" value="">
+   <input type="hidden" name="conf_id" id="sports_form_conf_id" value="">
+   <input type="hidden" name="region_id" id="sports_form_region_id" value="">
+   <input type="hidden" name="ncaa_custom_rank_summary_id" id="sports_form_ncaa_custom_rank_summary_id" value="">
+   <input type="hidden" name="user_custom_rank_summary_id" id="sports_form_user_custom_rank_summary_id" value="">
+   <input type="hidden" name="render_partial" value="Y">
+   <input type="submit" name="submit" value="" id="sports_form_submit_btn" style="display:none;">
+</form>
+ <form name="ranking_form" action="/rankings" method="post" target="RANKINGS_WINDOW">
+<input id="ranking_form_sport_code" type="hidden" name="sport_code" value="WVB">
+<input id="ranking_form_academic_year" type="hidden" name="academic_year" value="2018.0">
+<input id="ranking_form_division" type="hidden" name="division" value="1.0">
+<input id="ranking_form_ranking_period" type="hidden" name="ranking_period" value="81.0">
+<input id="ranking_form_team_individual" type="hidden" name="team_individual" value="T">
+<input id="ranking_form_game_high" type="hidden" name="game_high" value="N">
+<input id="ranking_form_stat_seq" type="hidden" name="stat_seq" value="">
+ <input id="authenticity_token" name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg=">
+</form>
+
+<form name="sport_year_div_form" action="/rankings/change_sport_year_div" method="post">
+<input id="sport_year_div_sport_code" type="hidden" name="sport_code" value="WVB">
+<input id="sport_year_div_academic_year" type="hidden" name="academic_year" value="2018.0">
+<input id="sport_year_div_division" type="hidden" name="division" value="1.0">
+<input id="sport_year_div_ranking_period" type="hidden" name="ranking_period" value="81.0">
+<input id="sport_year_div_team_individual" type="hidden" name="team_individual" value="T">
+<input id="sport_year_div_game_high" type="hidden" name="game_high" value="N">
+<input id="sport_year_div_ranking_summary" type="hidden" name="ranking_summary" value="N">
+<input id="sport_year_div_org_id" type="hidden" name="org_id" value="-1">
+<input id="sport_year_div_stat_seq" type="hidden" name="stat_seq" value="51">
+<input type="hidden" name="conf_id" id="sport_year_div_conf_id" value="-1">
+<input type="hidden" name="region_id" id="sport_year_div_region_id" value="-1">
+<input type="hidden" name="ncaa_custom_rank_summary_id" id="sport_year_div_ncaa_custom_rank_summary_id" value="-1">
+<input type="hidden" name="user_custom_rank_summary_id" id="sport_year_div_user_custom_rank_summary_id" value="-1">
+ <input id="authenticity_token" name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg=">
+</form>
+
+
+<!-- tabs -->
+<ul class="css-tabs">
+  <li>
+     <a id="stat_type_I_N" href="javascript:changeStatType('I', 'N');">Individual</a>
+  </li>
+  <li>
+     <a id="stat_type_I_Y" href="javascript:changeStatType('I', 'Y');">Individual Game Highs</a>
+  </li>
+  <li>
+     <a id="stat_type_T_N" href="javascript:changeStatType('T', 'N');" class="current">Team</a>
+  </li>
+  <li>
+     <a id="stat_type_T_Y" href="javascript:changeStatType('T', 'Y');">Team Game Highs</a>
+  </li>
+<li><a id="ranking_summary" href="javascript:changeRankingSummaryTab();">Ranking Summary</a></li>
+<li><a id="trends" href="javascript:submitSportYearDivForm('conference_trends');">Trends</a></li>
+  <li><a href="/reports/index?division=1.0&amp;id=12622" data-remote="true" id="misc_reports">Misc Reports</a></li>
+</ul>
+<!-- single pane. it is always visible -->
+<!--
+<div class="css-panes">
+-->
+<div id="national_ranking_div" class="rankings_pane">
+         <script type="text/javascript" charset="utf-8">
+  var lengthMenuA = [];
+  var lengthMenuB = [];
+              lengthMenuA.push("10");
+              lengthMenuB.push("10");
+              lengthMenuA.push("25");
+              lengthMenuB.push("25");
+              lengthMenuA.push("50");
+              lengthMenuB.push("50");
+              lengthMenuA.push("-1");
+              lengthMenuB.push("333");
+function initDataTable(){
+        var oTable = $('#rankings_table').DataTable({
+          dom: 'R<"clear">lfrtip',
+          bStateSave: true,
+          iCookieDuration : 60*60*24*1000,
+          sPaginationType: "full_numbers",
+          language: {
+            emptyTable:  "No teams ranked"
+          },
+          order: [[0, "asc"]],
+          pageLength: 50,
+          lengthMenu: [lengthMenuA, lengthMenuB],
+          columnDefs: [
+          {
+            targets: [0],
+            orderData: [0,0]
+          },
+          {
+            targets: [1],
+            orderData: [1,0]
+          },
+          {
+            targets: [2],
+            orderData: [2,0]
+          },
+          {
+            targets: [3],
+            orderData: [3,0]
+          },
+          {
+            targets: [4],
+            orderData: [4,0]
+          }
+          ]
+        } );
+}
+  </script>
+<form accept-charset="UTF-8" action="/rankings/national_ranking" data-remote="true" id="change_stat_form" method="post" onsubmit="mask('Loading');"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="F2vZsHZaCIGIf6pqKrugK9yewP65fK3KwPZVJjRWwPg="></div>
+<input type="hidden" name="sport_code" value="WVB">
+<input type="hidden" name="stat_seq" id="change_stat_form_stat_seq" value="">
+<input type="hidden" name="academic_year" value="2018.0">
+<input type="hidden" name="division" value="1.0">
+<input type="hidden" name="ranking_period" value="81.0">
+<input type="submit" name="submit" id="change_stat_form_submit_btn" style="display:none;">
+</form><table width="100%">
+<tbody><tr>
+  <td align="left">
+    <select id="stat_seq" name="stat_seq" onchange="$('#change_stat_form_stat_seq').val(this.value); $('#change_stat_form_submit_btn').click();"><option value="48">Aces Per Set</option>
+<option value="47">Assists Per Set</option>
+<option value="49">Blocks Per Set</option>
+<option value="50">Digs Per Set</option>
+<option value="45">Hitting Percentage</option>
+<option value="46">Kills Per Set</option>
+<option value="51" selected="selected">Match W-L Pctg.</option>
+<option value="911">Opp Hitting Percentage</option>
+<option value="882">Team Assists</option>
+<option value="892">Team Attacks Per Set</option>
+<option value="886">Team Digs</option>
+<option value="881">Team Kills</option>
+<option value="884">Team Service Aces</option>
+<option value="891">Team Total Attacks</option>
+<option value="888">Team Total Blocks</option></select>
+    <a class="skipMask" href="#" onclick="showLegacyPDF(81, 51, 1, 'WVB', 2018); return false;"><img alt="Page_white_acrobat" src="/assets/page_white_acrobat-3fc4cfab39df5d80ac7aae3b6a479f2f.png"></a>
+  </td>
+   <td>&nbsp;</td>
+</tr>
+</tbody></table>
+
+
+<div id="rankings_table_wrapper" class="dataTables_wrapper no-footer"><div class="clear"></div><div class="dataTables_length" id="rankings_table_length"><label>Show <select name="rankings_table_length" aria-controls="rankings_table" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">333</option></select> entries</label></div><div id="rankings_table_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="rankings_table"></label></div><table width="100%" class="mytbl dataTable no-footer" id="rankings_table" role="grid" aria-describedby="rankings_table_info" style="width: 100%;">
+<thead>
+   <tr class="splash_col_heading" role="row"><th width="5%" align="left" class="sorting_asc" tabindex="0" aria-controls="rankings_table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rank: activate to sort column descending" data-column-index="0" style="width: 33px;">Rank</th><th align="left" class="sorting" tabindex="0" aria-controls="rankings_table" rowspan="1" colspan="1" aria-label="Team: activate to sort column ascending" data-column-index="1" style="width: 465px;">Team</th><th width="&quot;5%&quot;" align="&quot;right&quot;" nowrap="" class="sorting" tabindex="0" aria-controls="rankings_table" rowspan="1" colspan="1" aria-label="W: activate to sort column ascending" data-column-index="2" style="width: 78px;">W</th><th width="&quot;5%&quot;" align="&quot;right&quot;" nowrap="" class="sorting" tabindex="0" aria-controls="rankings_table" rowspan="1" colspan="1" aria-label="L: activate to sort column ascending" data-column-index="3" style="width: 80px;">L</th><th width="&quot;5%&quot;" align="&quot;right&quot;" nowrap="" class="sorting" tabindex="0" aria-controls="rankings_table" rowspan="1" colspan="1" aria-label="Pct.: activate to sort column ascending" data-column-index="4" style="width: 114px;">Pct.</th></tr>
+
+</thead>
+<tbody>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="1">1</td>
+    <td class="reclass" data-order="Penn St.,Big Ten"><a href="/team/539.0/12622" class="skipMask" target="TEAM_WIN">Penn St. (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          33
+        </td>
+        <td align="right" nowrap="">
+          2
+        </td>
+        <td align="right" nowrap="">
+          0.943
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="2">2</td>
+    <td class="reclass" data-order="Florida,SEC"><a href="/team/235.0/12622" class="skipMask" target="TEAM_WIN">Florida (SEC)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          2
+        </td>
+        <td align="right" nowrap="">
+          0.938
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="3">3</td>
+    <td class="reclass" data-order="VCU,Atlantic 10"><a href="/team/740.0/12622" class="skipMask" target="TEAM_WIN">VCU (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          0.909
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="4">3</td>
+    <td class="reclass" data-order="BYU,WCC"><a href="/team/77.0/12622" class="skipMask" target="TEAM_WIN">BYU (WCC)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          0.909
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="5">5</td>
+    <td class="reclass" data-order="Texas,Big 12"><a href="/team/703.0/12622" class="skipMask" target="TEAM_WIN">Texas (Big 12)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          0.900
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="6">5</td>
+    <td class="reclass" data-order="Cal Poly,Big West"><a href="/team/90.0/12622" class="skipMask" target="TEAM_WIN">Cal Poly (Big West)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          0.900
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="7">7</td>
+    <td class="reclass" data-order="Nebraska,Big Ten"><a href="/team/463.0/12622" class="skipMask" target="TEAM_WIN">Nebraska (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          32
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.889
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="8">8</td>
+    <td class="reclass" data-order="Western Ky.,C-USA"><a href="/team/772.0/12622" class="skipMask" target="TEAM_WIN">Western Ky. (C-USA)</a></td>
+        <td align="right" nowrap="">
+          31
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.886
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="9">9</td>
+    <td class="reclass" data-order="Stanford,Pac-12"><a href="/team/674.0/12622" class="skipMask" target="TEAM_WIN">Stanford (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.882
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="10">10</td>
+    <td class="reclass" data-order="Colorado St.,MWC"><a href="/team/156.0/12622" class="skipMask" target="TEAM_WIN">Colorado St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          29
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.879
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="11">10</td>
+    <td class="reclass" data-order="North Texas,C-USA"><a href="/team/497.0/12622" class="skipMask" target="TEAM_WIN">North Texas (C-USA)</a></td>
+        <td align="right" nowrap="">
+          29
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.879
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="12">10</td>
+    <td class="reclass" data-order="Wichita St.,AAC"><a href="/team/782.0/12622" class="skipMask" target="TEAM_WIN">Wichita St. (AAC)</a></td>
+        <td align="right" nowrap="">
+          29
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.879
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="13">10</td>
+    <td class="reclass" data-order="Kentucky,SEC"><a href="/team/334.0/12622" class="skipMask" target="TEAM_WIN">Kentucky (SEC)</a></td>
+        <td align="right" nowrap="">
+          29
+        </td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          0.879
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="14">14</td>
+    <td class="reclass" data-order="Central Ark.,Southland"><a href="/team/1004.0/12622" class="skipMask" target="TEAM_WIN">Central Ark. (Southland)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          0.844
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="15">15</td>
+    <td class="reclass" data-order="Austin Peay,OVC"><a href="/team/43.0/12622" class="skipMask" target="TEAM_WIN">Austin Peay (OVC)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.833
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="16">15</td>
+    <td class="reclass" data-order="San Diego,WCC"><a href="/team/627.0/12622" class="skipMask" target="TEAM_WIN">San Diego (WCC)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          0.833
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="17">15</td>
+    <td class="reclass" data-order="Radford,Big South"><a href="/team/563.0/12622" class="skipMask" target="TEAM_WIN">Radford (Big South)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          0.833
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="18">18</td>
+    <td class="reclass" data-order="Missouri St.,MVC"><a href="/team/669.0/12622" class="skipMask" target="TEAM_WIN">Missouri St. (MVC)</a></td>
+        <td align="right" nowrap="">
+          28
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.824
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="19">18</td>
+    <td class="reclass" data-order="Minnesota,Big Ten"><a href="/team/428.0/12622" class="skipMask" target="TEAM_WIN">Minnesota (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          28
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.824
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="20">20</td>
+    <td class="reclass" data-order="Towson,CAA"><a href="/team/711.0/12622" class="skipMask" target="TEAM_WIN">Towson (CAA)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.818
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="21">20</td>
+    <td class="reclass" data-order="Col. of Charleston,CAA"><a href="/team/1014.0/12622" class="skipMask" target="TEAM_WIN">Col. of Charleston (CAA)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.818
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="22">22</td>
+    <td class="reclass" data-order="Kennesaw St.,ASUN"><a href="/team/1157.0/12622" class="skipMask" target="TEAM_WIN">Kennesaw St. (ASUN)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          0.808
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="23">23</td>
+    <td class="reclass" data-order="Denver,Summit League"><a href="/team/183.0/12622" class="skipMask" target="TEAM_WIN">Denver (Summit League)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.793
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="24">23</td>
+    <td class="reclass" data-order="James Madison,CAA"><a href="/team/317.0/12622" class="skipMask" target="TEAM_WIN">James Madison (CAA)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.793
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="25">25</td>
+    <td class="reclass" data-order="North Dakota,Big Sky"><a href="/team/494.0/12622" class="skipMask" target="TEAM_WIN">North Dakota (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          30
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.789
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="26">26</td>
+    <td class="reclass" data-order="Creighton,Big East"><a href="/team/169.0/12622" class="skipMask" target="TEAM_WIN">Creighton (Big East)</a></td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.788
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="27">26</td>
+    <td class="reclass" data-order="Pittsburgh,ACC"><a href="/team/545.0/12622" class="skipMask" target="TEAM_WIN">Pittsburgh (ACC)</a></td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.788
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="28">28</td>
+    <td class="reclass" data-order="Miami (FL),ACC"><a href="/team/415.0/12622" class="skipMask" target="TEAM_WIN">Miami (FL) (ACC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          0.786
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="29">29</td>
+    <td class="reclass" data-order="Fairfield,MAAC"><a href="/team/220.0/12622" class="skipMask" target="TEAM_WIN">Fairfield (MAAC)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.781
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="30">30</td>
+    <td class="reclass" data-order="Louisville,ACC"><a href="/team/367.0/12622" class="skipMask" target="TEAM_WIN">Louisville (ACC)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.774
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="31">30</td>
+    <td class="reclass" data-order="Baylor,Big 12"><a href="/team/51.0/12622" class="skipMask" target="TEAM_WIN">Baylor (Big 12)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.774
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="32">32</td>
+    <td class="reclass" data-order="SIUE,OVC"><a href="/team/660.0/12622" class="skipMask" target="TEAM_WIN">SIUE (OVC)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.767
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="33">33</td>
+    <td class="reclass" data-order="SFA,Southland"><a href="/team/676.0/12622" class="skipMask" target="TEAM_WIN">SFA (Southland)</a></td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.765
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="34">33</td>
+    <td class="reclass" data-order="American,Patriot"><a href="/team/23.0/12622" class="skipMask" target="TEAM_WIN">American (Patriot)</a></td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.765
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="35">35</td>
+    <td class="reclass" data-order="Iowa St.,Big 12"><a href="/team/311.0/12622" class="skipMask" target="TEAM_WIN">Iowa St. (Big 12)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          0.759
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="36">36</td>
+    <td class="reclass" data-order="Washington,Pac-12"><a href="/team/756.0/12622" class="skipMask" target="TEAM_WIN">Washington (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.758
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="37">37</td>
+    <td class="reclass" data-order="UNI,MVC"><a href="/team/504.0/12622" class="skipMask" target="TEAM_WIN">UNI (MVC)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.750
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="38">37</td>
+    <td class="reclass" data-order="UMES,MEAC"><a href="/team/393.0/12622" class="skipMask" target="TEAM_WIN">UMES (MEAC)</a></td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.750
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="39">37</td>
+    <td class="reclass" data-order="High Point,Big South"><a href="/team/19651.0/12622" class="skipMask" target="TEAM_WIN">High Point (Big South)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.750
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="40">37</td>
+    <td class="reclass" data-order="UC Irvine,Big West"><a href="/team/109.0/12622" class="skipMask" target="TEAM_WIN">UC Irvine (Big West)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.750
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="41">41</td>
+    <td class="reclass" data-order="Butler,Big East"><a href="/team/87.0/12622" class="skipMask" target="TEAM_WIN">Butler (Big East)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.742
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="42">41</td>
+    <td class="reclass" data-order="Navy,Patriot"><a href="/team/726.0/12622" class="skipMask" target="TEAM_WIN">Navy (Patriot)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.742
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="43">41</td>
+    <td class="reclass" data-order="Dayton,Atlantic 10"><a href="/team/175.0/12622" class="skipMask" target="TEAM_WIN">Dayton (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.742
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="44">44</td>
+    <td class="reclass" data-order="Cleveland St.,Horizon"><a href="/team/148.0/12622" class="skipMask" target="TEAM_WIN">Cleveland St. (Horizon)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.733
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="45">44</td>
+    <td class="reclass" data-order="Kansas,Big 12"><a href="/team/328.0/12622" class="skipMask" target="TEAM_WIN">Kansas (Big 12)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.733
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="46">46</td>
+    <td class="reclass" data-order="Michigan St.,Big Ten"><a href="/team/416.0/12622" class="skipMask" target="TEAM_WIN">Michigan St. (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.727
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="47">47</td>
+    <td class="reclass" data-order="New Mexico St.,WAC"><a href="/team/472.0/12622" class="skipMask" target="TEAM_WIN">New Mexico St. (WAC)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.724
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="48">48</td>
+    <td class="reclass" data-order="Sacramento St.,Big Sky"><a href="/team/102.0/12622" class="skipMask" target="TEAM_WIN">Sacramento St. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.722
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="49">49</td>
+    <td class="reclass" data-order="Miami (OH),MAC"><a href="/team/414.0/12622" class="skipMask" target="TEAM_WIN">Miami (OH) (MAC)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.719
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="50">50</td>
+    <td class="reclass" data-order="Alabama St.,SWAC"><a href="/team/7.0/12622" class="skipMask" target="TEAM_WIN">Alabama St. (SWAC)</a></td>
+        <td align="right" nowrap="">
+          28
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.718
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="51">51</td>
+    <td class="reclass" data-order="Southern California,Pac-12"><a href="/team/657.0/12622" class="skipMask" target="TEAM_WIN">Southern California (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.714
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="52">51</td>
+    <td class="reclass" data-order="Texas St.,Sun Belt"><a href="/team/670.0/12622" class="skipMask" target="TEAM_WIN">Texas St. (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.714
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="53">51</td>
+    <td class="reclass" data-order="Coastal Caro.,Sun Belt"><a href="/team/149.0/12622" class="skipMask" target="TEAM_WIN">Coastal Caro. (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.714
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="54">51</td>
+    <td class="reclass" data-order="Hawaii,Big West"><a href="/team/277.0/12622" class="skipMask" target="TEAM_WIN">Hawaii (Big West)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.714
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="55">55</td>
+    <td class="reclass" data-order="Murray St.,OVC"><a href="/team/454.0/12622" class="skipMask" target="TEAM_WIN">Murray St. (OVC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.710
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="56">56</td>
+    <td class="reclass" data-order="Colorado,Pac-12"><a href="/team/157.0/12622" class="skipMask" target="TEAM_WIN">Colorado (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.706
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="57">56</td>
+    <td class="reclass" data-order="Utah,Pac-12"><a href="/team/732.0/12622" class="skipMask" target="TEAM_WIN">Utah (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.706
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="58">58</td>
+    <td class="reclass" data-order="Central Conn. St.,NEC"><a href="/team/127.0/12622" class="skipMask" target="TEAM_WIN">Central Conn. St. (NEC)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.704
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="59">59</td>
+    <td class="reclass" data-order="Portland St.,Big Sky"><a href="/team/550.0/12622" class="skipMask" target="TEAM_WIN">Portland St. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.700
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="60">59</td>
+    <td class="reclass" data-order="Rice,C-USA"><a href="/team/574.0/12622" class="skipMask" target="TEAM_WIN">Rice (C-USA)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.700
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="61">61</td>
+    <td class="reclass" data-order="Drake,MVC"><a href="/team/189.0/12622" class="skipMask" target="TEAM_WIN">Drake (MVC)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.697
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="62">61</td>
+    <td class="reclass" data-order="Purdue,Big Ten"><a href="/team/559.0/12622" class="skipMask" target="TEAM_WIN">Purdue (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.697
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="63">63</td>
+    <td class="reclass" data-order="Princeton,Ivy League"><a href="/team/554.0/12622" class="skipMask" target="TEAM_WIN">Princeton (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.692
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="64">64</td>
+    <td class="reclass" data-order="Wisconsin,Big Ten"><a href="/team/796.0/12622" class="skipMask" target="TEAM_WIN">Wisconsin (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.688
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="65">64</td>
+    <td class="reclass" data-order="FGCU,ASUN"><a href="/team/28755.0/12622" class="skipMask" target="TEAM_WIN">FGCU (ASUN)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.688
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="66">64</td>
+    <td class="reclass" data-order="Notre Dame,ACC"><a href="/team/513.0/12622" class="skipMask" target="TEAM_WIN">Notre Dame (ACC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.688
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="67">64</td>
+    <td class="reclass" data-order="Marquette,Big East"><a href="/team/387.0/12622" class="skipMask" target="TEAM_WIN">Marquette (Big East)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.688
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="68">68</td>
+    <td class="reclass" data-order="North Dakota St.,Summit League"><a href="/team/493.0/12622" class="skipMask" target="TEAM_WIN">North Dakota St. (Summit League)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.679
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="69">69</td>
+    <td class="reclass" data-order="Furman,SoCon"><a href="/team/244.0/12622" class="skipMask" target="TEAM_WIN">Furman (SoCon)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.677
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="70">69</td>
+    <td class="reclass" data-order="Houston Baptist,Southland"><a href="/team/287.0/12622" class="skipMask" target="TEAM_WIN">Houston Baptist (Southland)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.677
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="71">71</td>
+    <td class="reclass" data-order="Illinois,Big Ten"><a href="/team/301.0/12622" class="skipMask" target="TEAM_WIN">Illinois (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.676
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="72">72</td>
+    <td class="reclass" data-order="East Carolina,AAC"><a href="/team/196.0/12622" class="skipMask" target="TEAM_WIN">East Carolina (AAC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="73">72</td>
+    <td class="reclass" data-order="Wofford,SoCon"><a href="/team/2915.0/12622" class="skipMask" target="TEAM_WIN">Wofford (SoCon)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="74">72</td>
+    <td class="reclass" data-order="LSU,SEC"><a href="/team/365.0/12622" class="skipMask" target="TEAM_WIN">LSU (SEC)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="75">72</td>
+    <td class="reclass" data-order="Temple,AAC"><a href="/team/690.0/12622" class="skipMask" target="TEAM_WIN">Temple (AAC)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="76">72</td>
+    <td class="reclass" data-order="LIU Brooklyn,NEC"><a href="/team/361.0/12622" class="skipMask" target="TEAM_WIN">LIU Brooklyn (NEC)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="77">72</td>
+    <td class="reclass" data-order="Fla. Atlantic,C-USA"><a href="/team/229.0/12622" class="skipMask" target="TEAM_WIN">Fla. Atlantic (C-USA)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="78">72</td>
+    <td class="reclass" data-order="Yale,Ivy League"><a href="/team/813.0/12622" class="skipMask" target="TEAM_WIN">Yale (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          0.667
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="79">79</td>
+    <td class="reclass" data-order="SMU,AAC"><a href="/team/663.0/12622" class="skipMask" target="TEAM_WIN">SMU (AAC)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.656
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="80">79</td>
+    <td class="reclass" data-order="UCLA,Pac-12"><a href="/team/110.0/12622" class="skipMask" target="TEAM_WIN">UCLA (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.656
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="81">79</td>
+    <td class="reclass" data-order="Louisiana,Sun Belt"><a href="/team/671.0/12622" class="skipMask" target="TEAM_WIN">Louisiana (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.656
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="82">82</td>
+    <td class="reclass" data-order="Missouri,SEC"><a href="/team/434.0/12622" class="skipMask" target="TEAM_WIN">Missouri (SEC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.647
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="83">82</td>
+    <td class="reclass" data-order="Georgia,SEC"><a href="/team/257.0/12622" class="skipMask" target="TEAM_WIN">Georgia (SEC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.647
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="84">84</td>
+    <td class="reclass" data-order="Niagara,MAAC"><a href="/team/482.0/12622" class="skipMask" target="TEAM_WIN">Niagara (MAAC)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.643
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="85">84</td>
+    <td class="reclass" data-order="Jacksonville,ASUN"><a href="/team/316.0/12622" class="skipMask" target="TEAM_WIN">Jacksonville (ASUN)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.643
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="86">86</td>
+    <td class="reclass" data-order="Jacksonville St.,OVC"><a href="/team/315.0/12622" class="skipMask" target="TEAM_WIN">Jacksonville St. (OVC)</a></td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.639
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="87">87</td>
+    <td class="reclass" data-order="Arkansas St.,Sun Belt"><a href="/team/30.0/12622" class="skipMask" target="TEAM_WIN">Arkansas St. (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.636
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="88">87</td>
+    <td class="reclass" data-order="Bryant,NEC"><a href="/team/81.0/12622" class="skipMask" target="TEAM_WIN">Bryant (NEC)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.636
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="89">87</td>
+    <td class="reclass" data-order="NC State,ACC"><a href="/team/490.0/12622" class="skipMask" target="TEAM_WIN">NC State (ACC)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.636
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="90">87</td>
+    <td class="reclass" data-order="Oregon St.,Pac-12"><a href="/team/528.0/12622" class="skipMask" target="TEAM_WIN">Oregon St. (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.636
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="91">87</td>
+    <td class="reclass" data-order="Michigan,Big Ten"><a href="/team/418.0/12622" class="skipMask" target="TEAM_WIN">Michigan (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.636
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="92">92</td>
+    <td class="reclass" data-order="Arkansas,SEC"><a href="/team/31.0/12622" class="skipMask" target="TEAM_WIN">Arkansas (SEC)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.633
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="93">92</td>
+    <td class="reclass" data-order="Ball St.,MAC"><a href="/team/47.0/12622" class="skipMask" target="TEAM_WIN">Ball St. (MAC)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.633
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="94">94</td>
+    <td class="reclass" data-order="South Alabama,Sun Belt"><a href="/team/646.0/12622" class="skipMask" target="TEAM_WIN">South Alabama (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.630
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="95">95</td>
+    <td class="reclass" data-order="Illinois St.,MVC"><a href="/team/299.0/12622" class="skipMask" target="TEAM_WIN">Illinois St. (MVC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.629
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="96">96</td>
+    <td class="reclass" data-order="Campbell,Big South"><a href="/team/115.0/12622" class="skipMask" target="TEAM_WIN">Campbell (Big South)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.625
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="97">96</td>
+    <td class="reclass" data-order="Southern Miss.,C-USA"><a href="/team/664.0/12622" class="skipMask" target="TEAM_WIN">Southern Miss. (C-USA)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.625
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="98">98</td>
+    <td class="reclass" data-order="Florida St.,ACC"><a href="/team/234.0/12622" class="skipMask" target="TEAM_WIN">Florida St. (ACC)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.621
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="99">98</td>
+    <td class="reclass" data-order="Colgate,Patriot"><a href="/team/153.0/12622" class="skipMask" target="TEAM_WIN">Colgate (Patriot)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.621
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="100">98</td>
+    <td class="reclass" data-order="Idaho,Big Sky"><a href="/team/295.0/12622" class="skipMask" target="TEAM_WIN">Idaho (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.621
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="101">101</td>
+    <td class="reclass" data-order="West Virginia,Big 12"><a href="/team/768.0/12622" class="skipMask" target="TEAM_WIN">West Virginia (Big 12)</a></td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.618
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="102">102</td>
+    <td class="reclass" data-order="UNC Greensboro,SoCon"><a href="/team/459.0/12622" class="skipMask" target="TEAM_WIN">UNC Greensboro (SoCon)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.613
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="103">102</td>
+    <td class="reclass" data-order="ETSU,SoCon"><a href="/team/198.0/12622" class="skipMask" target="TEAM_WIN">ETSU (SoCon)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.613
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="104">102</td>
+    <td class="reclass" data-order="Duke,ACC"><a href="/team/193.0/12622" class="skipMask" target="TEAM_WIN">Duke (ACC)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.613
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="105">102</td>
+    <td class="reclass" data-order="Charlotte,C-USA"><a href="/team/458.0/12622" class="skipMask" target="TEAM_WIN">Charlotte (C-USA)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.613
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="106">106</td>
+    <td class="reclass" data-order="Syracuse,ACC"><a href="/team/688.0/12622" class="skipMask" target="TEAM_WIN">Syracuse (ACC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.611
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="107">106</td>
+    <td class="reclass" data-order="Ole Miss,SEC"><a href="/team/433.0/12622" class="skipMask" target="TEAM_WIN">Ole Miss (SEC)</a></td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.611
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="108">108</td>
+    <td class="reclass" data-order="South Dakota,Summit League"><a href="/team/650.0/12622" class="skipMask" target="TEAM_WIN">South Dakota (Summit League)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.607
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="109">109</td>
+    <td class="reclass" data-order="Oregon,Pac-12"><a href="/team/529.0/12622" class="skipMask" target="TEAM_WIN">Oregon (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.600
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="110">109</td>
+    <td class="reclass" data-order="Army West Point,Patriot"><a href="/team/725.0/12622" class="skipMask" target="TEAM_WIN">Army West Point (Patriot)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.600
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="111">109</td>
+    <td class="reclass" data-order="Villanova,Big East"><a href="/team/739.0/12622" class="skipMask" target="TEAM_WIN">Villanova (Big East)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.600
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="112">112</td>
+    <td class="reclass" data-order="McNeese,Southland"><a href="/team/402.0/12622" class="skipMask" target="TEAM_WIN">McNeese (Southland)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.594
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="113">113</td>
+    <td class="reclass" data-order="UCF,AAC"><a href="/team/128.0/12622" class="skipMask" target="TEAM_WIN">UCF (AAC)</a></td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.588
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="114">114</td>
+    <td class="reclass" data-order="San Jose St.,MWC"><a href="/team/630.0/12622" class="skipMask" target="TEAM_WIN">San Jose St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.586
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="115">114</td>
+    <td class="reclass" data-order="Bowling Green,MAC"><a href="/team/71.0/12622" class="skipMask" target="TEAM_WIN">Bowling Green (MAC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.586
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="116">114</td>
+    <td class="reclass" data-order="UTRGV,WAC"><a href="/team/536.0/12622" class="skipMask" target="TEAM_WIN">UTRGV (WAC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.586
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="117">114</td>
+    <td class="reclass" data-order="Oakland,Horizon"><a href="/team/514.0/12622" class="skipMask" target="TEAM_WIN">Oakland (Horizon)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.586
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="118">118</td>
+    <td class="reclass" data-order="Stony Brook,America East"><a href="/team/683.0/12622" class="skipMask" target="TEAM_WIN">Stony Brook (America East)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.581
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="119">118</td>
+    <td class="reclass" data-order="Lehigh,Patriot"><a href="/team/352.0/12622" class="skipMask" target="TEAM_WIN">Lehigh (Patriot)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.581
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="120">118</td>
+    <td class="reclass" data-order="Western Mich.,MAC"><a href="/team/774.0/12622" class="skipMask" target="TEAM_WIN">Western Mich. (MAC)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.581
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="121">121</td>
+    <td class="reclass" data-order="CSU Bakersfield,WAC"><a href="/team/94.0/12622" class="skipMask" target="TEAM_WIN">CSU Bakersfield (WAC)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.576
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="122">122</td>
+    <td class="reclass" data-order="UIC,Horizon"><a href="/team/302.0/12622" class="skipMask" target="TEAM_WIN">UIC (Horizon)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.567
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="123">122</td>
+    <td class="reclass" data-order="Northeastern,CAA"><a href="/team/500.0/12622" class="skipMask" target="TEAM_WIN">Northeastern (CAA)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.567
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="124">124</td>
+    <td class="reclass" data-order="Harvard,Ivy League"><a href="/team/275.0/12622" class="skipMask" target="TEAM_WIN">Harvard (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          0.565
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="125">125</td>
+    <td class="reclass" data-order="Hofstra,CAA"><a href="/team/283.0/12622" class="skipMask" target="TEAM_WIN">Hofstra (CAA)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.563
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="126">125</td>
+    <td class="reclass" data-order="Maryland,Big Ten"><a href="/team/392.0/12622" class="skipMask" target="TEAM_WIN">Maryland (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.563
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="127">125</td>
+    <td class="reclass" data-order="Winthrop,Big South"><a href="/team/792.0/12622" class="skipMask" target="TEAM_WIN">Winthrop (Big South)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.563
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="128">125</td>
+    <td class="reclass" data-order="Alabama,SEC"><a href="/team/8.0/12622" class="skipMask" target="TEAM_WIN">Alabama (SEC)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.563
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="129">129</td>
+    <td class="reclass" data-order="Texas Tech,Big 12"><a href="/team/700.0/12622" class="skipMask" target="TEAM_WIN">Texas Tech (Big 12)</a></td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.559
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="130">130</td>
+    <td class="reclass" data-order="Florida A&amp;M,MEAC"><a href="/team/228.0/12622" class="skipMask" target="TEAM_WIN">Florida A&amp;M (MEAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.556
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="131">130</td>
+    <td class="reclass" data-order="Auburn,SEC"><a href="/team/37.0/12622" class="skipMask" target="TEAM_WIN">Auburn (SEC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.556
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="132">132</td>
+    <td class="reclass" data-order="Texas Southern,SWAC"><a href="/team/699.0/12622" class="skipMask" target="TEAM_WIN">Texas Southern (SWAC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.552
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="133">132</td>
+    <td class="reclass" data-order="Lipscomb,ASUN"><a href="/team/28600.0/12622" class="skipMask" target="TEAM_WIN">Lipscomb (ASUN)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.552
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="134">132</td>
+    <td class="reclass" data-order="LMU (CA),WCC"><a href="/team/370.0/12622" class="skipMask" target="TEAM_WIN">LMU (CA) (WCC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.552
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="135">135</td>
+    <td class="reclass" data-order="Boise St.,MWC"><a href="/team/66.0/12622" class="skipMask" target="TEAM_WIN">Boise St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.548
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="136">135</td>
+    <td class="reclass" data-order="Pacific,WCC"><a href="/team/534.0/12622" class="skipMask" target="TEAM_WIN">Pacific (WCC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.548
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="137">135</td>
+    <td class="reclass" data-order="Wyoming,MWC"><a href="/team/811.0/12622" class="skipMask" target="TEAM_WIN">Wyoming (MWC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.548
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="138">138</td>
+    <td class="reclass" data-order="Iowa,Big Ten"><a href="/team/312.0/12622" class="skipMask" target="TEAM_WIN">Iowa (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.545
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="139">139</td>
+    <td class="reclass" data-order="UMBC,America East"><a href="/team/391.0/12622" class="skipMask" target="TEAM_WIN">UMBC (America East)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          0.538
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="140">140</td>
+    <td class="reclass" data-order="Buffalo,MAC"><a href="/team/86.0/12622" class="skipMask" target="TEAM_WIN">Buffalo (MAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.536
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="141">141</td>
+    <td class="reclass" data-order="UC Davis,Big West"><a href="/team/108.0/12622" class="skipMask" target="TEAM_WIN">UC Davis (Big West)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.533
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="142">141</td>
+    <td class="reclass" data-order="Utah St.,MWC"><a href="/team/731.0/12622" class="skipMask" target="TEAM_WIN">Utah St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.533
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="143">143</td>
+    <td class="reclass" data-order="Ohio,MAC"><a href="/team/519.0/12622" class="skipMask" target="TEAM_WIN">Ohio (MAC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.531
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="144">143</td>
+    <td class="reclass" data-order="Rider,MAAC"><a href="/team/576.0/12622" class="skipMask" target="TEAM_WIN">Rider (MAAC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.531
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="145">145</td>
+    <td class="reclass" data-order="Washington St.,Pac-12"><a href="/team/754.0/12622" class="skipMask" target="TEAM_WIN">Washington St. (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.529
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="146">146</td>
+    <td class="reclass" data-order="Penn,Ivy League"><a href="/team/540.0/12622" class="skipMask" target="TEAM_WIN">Penn (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.522
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="147">146</td>
+    <td class="reclass" data-order="Cornell,Ivy League"><a href="/team/167.0/12622" class="skipMask" target="TEAM_WIN">Cornell (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          0.522
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="148">148</td>
+    <td class="reclass" data-order="Central Mich.,MAC"><a href="/team/129.0/12622" class="skipMask" target="TEAM_WIN">Central Mich. (MAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.517
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="149">148</td>
+    <td class="reclass" data-order="Oral Roberts,Summit League"><a href="/team/527.0/12622" class="skipMask" target="TEAM_WIN">Oral Roberts (Summit League)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.517
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="150">148</td>
+    <td class="reclass" data-order="A&amp;M-Corpus Christi,Southland"><a href="/team/26172.0/12622" class="skipMask" target="TEAM_WIN">A&amp;M-Corpus Christi (Southland)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.517
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="151">151</td>
+    <td class="reclass" data-order="Seton Hall,Big East"><a href="/team/635.0/12622" class="skipMask" target="TEAM_WIN">Seton Hall (Big East)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.516
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="152">151</td>
+    <td class="reclass" data-order="Pepperdine,WCC"><a href="/team/541.0/12622" class="skipMask" target="TEAM_WIN">Pepperdine (WCC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.516
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="153">151</td>
+    <td class="reclass" data-order="San Diego St.,MWC"><a href="/team/626.0/12622" class="skipMask" target="TEAM_WIN">San Diego St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.516
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="154">151</td>
+    <td class="reclass" data-order="IUPUI,Horizon"><a href="/team/2699.0/12622" class="skipMask" target="TEAM_WIN">IUPUI (Horizon)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.516
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="155">155</td>
+    <td class="reclass" data-order="Green Bay,Horizon"><a href="/team/794.0/12622" class="skipMask" target="TEAM_WIN">Green Bay (Horizon)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.515
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="156">155</td>
+    <td class="reclass" data-order="Providence,Big East"><a href="/team/556.0/12622" class="skipMask" target="TEAM_WIN">Providence (Big East)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.515
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="157">155</td>
+    <td class="reclass" data-order="Valparaiso,MVC"><a href="/team/735.0/12622" class="skipMask" target="TEAM_WIN">Valparaiso (MVC)</a></td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.515
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="158">158</td>
+    <td class="reclass" data-order="New Mexico,MWC"><a href="/team/473.0/12622" class="skipMask" target="TEAM_WIN">New Mexico (MWC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="159">158</td>
+    <td class="reclass" data-order="Elon,CAA"><a href="/team/1068.0/12622" class="skipMask" target="TEAM_WIN">Elon (CAA)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="160">158</td>
+    <td class="reclass" data-order="Howard,MEAC"><a href="/team/290.0/12622" class="skipMask" target="TEAM_WIN">Howard (MEAC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="161">158</td>
+    <td class="reclass" data-order="Portland,WCC"><a href="/team/551.0/12622" class="skipMask" target="TEAM_WIN">Portland (WCC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="162">158</td>
+    <td class="reclass" data-order="Santa Clara,WCC"><a href="/team/631.0/12622" class="skipMask" target="TEAM_WIN">Santa Clara (WCC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="163">158</td>
+    <td class="reclass" data-order="Eastern Ill.,OVC"><a href="/team/201.0/12622" class="skipMask" target="TEAM_WIN">Eastern Ill. (OVC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="164">158</td>
+    <td class="reclass" data-order="North Carolina,ACC"><a href="/team/457.0/12622" class="skipMask" target="TEAM_WIN">North Carolina (ACC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="165">158</td>
+    <td class="reclass" data-order="N.C. A&amp;T,MEAC"><a href="/team/488.0/12622" class="skipMask" target="TEAM_WIN">N.C. A&amp;T (MEAC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="166">158</td>
+    <td class="reclass" data-order="Bucknell,Patriot"><a href="/team/83.0/12622" class="skipMask" target="TEAM_WIN">Bucknell (Patriot)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.500
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="167">167</td>
+    <td class="reclass" data-order="Marist,MAAC"><a href="/team/386.0/12622" class="skipMask" target="TEAM_WIN">Marist (MAAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.484
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="168">167</td>
+    <td class="reclass" data-order="Ohio St.,Big Ten"><a href="/team/518.0/12622" class="skipMask" target="TEAM_WIN">Ohio St. (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.484
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="169">167</td>
+    <td class="reclass" data-order="Utah Valley,WAC"><a href="/team/30024.0/12622" class="skipMask" target="TEAM_WIN">Utah Valley (WAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.484
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="170">170</td>
+    <td class="reclass" data-order="Morehead St.,OVC"><a href="/team/444.0/12622" class="skipMask" target="TEAM_WIN">Morehead St. (OVC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.483
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="171">170</td>
+    <td class="reclass" data-order="Belmont,OVC"><a href="/team/14927.0/12622" class="skipMask" target="TEAM_WIN">Belmont (OVC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.483
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="172">172</td>
+    <td class="reclass" data-order="New Hampshire,America East"><a href="/team/469.0/12622" class="skipMask" target="TEAM_WIN">New Hampshire (America East)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.481
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="173">173</td>
+    <td class="reclass" data-order="Eastern Mich.,MAC"><a href="/team/204.0/12622" class="skipMask" target="TEAM_WIN">Eastern Mich. (MAC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.471
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="174">173</td>
+    <td class="reclass" data-order="Iona,MAAC"><a href="/team/310.0/12622" class="skipMask" target="TEAM_WIN">Iona (MAAC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.471
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="175">175</td>
+    <td class="reclass" data-order="Northwestern St.,Southland"><a href="/team/508.0/12622" class="skipMask" target="TEAM_WIN">Northwestern St. (Southland)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.469
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="176">175</td>
+    <td class="reclass" data-order="Tulsa,AAC"><a href="/team/719.0/12622" class="skipMask" target="TEAM_WIN">Tulsa (AAC)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.469
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="177">175</td>
+    <td class="reclass" data-order="TCU,Big 12"><a href="/team/698.0/12622" class="skipMask" target="TEAM_WIN">TCU (Big 12)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.469
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="178">178</td>
+    <td class="reclass" data-order="La Salle,Atlantic 10"><a href="/team/340.0/12622" class="skipMask" target="TEAM_WIN">La Salle (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.467
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="179">178</td>
+    <td class="reclass" data-order="Gonzaga,WCC"><a href="/team/260.0/12622" class="skipMask" target="TEAM_WIN">Gonzaga (WCC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.467
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="180">178</td>
+    <td class="reclass" data-order="Northern Colo.,Big Sky"><a href="/team/502.0/12622" class="skipMask" target="TEAM_WIN">Northern Colo. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.467
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="181">178</td>
+    <td class="reclass" data-order="Sam Houston St.,Southland"><a href="/team/624.0/12622" class="skipMask" target="TEAM_WIN">Sam Houston St. (Southland)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.467
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="182">182</td>
+    <td class="reclass" data-order="CSUN,Big West"><a href="/team/101.0/12622" class="skipMask" target="TEAM_WIN">CSUN (Big West)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.464
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="183">182</td>
+    <td class="reclass" data-order="Saint Louis,Atlantic 10"><a href="/team/609.0/12622" class="skipMask" target="TEAM_WIN">Saint Louis (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.464
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="184">182</td>
+    <td class="reclass" data-order="Northern Ariz.,Big Sky"><a href="/team/501.0/12622" class="skipMask" target="TEAM_WIN">Northern Ariz. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.464
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="185">182</td>
+    <td class="reclass" data-order="UNC Asheville,Big South"><a href="/team/456.0/12622" class="skipMask" target="TEAM_WIN">UNC Asheville (Big South)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.464
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="186">186</td>
+    <td class="reclass" data-order="Bethune-Cookman,MEAC"><a href="/team/61.0/12622" class="skipMask" target="TEAM_WIN">Bethune-Cookman (MEAC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          0.462
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="187">187</td>
+    <td class="reclass" data-order="St. John's (NY),Big East"><a href="/team/603.0/12622" class="skipMask" target="TEAM_WIN">St. John's (NY) (Big East)</a></td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.455
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="188">188</td>
+    <td class="reclass" data-order="Robert Morris,NEC"><a href="/team/579.0/12622" class="skipMask" target="TEAM_WIN">Robert Morris (NEC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.452
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="189">189</td>
+    <td class="reclass" data-order="Duquesne,Atlantic 10"><a href="/team/194.0/12622" class="skipMask" target="TEAM_WIN">Duquesne (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.448
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="190">190</td>
+    <td class="reclass" data-order="Fordham,Atlantic 10"><a href="/team/236.0/12622" class="skipMask" target="TEAM_WIN">Fordham (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="191">190</td>
+    <td class="reclass" data-order="Tennessee,SEC"><a href="/team/694.0/12622" class="skipMask" target="TEAM_WIN">Tennessee (SEC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="192">190</td>
+    <td class="reclass" data-order="Sacred Heart,NEC"><a href="/team/590.0/12622" class="skipMask" target="TEAM_WIN">Sacred Heart (NEC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="193">190</td>
+    <td class="reclass" data-order="Saint Francis (PA),NEC"><a href="/team/600.0/12622" class="skipMask" target="TEAM_WIN">Saint Francis (PA) (NEC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="194">190</td>
+    <td class="reclass" data-order="Binghamton,America East"><a href="/team/62.0/12622" class="skipMask" target="TEAM_WIN">Binghamton (America East)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="195">190</td>
+    <td class="reclass" data-order="Northern Ky.,Horizon"><a href="/team/505.0/12622" class="skipMask" target="TEAM_WIN">Northern Ky. (Horizon)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.444
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="196">196</td>
+    <td class="reclass" data-order="Air Force,MWC"><a href="/team/721.0/12622" class="skipMask" target="TEAM_WIN">Air Force (MWC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.438
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="197">196</td>
+    <td class="reclass" data-order="Northwestern,Big Ten"><a href="/team/509.0/12622" class="skipMask" target="TEAM_WIN">Northwestern (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.438
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="198">198</td>
+    <td class="reclass" data-order="Columbia,Ivy League"><a href="/team/158.0/12622" class="skipMask" target="TEAM_WIN">Columbia (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.435
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="199">198</td>
+    <td class="reclass" data-order="Dartmouth,Ivy League"><a href="/team/172.0/12622" class="skipMask" target="TEAM_WIN">Dartmouth (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          0.435
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="200">200</td>
+    <td class="reclass" data-order="Hampton,MEAC"><a href="/team/270.0/12622" class="skipMask" target="TEAM_WIN">Hampton (MEAC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.433
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="201">200</td>
+    <td class="reclass" data-order="UT Arlington,Sun Belt"><a href="/team/702.0/12622" class="skipMask" target="TEAM_WIN">UT Arlington (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.433
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="202">202</td>
+    <td class="reclass" data-order="Rhode Island,Atlantic 10"><a href="/team/572.0/12622" class="skipMask" target="TEAM_WIN">Rhode Island (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.429
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="203">202</td>
+    <td class="reclass" data-order="Toledo,MAC"><a href="/team/709.0/12622" class="skipMask" target="TEAM_WIN">Toledo (MAC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.429
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="204">202</td>
+    <td class="reclass" data-order="Houston,AAC"><a href="/team/288.0/12622" class="skipMask" target="TEAM_WIN">Houston (AAC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.429
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="205">202</td>
+    <td class="reclass" data-order="New Orleans,Southland"><a href="/team/474.0/12622" class="skipMask" target="TEAM_WIN">New Orleans (Southland)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.429
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="206">202</td>
+    <td class="reclass" data-order="UTSA,C-USA"><a href="/team/706.0/12622" class="skipMask" target="TEAM_WIN">UTSA (C-USA)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.429
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="207">207</td>
+    <td class="reclass" data-order="Tulane,AAC"><a href="/team/718.0/12622" class="skipMask" target="TEAM_WIN">Tulane (AAC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.424
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="208">208</td>
+    <td class="reclass" data-order="Albany (NY),America East"><a href="/team/14.0/12622" class="skipMask" target="TEAM_WIN">Albany (NY) (America East)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.423
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="209">209</td>
+    <td class="reclass" data-order="Abilene Christian,Southland"><a href="/team/2.0/12622" class="skipMask" target="TEAM_WIN">Abilene Christian (Southland)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.419
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="210">209</td>
+    <td class="reclass" data-order="California,Pac-12"><a href="/team/107.0/12622" class="skipMask" target="TEAM_WIN">California (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.419
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="211">209</td>
+    <td class="reclass" data-order="Georgia Tech,ACC"><a href="/team/255.0/12622" class="skipMask" target="TEAM_WIN">Georgia Tech (ACC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.419
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="212">209</td>
+    <td class="reclass" data-order="Samford,SoCon"><a href="/team/625.0/12622" class="skipMask" target="TEAM_WIN">Samford (SoCon)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.419
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="213">209</td>
+    <td class="reclass" data-order="Chattanooga,SoCon"><a href="/team/693.0/12622" class="skipMask" target="TEAM_WIN">Chattanooga (SoCon)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.419
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="214">214</td>
+    <td class="reclass" data-order="Alabama A&amp;M,SWAC"><a href="/team/6.0/12622" class="skipMask" target="TEAM_WIN">Alabama A&amp;M (SWAC)</a></td>
+        <td align="right" nowrap="">
+          14
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.412
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="215">215</td>
+    <td class="reclass" data-order="Grambling,SWAC"><a href="/team/261.0/12622" class="skipMask" target="TEAM_WIN">Grambling (SWAC)</a></td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.410
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="216">216</td>
+    <td class="reclass" data-order="Cincinnati,AAC"><a href="/team/140.0/12622" class="skipMask" target="TEAM_WIN">Cincinnati (AAC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.406
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="217">216</td>
+    <td class="reclass" data-order="Xavier,Big East"><a href="/team/812.0/12622" class="skipMask" target="TEAM_WIN">Xavier (Big East)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.406
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="218">216</td>
+    <td class="reclass" data-order="North Florida,ASUN"><a href="/team/2711.0/12622" class="skipMask" target="TEAM_WIN">North Florida (ASUN)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.406
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="219">216</td>
+    <td class="reclass" data-order="Wake Forest,ACC"><a href="/team/749.0/12622" class="skipMask" target="TEAM_WIN">Wake Forest (ACC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.406
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="220">216</td>
+    <td class="reclass" data-order="Eastern Ky.,OVC"><a href="/team/202.0/12622" class="skipMask" target="TEAM_WIN">Eastern Ky. (OVC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.406
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="221">221</td>
+    <td class="reclass" data-order="Milwaukee,Horizon"><a href="/team/797.0/12622" class="skipMask" target="TEAM_WIN">Milwaukee (Horizon)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="222">221</td>
+    <td class="reclass" data-order="South Carolina,SEC"><a href="/team/648.0/12622" class="skipMask" target="TEAM_WIN">South Carolina (SEC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="223">221</td>
+    <td class="reclass" data-order="South Fla.,AAC"><a href="/team/651.0/12622" class="skipMask" target="TEAM_WIN">South Fla. (AAC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="224">221</td>
+    <td class="reclass" data-order="Fresno St.,MWC"><a href="/team/96.0/12622" class="skipMask" target="TEAM_WIN">Fresno St. (MWC)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="225">221</td>
+    <td class="reclass" data-order="Texas A&amp;M,SEC"><a href="/team/697.0/12622" class="skipMask" target="TEAM_WIN">Texas A&amp;M (SEC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="226">221</td>
+    <td class="reclass" data-order="Montana St.,Big Sky"><a href="/team/440.0/12622" class="skipMask" target="TEAM_WIN">Montana St. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.400
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="227">227</td>
+    <td class="reclass" data-order="Ark.-Pine Bluff,SWAC"><a href="/team/2678.0/12622" class="skipMask" target="TEAM_WIN">Ark.-Pine Bluff (SWAC)</a></td>
+        <td align="right" nowrap="">
+          13
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.394
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="228">228</td>
+    <td class="reclass" data-order="Seattle U,WAC"><a href="/team/1356.0/12622" class="skipMask" target="TEAM_WIN">Seattle U (WAC)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.393
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="229">228</td>
+    <td class="reclass" data-order="UNCW,CAA"><a href="/team/460.0/12622" class="skipMask" target="TEAM_WIN">UNCW (CAA)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.393
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="230">230</td>
+    <td class="reclass" data-order="Purdue Fort Wayne,Summit League"><a href="/team/308.0/12622" class="skipMask" target="TEAM_WIN">Purdue Fort Wayne (Summit League)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.387
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="231">230</td>
+    <td class="reclass" data-order="NJIT,ASUN"><a href="/team/471.0/12622" class="skipMask" target="TEAM_WIN">NJIT (ASUN)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.387
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="232">230</td>
+    <td class="reclass" data-order="Liberty,Big South"><a href="/team/355.0/12622" class="skipMask" target="TEAM_WIN">Liberty (Big South)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.387
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="233">233</td>
+    <td class="reclass" data-order="Wright St.,Horizon"><a href="/team/810.0/12622" class="skipMask" target="TEAM_WIN">Wright St. (Horizon)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.379
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="234">233</td>
+    <td class="reclass" data-order="Arizona,Pac-12"><a href="/team/29.0/12622" class="skipMask" target="TEAM_WIN">Arizona (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.379
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="235">233</td>
+    <td class="reclass" data-order="UT Martin,OVC"><a href="/team/695.0/12622" class="skipMask" target="TEAM_WIN">UT Martin (OVC)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.379
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="236">236</td>
+    <td class="reclass" data-order="Appalachian St.,Sun Belt"><a href="/team/27.0/12622" class="skipMask" target="TEAM_WIN">Appalachian St. (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.375
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="237">236</td>
+    <td class="reclass" data-order="Indiana,Big Ten"><a href="/team/306.0/12622" class="skipMask" target="TEAM_WIN">Indiana (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          12
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.375
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="238">238</td>
+    <td class="reclass" data-order="Davidson,Atlantic 10"><a href="/team/173.0/12622" class="skipMask" target="TEAM_WIN">Davidson (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          17
+        </td>
+        <td align="right" nowrap="">
+          0.370
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="239">239</td>
+    <td class="reclass" data-order="UAB,C-USA"><a href="/team/9.0/12622" class="skipMask" target="TEAM_WIN">UAB (C-USA)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.367
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="240">239</td>
+    <td class="reclass" data-order="Marshall,C-USA"><a href="/team/388.0/12622" class="skipMask" target="TEAM_WIN">Marshall (C-USA)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.367
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="241">239</td>
+    <td class="reclass" data-order="Western Caro.,SoCon"><a href="/team/769.0/12622" class="skipMask" target="TEAM_WIN">Western Caro. (SoCon)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.367
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="242">239</td>
+    <td class="reclass" data-order="Idaho St.,Big Sky"><a href="/team/294.0/12622" class="skipMask" target="TEAM_WIN">Idaho St. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.367
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="243">243</td>
+    <td class="reclass" data-order="Canisius,MAAC"><a href="/team/116.0/12622" class="skipMask" target="TEAM_WIN">Canisius (MAAC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.357
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="244">243</td>
+    <td class="reclass" data-order="UC Riverside,Big West"><a href="/team/111.0/12622" class="skipMask" target="TEAM_WIN">UC Riverside (Big West)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.357
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="245">243</td>
+    <td class="reclass" data-order="Omaha,Summit League"><a href="/team/464.0/12622" class="skipMask" target="TEAM_WIN">Omaha (Summit League)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.357
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="246">246</td>
+    <td class="reclass" data-order="Southeast Mo. St.,OVC"><a href="/team/654.0/12622" class="skipMask" target="TEAM_WIN">Southeast Mo. St. (OVC)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.355
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="247">247</td>
+    <td class="reclass" data-order="Incarnate Word,Southland"><a href="/team/2743.0/12622" class="skipMask" target="TEAM_WIN">Incarnate Word (Southland)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          15
+        </td>
+        <td align="right" nowrap="">
+          0.348
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="248">248</td>
+    <td class="reclass" data-order="Georgia St.,Sun Belt"><a href="/team/254.0/12622" class="skipMask" target="TEAM_WIN">Georgia St. (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.345
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="249">248</td>
+    <td class="reclass" data-order="Kansas St.,Big 12"><a href="/team/327.0/12622" class="skipMask" target="TEAM_WIN">Kansas St. (Big 12)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.345
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="250">248</td>
+    <td class="reclass" data-order="Loyola Maryland,Patriot"><a href="/team/369.0/12622" class="skipMask" target="TEAM_WIN">Loyola Maryland (Patriot)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.345
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="251">248</td>
+    <td class="reclass" data-order="Long Beach St.,Big West"><a href="/team/99.0/12622" class="skipMask" target="TEAM_WIN">Long Beach St. (Big West)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.345
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="252">252</td>
+    <td class="reclass" data-order="UConn,AAC"><a href="/team/164.0/12622" class="skipMask" target="TEAM_WIN">UConn (AAC)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.344
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="253">252</td>
+    <td class="reclass" data-order="George Washington,Atlantic 10"><a href="/team/249.0/12622" class="skipMask" target="TEAM_WIN">George Washington (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.344
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="254">252</td>
+    <td class="reclass" data-order="Indiana St.,MVC"><a href="/team/305.0/12622" class="skipMask" target="TEAM_WIN">Indiana St. (MVC)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.344
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="255">255</td>
+    <td class="reclass" data-order="Troy,Sun Belt"><a href="/team/716.0/12622" class="skipMask" target="TEAM_WIN">Troy (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          11
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.333
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="256">255</td>
+    <td class="reclass" data-order="Evansville,MVC"><a href="/team/219.0/12622" class="skipMask" target="TEAM_WIN">Evansville (MVC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.333
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="257">255</td>
+    <td class="reclass" data-order="Nevada,MWC"><a href="/team/466.0/12622" class="skipMask" target="TEAM_WIN">Nevada (MWC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.333
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="258">258</td>
+    <td class="reclass" data-order="Virginia Tech,ACC"><a href="/team/742.0/12622" class="skipMask" target="TEAM_WIN">Virginia Tech (ACC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.323
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="259">258</td>
+    <td class="reclass" data-order="Mercer,SoCon"><a href="/team/406.0/12622" class="skipMask" target="TEAM_WIN">Mercer (SoCon)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.323
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="260">258</td>
+    <td class="reclass" data-order="Chicago St.,WAC"><a href="/team/136.0/12622" class="skipMask" target="TEAM_WIN">Chicago St. (WAC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.323
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="261">261</td>
+    <td class="reclass" data-order="Saint Mary's (CA),WCC"><a href="/team/610.0/12622" class="skipMask" target="TEAM_WIN">Saint Mary's (CA) (WCC)</a></td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.321
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="262">261</td>
+    <td class="reclass" data-order="UMKC,WAC"><a href="/team/2707.0/12622" class="skipMask" target="TEAM_WIN">UMKC (WAC)</a></td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.321
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="263">261</td>
+    <td class="reclass" data-order="Little Rock,Sun Belt"><a href="/team/32.0/12622" class="skipMask" target="TEAM_WIN">Little Rock (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.321
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="264">264</td>
+    <td class="reclass" data-order="Arizona St.,Pac-12"><a href="/team/28.0/12622" class="skipMask" target="TEAM_WIN">Arizona St. (Pac-12)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.313
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="265">264</td>
+    <td class="reclass" data-order="Bradley,MVC"><a href="/team/72.0/12622" class="skipMask" target="TEAM_WIN">Bradley (MVC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.313
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="266">264</td>
+    <td class="reclass" data-order="Quinnipiac,MAAC"><a href="/team/562.0/12622" class="skipMask" target="TEAM_WIN">Quinnipiac (MAAC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.313
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="267">264</td>
+    <td class="reclass" data-order="Memphis,AAC"><a href="/team/404.0/12622" class="skipMask" target="TEAM_WIN">Memphis (AAC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.313
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="268">268</td>
+    <td class="reclass" data-order="Weber St.,Big Sky"><a href="/team/758.0/12622" class="skipMask" target="TEAM_WIN">Weber St. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          9
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.310
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="269">269</td>
+    <td class="reclass" data-order="Grand Canyon,WAC"><a href="/team/1104.0/12622" class="skipMask" target="TEAM_WIN">Grand Canyon (WAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.308
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="270">269</td>
+    <td class="reclass" data-order="Morgan St.,MEAC"><a href="/team/446.0/12622" class="skipMask" target="TEAM_WIN">Morgan St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.308
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="271">271</td>
+    <td class="reclass" data-order="Mississippi St.,SEC"><a href="/team/430.0/12622" class="skipMask" target="TEAM_WIN">Mississippi St. (SEC)</a></td>
+        <td align="right" nowrap="">
+          10
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.303
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="272">272</td>
+    <td class="reclass" data-order="Prairie View,SWAC"><a href="/team/553.0/12622" class="skipMask" target="TEAM_WIN">Prairie View (SWAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          19
+        </td>
+        <td align="right" nowrap="">
+          0.296
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="273">273</td>
+    <td class="reclass" data-order="UC Santa Barbara,Big West"><a href="/team/104.0/12622" class="skipMask" target="TEAM_WIN">UC Santa Barbara (Big West)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.286
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="274">273</td>
+    <td class="reclass" data-order="Western Ill.,Summit League"><a href="/team/771.0/12622" class="skipMask" target="TEAM_WIN">Western Ill. (Summit League)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.286
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="275">275</td>
+    <td class="reclass" data-order="Eastern Wash.,Big Sky"><a href="/team/207.0/12622" class="skipMask" target="TEAM_WIN">Eastern Wash. (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.280
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="276">275</td>
+    <td class="reclass" data-order="Brown,Ivy League"><a href="/team/80.0/12622" class="skipMask" target="TEAM_WIN">Brown (Ivy League)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          18
+        </td>
+        <td align="right" nowrap="">
+          0.280
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="277">277</td>
+    <td class="reclass" data-order="Montana,Big Sky"><a href="/team/441.0/12622" class="skipMask" target="TEAM_WIN">Montana (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.276
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="278">277</td>
+    <td class="reclass" data-order="Ga. Southern,Sun Belt"><a href="/team/253.0/12622" class="skipMask" target="TEAM_WIN">Ga. Southern (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.276
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="279">277</td>
+    <td class="reclass" data-order="Southern U.,SWAC"><a href="/team/665.0/12622" class="skipMask" target="TEAM_WIN">Southern U. (SWAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.276
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="280">277</td>
+    <td class="reclass" data-order="St. Francis Brooklyn,NEC"><a href="/team/599.0/12622" class="skipMask" target="TEAM_WIN">St. Francis Brooklyn (NEC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.276
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="281">277</td>
+    <td class="reclass" data-order="USC Upstate,ASUN"><a href="/team/10411.0/12622" class="skipMask" target="TEAM_WIN">USC Upstate (ASUN)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.276
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="282">282</td>
+    <td class="reclass" data-order="FIU,C-USA"><a href="/team/231.0/12622" class="skipMask" target="TEAM_WIN">FIU (C-USA)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          16
+        </td>
+        <td align="right" nowrap="">
+          0.273
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="283">283</td>
+    <td class="reclass" data-order="Charleston So.,Big South"><a href="/team/48.0/12622" class="skipMask" target="TEAM_WIN">Charleston So. (Big South)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.267
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="284">283</td>
+    <td class="reclass" data-order="Youngstown St.,Horizon"><a href="/team/817.0/12622" class="skipMask" target="TEAM_WIN">Youngstown St. (Horizon)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.267
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="285">283</td>
+    <td class="reclass" data-order="DePaul,Big East"><a href="/team/176.0/12622" class="skipMask" target="TEAM_WIN">DePaul (Big East)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.267
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="286">283</td>
+    <td class="reclass" data-order="Georgetown,Big East"><a href="/team/251.0/12622" class="skipMask" target="TEAM_WIN">Georgetown (Big East)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.267
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="287">287</td>
+    <td class="reclass" data-order="Northern Ill.,MAC"><a href="/team/503.0/12622" class="skipMask" target="TEAM_WIN">Northern Ill. (MAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.258
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="288">287</td>
+    <td class="reclass" data-order="Presbyterian,Big South"><a href="/team/1320.0/12622" class="skipMask" target="TEAM_WIN">Presbyterian (Big South)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.258
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="289">287</td>
+    <td class="reclass" data-order="UNLV,MWC"><a href="/team/465.0/12622" class="skipMask" target="TEAM_WIN">UNLV (MWC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.258
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="290">290</td>
+    <td class="reclass" data-order="Southern Utah,Big Sky"><a href="/team/667.0/12622" class="skipMask" target="TEAM_WIN">Southern Utah (Big Sky)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.250
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="291">290</td>
+    <td class="reclass" data-order="Louisiana Tech,C-USA"><a href="/team/366.0/12622" class="skipMask" target="TEAM_WIN">Louisiana Tech (C-USA)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.250
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="292">292</td>
+    <td class="reclass" data-order="Gardner-Webb,Big South"><a href="/team/1092.0/12622" class="skipMask" target="TEAM_WIN">Gardner-Webb (Big South)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.241
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="293">292</td>
+    <td class="reclass" data-order="Siena,MAAC"><a href="/team/639.0/12622" class="skipMask" target="TEAM_WIN">Siena (MAAC)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.241
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="294">292</td>
+    <td class="reclass" data-order="Oklahoma,Big 12"><a href="/team/522.0/12622" class="skipMask" target="TEAM_WIN">Oklahoma (Big 12)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.241
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="295">295</td>
+    <td class="reclass" data-order="Jackson St.,SWAC"><a href="/team/314.0/12622" class="skipMask" target="TEAM_WIN">Jackson St. (SWAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          0.235
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="296">295</td>
+    <td class="reclass" data-order="Mississippi Val.,SWAC"><a href="/team/432.0/12622" class="skipMask" target="TEAM_WIN">Mississippi Val. (SWAC)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          0.235
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="297">295</td>
+    <td class="reclass" data-order="The Citadel,SoCon"><a href="/team/141.0/12622" class="skipMask" target="TEAM_WIN">The Citadel (SoCon)</a></td>
+        <td align="right" nowrap="">
+          8
+        </td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          0.235
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="298">298</td>
+    <td class="reclass" data-order="Tennessee St.,OVC"><a href="/team/691.0/12622" class="skipMask" target="TEAM_WIN">Tennessee St. (OVC)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.233
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="299">298</td>
+    <td class="reclass" data-order="Middle Tenn.,C-USA"><a href="/team/419.0/12622" class="skipMask" target="TEAM_WIN">Middle Tenn. (C-USA)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.233
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="300">298</td>
+    <td class="reclass" data-order="Boston College,ACC"><a href="/team/67.0/12622" class="skipMask" target="TEAM_WIN">Boston College (ACC)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.233
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="301">301</td>
+    <td class="reclass" data-order="Hartford,America East"><a href="/team/272.0/12622" class="skipMask" target="TEAM_WIN">Hartford (America East)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.231
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="302">302</td>
+    <td class="reclass" data-order="Virginia,ACC"><a href="/team/746.0/12622" class="skipMask" target="TEAM_WIN">Virginia (ACC)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.226
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="303">303</td>
+    <td class="reclass" data-order="George Mason,Atlantic 10"><a href="/team/248.0/12622" class="skipMask" target="TEAM_WIN">George Mason (Atlantic 10)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.222
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="304">304</td>
+    <td class="reclass" data-order="Clemson,ACC"><a href="/team/147.0/12622" class="skipMask" target="TEAM_WIN">Clemson (ACC)</a></td>
+        <td align="right" nowrap="">
+          7
+        </td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          0.219
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="305">305</td>
+    <td class="reclass" data-order="UTEP,C-USA"><a href="/team/704.0/12622" class="skipMask" target="TEAM_WIN">UTEP (C-USA)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.214
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="306">305</td>
+    <td class="reclass" data-order="Akron,MAC"><a href="/team/5.0/12622" class="skipMask" target="TEAM_WIN">Akron (MAC)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.214
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="307">307</td>
+    <td class="reclass" data-order="Southern Ill.,MVC"><a href="/team/659.0/12622" class="skipMask" target="TEAM_WIN">Southern Ill. (MVC)</a></td>
+        <td align="right" nowrap="">
+          6
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.207
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="308">308</td>
+    <td class="reclass" data-order="UMass Lowell,America East"><a href="/team/368.0/12622" class="skipMask" target="TEAM_WIN">UMass Lowell (America East)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.192
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="309">308</td>
+    <td class="reclass" data-order="Delaware,CAA"><a href="/team/180.0/12622" class="skipMask" target="TEAM_WIN">Delaware (CAA)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          21
+        </td>
+        <td align="right" nowrap="">
+          0.192
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="310">310</td>
+    <td class="reclass" data-order="Kent St.,MAC"><a href="/team/331.0/12622" class="skipMask" target="TEAM_WIN">Kent St. (MAC)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.185
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="311">311</td>
+    <td class="reclass" data-order="Fairleigh Dickinson,NEC"><a href="/team/222.0/12622" class="skipMask" target="TEAM_WIN">Fairleigh Dickinson (NEC)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.172
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="312">311</td>
+    <td class="reclass" data-order="Cal St. Fullerton,Big West"><a href="/team/97.0/12622" class="skipMask" target="TEAM_WIN">Cal St. Fullerton (Big West)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.172
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="313">311</td>
+    <td class="reclass" data-order="Loyola Chicago,MVC"><a href="/team/371.0/12622" class="skipMask" target="TEAM_WIN">Loyola Chicago (MVC)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.172
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="314">311</td>
+    <td class="reclass" data-order="Lafayette,Patriot"><a href="/team/342.0/12622" class="skipMask" target="TEAM_WIN">Lafayette (Patriot)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.172
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="315">311</td>
+    <td class="reclass" data-order="Holy Cross,Patriot"><a href="/team/285.0/12622" class="skipMask" target="TEAM_WIN">Holy Cross (Patriot)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.172
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="316">316</td>
+    <td class="reclass" data-order="William &amp; Mary,CAA"><a href="/team/786.0/12622" class="skipMask" target="TEAM_WIN">William &amp; Mary (CAA)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          0.167
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="317">316</td>
+    <td class="reclass" data-order="N.C. Central,MEAC"><a href="/team/489.0/12622" class="skipMask" target="TEAM_WIN">N.C. Central (MEAC)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          20
+        </td>
+        <td align="right" nowrap="">
+          0.167
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="318">318</td>
+    <td class="reclass" data-order="Rutgers,Big Ten"><a href="/team/587.0/12622" class="skipMask" target="TEAM_WIN">Rutgers (Big Ten)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          0.156
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="319">319</td>
+    <td class="reclass" data-order="Lamar University,Southland"><a href="/team/346.0/12622" class="skipMask" target="TEAM_WIN">Lamar University (Southland)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          22
+        </td>
+        <td align="right" nowrap="">
+          0.154
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="320">320</td>
+    <td class="reclass" data-order="La.-Monroe,Sun Belt"><a href="/team/498.0/12622" class="skipMask" target="TEAM_WIN">La.-Monroe (Sun Belt)</a></td>
+        <td align="right" nowrap="">
+          5
+        </td>
+        <td align="right" nowrap="">
+          28
+        </td>
+        <td align="right" nowrap="">
+          0.152
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="321">321</td>
+    <td class="reclass" data-order="Tennessee Tech,OVC"><a href="/team/692.0/12622" class="skipMask" target="TEAM_WIN">Tennessee Tech (OVC)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.143
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="322">321</td>
+    <td class="reclass" data-order="Savannah St.,MEAC"><a href="/team/632.0/12622" class="skipMask" target="TEAM_WIN">Savannah St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          24
+        </td>
+        <td align="right" nowrap="">
+          0.143
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="323">323</td>
+    <td class="reclass" data-order="Nicholls St.,Southland"><a href="/team/483.0/12622" class="skipMask" target="TEAM_WIN">Nicholls St. (Southland)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          0.138
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="324">324</td>
+    <td class="reclass" data-order="Coppin St.,MEAC"><a href="/team/165.0/12622" class="skipMask" target="TEAM_WIN">Coppin St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          4
+        </td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          0.133
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="325">325</td>
+    <td class="reclass" data-order="Stetson,ASUN"><a href="/team/678.0/12622" class="skipMask" target="TEAM_WIN">Stetson (ASUN)</a></td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.115
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="326">325</td>
+    <td class="reclass" data-order="Norfolk St.,MEAC"><a href="/team/485.0/12622" class="skipMask" target="TEAM_WIN">Norfolk St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          23
+        </td>
+        <td align="right" nowrap="">
+          0.115
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="327">327</td>
+    <td class="reclass" data-order="Delaware St.,MEAC"><a href="/team/178.0/12622" class="skipMask" target="TEAM_WIN">Delaware St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          0.107
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="328">328</td>
+    <td class="reclass" data-order="Southeastern La.,Southland"><a href="/team/655.0/12622" class="skipMask" target="TEAM_WIN">Southeastern La. (Southland)</a></td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          27
+        </td>
+        <td align="right" nowrap="">
+          0.100
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="329">329</td>
+    <td class="reclass" data-order="San Francisco,WCC"><a href="/team/629.0/12622" class="skipMask" target="TEAM_WIN">San Francisco (WCC)</a></td>
+        <td align="right" nowrap="">
+          3
+        </td>
+        <td align="right" nowrap="">
+          28
+        </td>
+        <td align="right" nowrap="">
+          0.097
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="330">330</td>
+    <td class="reclass" data-order="South Dakota St.,Summit League"><a href="/team/649.0/12622" class="skipMask" target="TEAM_WIN">South Dakota St. (Summit League)</a></td>
+        <td align="right" nowrap="">
+          2
+        </td>
+        <td align="right" nowrap="">
+          25
+        </td>
+        <td align="right" nowrap="">
+          0.074
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="331">331</td>
+    <td class="reclass" data-order="Manhattan,MAAC"><a href="/team/381.0/12622" class="skipMask" target="TEAM_WIN">Manhattan (MAAC)</a></td>
+        <td align="right" nowrap="">
+          2
+        </td>
+        <td align="right" nowrap="">
+          29
+        </td>
+        <td align="right" nowrap="">
+          0.065
+        </td>
+  </tr><tr class="row_even even" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="332">332</td>
+    <td class="reclass" data-order="Alcorn,SWAC"><a href="/team/17.0/12622" class="skipMask" target="TEAM_WIN">Alcorn (SWAC)</a></td>
+        <td align="right" nowrap="">
+          2
+        </td>
+        <td align="right" nowrap="">
+          39
+        </td>
+        <td align="right" nowrap="">
+          0.049
+        </td>
+  </tr><tr class="row_odd odd" role="row">
+    <td class="reclass sorting_1 sorting_2" data-order="333">333</td>
+    <td class="reclass" data-order="South Carolina St.,MEAC"><a href="/team/647.0/12622" class="skipMask" target="TEAM_WIN">South Carolina St. (MEAC)</a></td>
+        <td align="right" nowrap="">
+          1
+        </td>
+        <td align="right" nowrap="">
+          26
+        </td>
+        <td align="right" nowrap="">
+          0.037
+        </td>
+  </tr></tbody>
+</table><div class="dataTables_info" id="rankings_table_info" role="status" aria-live="polite">Showing 1 to 333 of 333 entries</div><div class="dataTables_paginate paging_full_numbers" id="rankings_table_paginate"><a class="paginate_button first disabled" aria-controls="rankings_table" data-dt-idx="0" tabindex="0" id="rankings_table_first">First</a><a class="paginate_button previous disabled" aria-controls="rankings_table" data-dt-idx="1" tabindex="0" id="rankings_table_previous">Previous</a><span><a class="paginate_button current" aria-controls="rankings_table" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="rankings_table" data-dt-idx="3" tabindex="0" id="rankings_table_next">Next</a><a class="paginate_button last disabled" aria-controls="rankings_table" data-dt-idx="4" tabindex="0" id="rankings_table_last">Last</a></div></div>
+<script>
+  init_tabs("#stat_type_T_N");
+  initRankingsCall(51.0, -1, -1, -1, -1, -1); 
+  $(document).ready(initDataTable());
+</script>
+
+
+</div>
+<!--
+</div>
+-->
+
+<!-- activate tabs with JavaScript -->
+<script>
+  init_tabs("#stat_type_T_N");
+
+
+$(function() {
+
+$("ul.css-tabs").tabs("div.national_ranking_div > div", {effect: 'ajax'});
+
+});
+</script>
+
+<br>
+
+  </div>
+
+  <div class="footer"></div>
+
+
+<script>
+    //ui-datepicker = calendar month prev/next buttons, 
+    //ui-corner-all = autocomplete dropdown results
+    //paginate_button = datatables
+  function skipMask(obj){
+    if (obj.hasClass('chosen-single') || obj.hasClass('skipMask') || obj.hasClass('ui-datepicker-prev') || obj.hasClass('ui-datepicker-next') || obj.hasClass('ui-corner-all') || obj.hasClass('paginate_button') || obj.hasClass('dt-button')){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  $(document).ajaxComplete(function(){
+    unmask();
+  });
+/*
+  $("form").on('submit', function(event){
+    if (skipMask($(this))){
+      return;
+    }else{
+      mask('Loading');
+    }
+  });
+  */
+  $(document).on('click', 'a', function(){
+    if (skipMask($(this))){
+      return;
+    }else{
+      mask('Loading');
+    }
+  });
+  $(document).on('click', 'input.green', function(){
+    if (skipMask($(this))){
+      return;
+    }else{
+      mask('Loading');
+    }
+  });
+</script>
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></body></html>
