@@ -34,8 +34,6 @@ root_path.joinpath("team_stats").mkdir(exist_ok=True, parents=True)
 root_url_main = "https://stats.ncaa.org"
 url_teams_map = {tag.string : root_url_main + tag['href'] for tag in a_list}
 
-failed_list = []
-
 print(f"Scraping NCAA Women's Volleyball Data for {year}\n")
 
 i = 0
@@ -72,15 +70,5 @@ for team_name, root_url in url_teams_map.items():
         print("Completed!")
     except:
         print("Failed!!")
-        failed_list.append([team_name,"Team stats = "+team_stats_url,"Game stats = "+game_by_game_url])
-
 
 print(f"Scraping Completed! Data can be found at {root_path.resolve()}")
-
-if len(failed_list)>0:
-    print("Failed entries:")
-    for i in failed_list:
-       print(i[0])
-       print(i[1])
-       print(i[2])
-       print()
