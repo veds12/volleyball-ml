@@ -45,28 +45,30 @@ for team_name, root_url in url_teams_map.items():
         print("Exists!")
         continue
 
-    req = Request(root_url, headers={"User-Agent": user_agent})
-    root_page = urlopen(req)
-    root_html = root_page.read().decode("utf-8")
-    soup = BeautifulSoup(root_html, "lxml")
-    team_stats_idx = 15 if year >= 2018 else 13
-    team_stats_url = "https://stats.ncaa.org" + str(
-        soup.find("body").find("div", id="contentarea").contents[team_stats_idx]["href"]
-    )
-    game_by_game_idx = 17 if year >= 2018 else 15
-    game_by_game_url = "https://stats.ncaa.org" + str(
-        soup.find("body").find("div", id="contentarea").contents[game_by_game_idx]["href"]
-    )
-    r = requests.get(game_by_game_url, headers={"User-Agent": user_agent})
-    tables = pd.read_html(r.text)
-    df = tables[-1].drop(labels=[0], axis=0)
-    df.to_csv(root_path.joinpath(f"team_game_by_game/{team_name}.csv"), index=False)
+    try:
+        req = Request(root_url, headers={"User-Agent": user_agent})
+        root_page = urlopen(req)
+        root_html = root_page.read().decode("utf-8")
+        soup = BeautifulSoup(root_html, "lxml")
+        team_stats_idx = 15 if year >= 2018 else 13
+        team_stats_url = "https://stats.ncaa.org" + str(
+            soup.find("body").find("div", id="contentarea").contents[team_stats_idx]["href"]
+        )
+        game_by_game_idx = 17 if year >= 2018 else 15
+        game_by_game_url = "https://stats.ncaa.org" + str(
+            soup.find("body").find("div", id="contentarea").contents[game_by_game_idx]["href"]
+        )
+        r = requests.get(game_by_game_url, headers={"User-Agent": user_agent})
+        tables = pd.read_html(r.text)
+        df = tables[-1].drop(labels=[0], axis=0)
+        df.to_csv(root_path.joinpath(f"team_game_by_game/{team_name}.csv"), index=False)
 
-    r = requests.get(team_stats_url, headers={"User-Agent": user_agent})
-    tables = pd.read_html(r.text)
-    df = tables[1]
-    df.to_csv(root_path.joinpath(f"team_stats/{team_name}.csv"), index=False)
-    print("Completed!")
-
+        r = requests.get(team_stats_url, headers={"User-Agent": user_agent})
+        tables = pd.read_html(r.text)
+        df = tables[1]
+        df.to_csv(root_path.joinpath(f"team_stats/{team_name}.csv"), index=False)
+        print("Completed!")
+    except:
+        print("Failed!!")
 
 print(f"Scraping Completed! Data can be found at {root_path.resolve()}")
