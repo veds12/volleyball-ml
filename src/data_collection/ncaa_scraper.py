@@ -34,9 +34,17 @@ root_path.joinpath("team_stats").mkdir(exist_ok=True, parents=True)
 root_url_main = "https://stats.ncaa.org"
 url_teams_map = {tag.string : root_url_main + tag['href'] for tag in a_list}
 
-print("<-------Starting Team Data Scraping------->\n")
+print(f"Scraping NCAA Women's Volleyball Data for {year}\n")
 
+i = 0
+n = len(url_teams_map.values())
 for team_name, root_url in url_teams_map.items():
+    i += 1
+    print(f"[{i} / {n}] Scraping {team_name} ...", end=' ')
+    if root_path.joinpath(f"team_game_by_game/{team_name}.csv").exists() and root_path.joinpath(f"team_stats/{team_name}.csv").exists():
+        print("Exists!")
+        continue
+
     req = Request(root_url, headers={"User-Agent": user_agent})
     root_page = urlopen(req)
     root_html = root_page.read().decode("utf-8")
@@ -58,6 +66,7 @@ for team_name, root_url in url_teams_map.items():
     tables = pd.read_html(r.text)
     df = tables[1]
     df.to_csv(root_path.joinpath(f"team_stats/{team_name}.csv"), index=False)
-    print(f"{team_name} - Scraped!")
+    print("Completed!")
 
-print("\n<-------Data Scraped!------->")
+
+print(f"Scraping Completed! Data can be found at {root_path.resolve()}")
