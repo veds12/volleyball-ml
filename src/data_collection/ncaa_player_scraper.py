@@ -70,7 +70,7 @@ for team_name, root_url in url_teams_map.items():
         failed_list = []
         for player_name, player_url in url_player_map.items():
             k += 1
-            print(f"\t[{k} / {m}] Scraping {player_name}...", end=' ')
+            print(f"\t[{k} / {m}] Scraping {player_name}...\n", end=' ')
             if root_path.joinpath(f"{team_name}/{player_name}.csv").exists():
                 print("Exists!")
                 continue
