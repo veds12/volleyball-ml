@@ -1,3 +1,3 @@
 .vscode/
 src/data_collection/test_scraper.py
-data/ncaa/2019/player_game_wise
+data/ncaa/raw/2019/player_game_wise

@@ -20,7 +20,7 @@ year = args.year
 
 user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
 
-data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.joinpath(f"data/ncaa")
+data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.joinpath(f"data/ncaa/raw")
 index_path = data_path.joinpath(f"index_files/ncaa_{year}_teams_index.html")
 soup = BeautifulSoup(open(index_path, "r"), "lxml")
 a_list = soup.body.find('div', id='contentarea').find('div', id='national_ranking_div').find_all('a', href=True)
@@ -44,7 +44,7 @@ failed_players_list = []
 failed_teams_list = []
 for team_name, root_url in url_teams_map.items():
     i += 1
-    print(f"[{i} / {n}] Scraping  {team_name} ...", end=' ')
+    print(f"[{i} / {n}] Scraping  {team_name} ...\n", end=' ')
     root_path.joinpath(f"{team_name}").mkdir(exist_ok=True, parents=True)
 
     try:
@@ -70,7 +70,7 @@ for team_name, root_url in url_teams_map.items():
         failed_list = []
         for player_name, player_url in url_player_map.items():
             k += 1
-            print(f"[{k} / {m}] Scraping {player_name}...", end=' ')
+            print(f"\t[{k} / {m}] Scraping {player_name}...", end=' ')
             if root_path.joinpath(f"{team_name}/{player_name}.csv").exists():
                 print("Exists!")
                 continue
