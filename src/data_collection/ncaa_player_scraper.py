@@ -70,9 +70,9 @@ for team_name, root_url in url_teams_map.items():
         failed_list = []
         for player_name, player_url in url_player_map.items():
             k += 1
-            print(f"\t[{k} / {m}] Scraping {player_name}...\n", end=' ')
+            print(f"\t[{k} / {m}] Scraping {player_name}...", end=' ')
             if root_path.joinpath(f"{team_name}/{player_name}.csv").exists():
-                print("Exists!")
+                print("Exists!!")
                 continue
 
             try:
@@ -80,9 +80,11 @@ for team_name, root_url in url_teams_map.items():
                 tables = pd.read_html(r.text)
                 df = tables[-1].drop(labels=[0], axis=0)
                 df.to_csv(root_path.joinpath(f"{team_name}/{player_name}.csv"), index=False)
+                print("Scrapped!")
             except:
                 print(f"Scraping for {player_name} failed!!")
                 failed_list.append(player_name)
+                print("\n")
         failed_players_list.append(failed_list)        
     except:
         print(f"Scraping failed for team {team_name}!!")
