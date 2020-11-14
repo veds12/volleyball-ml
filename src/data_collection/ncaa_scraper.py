@@ -20,7 +20,7 @@ year = args.year
 
 user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
 
-data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.joinpath(f"data/ncaa")
+data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.joinpath(f"data/ncaa/raw")
 index_path = data_path.joinpath(f"index_files/ncaa_{year}_teams_index.html")
 soup = BeautifulSoup(open(index_path, "r"), "lxml")
 a_list = soup.body.find('div', id='contentarea').find('div', id='national_ranking_div').find_all('a', href=True)
