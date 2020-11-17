@@ -37,8 +37,8 @@ data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.join
 
 def clean_data():
     print(f"Cleaning team data for {year} ...", end=' ')
-    for root, _, files in os.walk(data_path.joinpath(f'/raw/{year}/team_game_by_game/')):
-        for i in range(len(files), desc='Cleaning data'):
+    for root, _, files in os.walk(data_path.joinpath(f'raw/{year}/team_game_by_game/')):
+        for i in range(len(files)): 
             f = files[i]
             df = pd.read_csv(Path(root).joinpath(f), header=1)
             if year >= 2018:
