@@ -58,7 +58,10 @@ def clean_data():
                     print(f"{Path(team_root).joinpath(player_file)} Failed!")
                     continue
                 
-                df.drop(columns=["MP", "Attend", "BHE", "Unnamed: 20"], inplace=True)
+                if year > 2017:
+                    df.drop(columns=["MP", "Attend", "BHE", "Unnamed: 20"], inplace=True)
+                else :
+                    df.drop(columns=["MP", "BHE", "Unnamed: 19"], inplace=True)
                 df.replace({'/':''}, regex=True, inplace=True)
                 df.fillna(0, inplace=True)
                 df[["Kills", "Errors", "Total Attacks", "Assists", "Aces", "SErr", "Digs", "RErr", "Block Solos", "Block Assists", "BErr"]] = df[["Kills", "Errors", "Total Attacks", "Assists", "Aces", "SErr", "Digs", "RErr", "Block Solos", "Block Assists", "BErr"]].astype(int)
@@ -125,6 +128,7 @@ def combine_with_player(player_input_path, team_stats_path, team_matches_path, m
     for root, _, files in os.walk(team_matches_path):
         for f in files:
             team_names.append(f[:-4])
+
     print("Done!")
 
     player_input_path = Path(player_input_path)

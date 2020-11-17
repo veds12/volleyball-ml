@@ -1,2 +1,4 @@
 .vscode/
 src/data_collection/test_scraper.py
+src/data_collection/ncaa_combine_data.py
+src/model/experiments/ncaa_test_vs.ipynb
