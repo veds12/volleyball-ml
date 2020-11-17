@@ -13,8 +13,8 @@ import requests
 parser = argparse.ArgumentParser()
 parser.add_argument("-y", "--year", type=int, required=True)
 parser.add_argument("--all", action="store_true")
-parser.add_argument("--alpha", type=float, default=None)
-parser.add_argument("--window", type=int, default=None)
+parser.add_argument("--alpha", type=float, default=0.2)
+parser.add_argument("--window", type=int, default=10)
 parser.add_argument("--clean", action="store_true")
 parser.add_argument("--tf_sma", action="store_true")
 parser.add_argument("--tf_cma", action="store_true")
@@ -58,7 +58,11 @@ def clean_data():
                     print(f"{Path(team_root).joinpath(player_file)} Failed!")
                     continue
                 
-                df.drop(columns=["MP", "Attend", "BHE", "Unnamed: 20"], inplace=True)
+                if year > 2017:
+                    df.drop(columns=["MP", "Attend", "BHE", "Unnamed: 20"], inplace=True)
+                else:
+                    df.drop(columns=["MP", "BHE", "Unnamed: 19"], inplace=True)
+
                 df.replace({'/':''}, regex=True, inplace=True)
                 df.fillna(0, inplace=True)
                 df[["Kills", "Errors", "Total Attacks", "Assists", "Aces", "SErr", "Digs", "RErr", "Block Solos", "Block Assists", "BErr"]] = df[["Kills", "Errors", "Total Attacks", "Assists", "Aces", "SErr", "Digs", "RErr", "Block Solos", "Block Assists", "BErr"]].astype(int)
@@ -126,6 +130,7 @@ def combine_with_player(player_input_path, team_stats_path, team_matches_path, m
         for f in files:
             team_names.append(f[:-4])
     print("Done!")
+    print(team_names)
 
     player_input_path = Path(player_input_path)
     team_stats_path = Path(team_stats_path)
@@ -142,6 +147,9 @@ def combine_with_player(player_input_path, team_stats_path, team_matches_path, m
             top_player_names.append(player_row["Player"])
             if j == 11:
                 break
+        if len(top_player_names) < 12:
+            print(f"Could not get enough players for {name}!")
+            continue
         try:
             for j, player in enumerate(top_player_names):
                 team_matches_df[[f"Player {j} {f}" for f in features]] = pd.read_csv(player_input_path.joinpath(f"{name}/{player}.csv"))[features]
@@ -153,10 +161,12 @@ def combine_with_player(player_input_path, team_stats_path, team_matches_path, m
 
     print("\tGetting match wise dataframes ...", end=' ')
     dfs = []
+    team_names = []
     for root, _, files in os.walk(macthes_with_player_info_path):
         for f in files:
+            team_names.append(f[:-4])
             dfs.append(pd.read_csv(Path(root).joinpath(f)))
-    print("Done!")
+    print(f"Collected {len(dfs)} dataframes. Done!")
 
     err_a, err_b = 0, 0
     data = []
@@ -248,3 +258,16 @@ if __name__=='__main__':
             macthes_with_player_info_path=data_path.joinpath(f"processed/{year}/game_by_game_with_players_{alpha}_ewm"),
             combined_output_path=data_path.joinpath(f"processed/{year}/accumulated/{alpha}_ewm_with_players.csv"),
         )
+
+# #%%
+
+# import os
+# from pathlib import Path
+
+# year = 2017
+# for root, _, files in os.walk(f'../../data/ncaa/raw/{year}/team_stats/'):
+#     for f in files:
+#         f_new = f[:f.find('(') - 1] + ".csv"
+#         os.rename(Path(root).joinpath(f), Path(root).joinpath(f_new))
+#         print(f"{f} successfully renamed to {f_new}!")
+
