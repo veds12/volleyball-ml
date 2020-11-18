@@ -5,6 +5,7 @@ Atharv Sonwane	(2018A7PS1021G)
 > Data Scraping
 > Feature selection for models
 > Data preprocessing and cleaning
+> Report Writing
 
 Vedant Shah	(2018AAPS0566G)
 
