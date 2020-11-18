@@ -4,13 +4,13 @@
 
 Example to generate the data and train the model for the year 2019. Run the code in the root of the project folder :
 
-```python3
+```python
 python src/data_collection/ncaa_team_scraper.py -y 2019
 python src/data_collection/ncaa_player_scraper.py -y 2019
 python src/data_collection/ncaa_team_data_cleaner.py -y 2019 --all
 python src/data_collection/ncaa_player_data_cleaner.py -y 2019 --all
 python src/models/ncaa_model_evaluator.py -d "../../data/ncaa/processed/2019/accumulated/0.2_ewm_with_players.csv"
-python src/models/ncaa_model_tuner.py -d ""../../data/ncaa/processed/2019/accumulated/0.2_ewm_with_players.csv"
+python src/models/ncaa_model_tuner.py -d "../../data/ncaa/processed/2019/accumulated/0.2_ewm_with_players.csv"
 ```
 
 ## Description of relevant scripts
