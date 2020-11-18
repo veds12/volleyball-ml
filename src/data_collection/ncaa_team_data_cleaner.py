@@ -226,6 +226,6 @@ if __name__=='__main__':
     
     if args.all or args.combine_ewm:
         prev_combine(
-            input_path=data_path.joinpath(f"processed/{year}/game_by_game_{o.2}_ewm"),
+            input_path=data_path.joinpath(f"processed/{year}/game_by_game_{0.2}_ewm"),
             output_path=data_path.joinpath(f"processed/{year}/accumulated/{0.2}_ewm.csv"),
         )
