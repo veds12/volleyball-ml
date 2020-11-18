@@ -126,7 +126,7 @@ def combine_with_player(player_input_path, team_stats_path, team_matches_path, m
 
     print("\tBuilding team index ...", end=' ')
     team_names = []
-    for root, _, files in os.walk(team_matches_path):
+    for root, _, files in os.walk(team_stats_path):
         for f in files:
             team_names.append(f[:-4])
     print("Done!")

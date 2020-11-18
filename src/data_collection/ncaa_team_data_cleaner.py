@@ -125,6 +125,7 @@ def combine(input_path, output_path):
             data.append([date, TeamA, TeamB, Result, S, *TeamA_stats, *TeamB_stats])
         
     combined_df = pd.DataFrame(data, columns=combined_features)
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     combined_df.to_csv(output_path, index=False)
     results = dict(df_length=len(combined_df), err_a=err_a, err_b=err_b)
     print(f"Done! Results: {results}")
