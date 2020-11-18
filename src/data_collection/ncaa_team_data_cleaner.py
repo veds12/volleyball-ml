@@ -37,8 +37,8 @@ data_path = Path(os.path.dirname(os.path.realpath(__file__))).parent.parent.join
 
 def clean_data():
     print(f"Cleaning team data for {year} ...", end=' ')
-    for root, _, files in os.walk(data_path.joinpath(f'/raw/{year}/team_game_by_game/')):
-        for i in range(len(files), desc='Cleaning data'):
+    for root, _, files in os.walk(data_path.joinpath(f'raw/{year}/team_game_by_game/')):
+        for i in range(len(files)): 
             f = files[i]
             df = pd.read_csv(Path(root).joinpath(f), header=1)
             if year >= 2018:
@@ -125,6 +125,7 @@ def combine(input_path, output_path):
             data.append([date, TeamA, TeamB, Result, S, *TeamA_stats, *TeamB_stats])
         
     combined_df = pd.DataFrame(data, columns=combined_features)
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     combined_df.to_csv(output_path, index=False)
     results = dict(df_length=len(combined_df), err_a=err_a, err_b=err_b)
     print(f"Done! Results: {results}")
@@ -220,12 +221,12 @@ if __name__=='__main__':
 
     if args.all or args.combine_cme:
         prev_combine(
-            input_path=data_path.joinpath(f"processed/{year}/game_by_game_{window}_sma"),
-            output_path=data_path.joinpath(f"processed/{year}/accumulated/{window}_sma.csv"),
+            input_path=data_path.joinpath(f"processed/{year}/game_by_game_cma"),
+            output_path=data_path.joinpath(f"processed/{year}/accumulated/cma.csv"),
         )
     
     if args.all or args.combine_ewm:
         prev_combine(
-            input_path=data_path.joinpath(f"processed/{year}/game_by_game_{window}_sma"),
-            output_path=data_path.joinpath(f"processed/{year}/accumulated/{window}_sma.csv"),
+            input_path=data_path.joinpath(f"processed/{year}/game_by_game_{0.2}_ewm"),
+            output_path=data_path.joinpath(f"processed/{year}/accumulated/{0.2}_ewm.csv"),
         )

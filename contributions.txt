@@ -1,0 +1,32 @@
+Atharv Sonwane	(2018A7PS1021G)
+
+> Literature Review
+> Model and Data Experiments
+> Data Scraping
+> Feature selection for models
+> Data preprocessing and cleaning
+> Report Writing
+
+Vedant Shah	(2018AAPS0566G)
+
+> Literature Review
+> Model and Data Experiments
+> Generating Combined Dataset
+> Data Scraping
+> Data Preprocessing and cleaning
+
+Himay Patel	(2018AAPS0377G0
+
+> Literature Review
+> Data Scraping
+> Report Writing
+> Result Compilation
+
+Atharv Kirtikar	(2018A7PS0107G)
+
+> Literature Review
+> Data Scraping
+> Report Writing
+> Result Compilation
+
+
