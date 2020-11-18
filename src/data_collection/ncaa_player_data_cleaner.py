@@ -270,4 +270,3 @@ if __name__=='__main__':
 #         f_new = f[:f.find('(') - 1] + ".csv"
 #         os.rename(Path(root).joinpath(f), Path(root).joinpath(f_new))
 #         print(f"{f} successfully renamed to {f_new}!")
-
